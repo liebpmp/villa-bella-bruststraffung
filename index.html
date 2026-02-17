@@ -44,7 +44,7 @@
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-    html { scroll-behavior: smooth; }
+    html { scroll-behavior: smooth; overflow-x: hidden; }
 
     body {
       font-family: var(--font-sans);
@@ -509,13 +509,15 @@
       padding: var(--space-4xl) 0;
     }
     .steps-sub { font-size: 17px; color: var(--text-secondary); text-align: center; max-width: 680px; margin: 0 auto var(--space-2xl); }
-    .steps-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-lg); }
+    .steps-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-lg); width: 100%; }
     .step-card {
       background: var(--white);
       border: 1px solid rgba(201,169,110,0.15);
       border-radius: var(--radius-lg);
       padding: var(--space-lg);
       position: relative;
+      min-width: 0;
+      overflow: hidden;
     }
     .step-num {
       width: 40px;
@@ -530,8 +532,8 @@
       font-size: 18px;
       margin-bottom: var(--space-md);
     }
-    .step-card h4 { font-size: 17px; margin-bottom: var(--space-sm); }
-    .step-card p { font-size: 15px; color: var(--text-secondary); line-height: 1.5; }
+    .step-card h4 { font-size: 17px; margin-bottom: var(--space-sm); word-wrap: break-word; overflow-wrap: break-word; }
+    .step-card p { font-size: 15px; color: var(--text-secondary); line-height: 1.5; word-wrap: break-word; overflow-wrap: break-word; }
 
     /* ===== SEKTION 17: KONTAKT ===== */
     .contact {
@@ -720,7 +722,11 @@
       .faq-accordion { padding: 0; }
 
       .next-steps { padding: var(--space-3xl) 20px; }
-      .steps-grid { grid-template-columns: 1fr 1fr; gap: var(--space-md); }
+      .steps-grid { grid-template-columns: 1fr 1fr; gap: var(--space-sm); }
+      .step-card { padding: var(--space-md); }
+      .step-card h4 { font-size: 15px; }
+      .step-card p { font-size: 13px; }
+      .step-num { width: 32px; height: 32px; min-width: 32px; font-size: 15px; }
 
       .contact { padding: var(--space-3xl) 20px; }
       .form-row { grid-template-columns: 1fr; }
