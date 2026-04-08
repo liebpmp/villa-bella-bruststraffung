@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bruststraffung München | Villa Bella – Ihr Spezialistenteam</title>
-  <meta name="description" content="Bruststraffung in München: Natürliche Ergebnisse, narbenarme Technik, 3D-Simulation. 3.127 erfolgreiche Brust-OPs. Jetzt kostenloses Beratungsgespräch sichern.">
+  <meta name="description" content="Bruststraffung in München: Natürliche Ergebnisse, narbenarme Technik, 3D-Simulation. Über 3.000 Brust-OPs. Jetzt kostenlos & unverbindlich beraten lassen.">
   <meta name="robots" content="index, follow">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -57,7 +57,7 @@
     .container-narrow { max-width: var(--container-narrow); margin: 0 auto; padding: 0 24px; }
 
     h1, h2, h3 { font-family: var(--font-serif); color: var(--text-primary); }
-    h1 { font-weight: 700; font-size: 48px; line-height: 1.12; }
+    h1 { font-weight: 700; font-size: 48px; line-height: 1.15; }
     h2 { font-weight: 700; font-size: 38px; line-height: 1.2; margin-bottom: var(--space-lg); }
     h3 { font-weight: 600; font-size: 26px; line-height: 1.3; }
     h4 { font-family: var(--font-sans); font-weight: 600; font-size: 20px; line-height: 1.35; color: var(--text-primary); }
@@ -71,20 +71,18 @@
       color: var(--white);
       font-family: var(--font-sans);
       font-weight: 600;
-      font-size: 18px;
-      padding: 20px 44px;
+      font-size: 17px;
+      padding: 18px 40px;
       border-radius: var(--radius-sm);
       border: none;
       cursor: pointer;
       text-decoration: none;
-      box-shadow: 0 4px 20px rgba(201, 169, 110, 0.45);
+      box-shadow: 0 4px 14px rgba(201, 169, 110, 0.4);
       transition: all 0.25s ease;
       text-align: center;
-      position: relative;
     }
-    .btn-primary:hover { background: var(--gold-dark); transform: translateY(-2px); box-shadow: 0 8px 28px rgba(201, 169, 110, 0.55); }
-    .btn-primary:active { transform: translateY(0); box-shadow: 0 2px 10px rgba(201, 169, 110, 0.3); }
-    .btn-primary--lg { font-size: 19px; padding: 22px 52px; }
+    .btn-primary:hover { background: var(--gold-dark); transform: translateY(-2px); box-shadow: 0 6px 20px rgba(201, 169, 110, 0.5); }
+    .btn-primary:active { transform: translateY(0); box-shadow: 0 2px 8px rgba(201, 169, 110, 0.3); }
 
     .btn-secondary-outline {
       display: inline-block;
@@ -109,10 +107,6 @@
     .wistia-wrapper { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: var(--radius-md); box-shadow: 0 4px 24px rgba(0,0,0,0.08); }
     .wistia-wrapper iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; border-radius: var(--radius-md); }
     .video-caption { font-size: 14px; font-style: italic; color: var(--text-light); text-align: center; margin-top: var(--space-sm); }
-
-    /* ===== CTA WRAPPER — Extra whitespace ===== */
-    .cta-wrapper { padding: 40px 0; text-align: center; }
-    .cta-micro { font-size: 14px; color: var(--text-light); margin-top: 12px; }
 
     /* ===== STICKY HEADER ===== */
     .site-header {
@@ -151,65 +145,49 @@
     /* ===== HERO ===== */
     .hero {
       background: var(--white);
-      padding: 110px 0 0;
+      padding: 120px 0 0;
     }
     .hero-grid {
       display: grid;
-      grid-template-columns: 58% 42%;
+      grid-template-columns: 55% 45%;
       gap: var(--space-xl);
       align-items: center;
     }
     .hero-eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 13px;
+      display: inline-block;
+      font-size: 14px;
       font-weight: 600;
       color: var(--gold);
       text-transform: uppercase;
       letter-spacing: 1.5px;
       margin-bottom: var(--space-md);
     }
-    .hero-eyebrow::before { content: ''; width: 28px; height: 2px; background: var(--gold); }
     .hero-text h1 { margin-bottom: var(--space-md); }
     .hero-text h1 em { font-style: normal; color: var(--gold); }
-    .hero-subline {
-      font-size: 18px;
+    .hero-subheadline { font-size: 19px; color: var(--text-secondary); margin-bottom: 28px; line-height: 1.6; }
+    .hero-bullets { list-style: none; margin-bottom: var(--space-lg); }
+    .hero-bullets li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 16px;
       color: var(--text-secondary);
-      margin-bottom: 28px;
-      line-height: 1.6;
+      margin-bottom: 14px;
     }
-    .hero-subline strong { color: var(--text-primary); font-weight: 600; }
-    .hero-cta-area { margin-bottom: 20px; }
-    .hero-cta-area .btn-primary { font-size: 18px; }
-    .hero-micro {
-      font-size: 14px;
-      color: var(--text-light);
-      margin-bottom: var(--space-xl);
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
+    .hero-bullets li img { width: 18px; height: 18px; margin-top: 3px; flex-shrink: 0; }
+    .hero-cta-group { display: flex; gap: var(--space-md); align-items: center; flex-wrap: wrap; margin-bottom: var(--space-md); }
+    .hero-micro { font-size: 14px; color: var(--text-light); margin-bottom: var(--space-xl); }
+    .hero-testimonial-snippet {
+      background: var(--gold-ultralight);
+      border-left: 3px solid var(--gold);
+      padding: 16px 20px;
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
     }
-    .hero-micro span { display: inline-flex; align-items: center; gap: 5px; }
-    .hero-trust-badges {
-      display: flex;
-      align-items: center;
-      gap: 24px;
-      padding-top: var(--space-md);
-      border-top: 1px solid rgba(201,169,110,0.15);
-    }
-    .hero-badge {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 14px;
-      font-weight: 500;
-      color: var(--text-secondary);
-    }
-    .hero-badge .badge-stars { color: var(--gold); font-size: 13px; letter-spacing: -1px; }
-    .hero-badge strong { color: var(--text-primary); }
-    .hero-image img { border-radius: var(--radius-lg); box-shadow: 0 12px 40px rgba(0,0,0,0.12); width: 100%; object-fit: cover; }
-    .hero-video-mobile { display: none; margin-top: var(--space-lg); }
+    .hero-testimonial-snippet .snippet-stars { color: var(--gold); font-size: 14px; margin-bottom: 4px; }
+    .hero-testimonial-snippet .snippet-quote { font-size: 15px; font-style: italic; color: var(--text-secondary); line-height: 1.5; margin-bottom: 4px; }
+    .hero-testimonial-snippet .snippet-author { font-size: 13px; color: var(--text-light); font-weight: 500; }
+    .hero-image img { border-radius: var(--radius-lg); box-shadow: 0 8px 30px rgba(0,0,0,0.1); width: 100%; object-fit: cover; }
+    .hero-video-mobile { display: none; margin-top: var(--space-xl); }
 
     /* ===== TRUST STRIP ===== */
     .trust-strip {
@@ -226,66 +204,13 @@
       padding: 0 24px;
     }
     .trust-item { text-align: center; flex: 1; }
-    .trust-divider { width: 1px; height: 40px; background: rgba(201,169,110,0.4); flex-shrink: 0; }
+    .trust-divider { width: 1px; height: 40px; background: var(--gold); flex-shrink: 0; }
     .trust-number { font-family: var(--font-serif); font-weight: 700; font-size: 32px; color: var(--gold); line-height: 1; }
     .trust-label { font-size: 14px; color: var(--text-secondary); margin-top: 4px; }
 
-    /* ===== SOCIAL PROOF (Testimonials moved up) ===== */
-    .social-proof {
-      background: var(--white);
-      padding: var(--space-4xl) 0;
-    }
-    .social-proof-subtitle {
-      font-size: 18px;
-      color: var(--text-secondary);
-      text-align: center;
-      margin-bottom: var(--space-sm);
-    }
-    .social-proof-framing {
-      font-size: 17px;
-      font-style: italic;
-      color: var(--gold);
-      text-align: center;
-      margin-bottom: var(--space-2xl);
-    }
-    .testimonial-video { max-width: 680px; margin: 0 auto var(--space-2xl); }
-    .testimonial-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-lg); max-width: 960px; margin: 0 auto; }
-    .testimonial-card {
-      background: var(--gold-ultralight);
-      border-radius: var(--radius-lg);
-      padding: 28px;
-      border-left: 4px solid var(--gold);
-      transition: box-shadow 0.25s ease;
-    }
-    .testimonial-card:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.06); }
-    .testimonial-stars { color: var(--gold); font-size: 16px; margin-bottom: var(--space-sm); }
-    .testimonial-quote { font-style: italic; font-size: 16px; color: var(--text-secondary); line-height: 1.6; margin-bottom: var(--space-md); }
-    .testimonial-context { font-size: 13px; color: var(--gold-dark); font-weight: 500; margin-bottom: var(--space-sm); }
-    .testimonial-author { font-weight: 600; font-size: 14px; color: var(--text-primary); }
-    .testimonial-source { font-size: 13px; color: var(--text-light); }
-    .review-badges {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 40px;
-      margin-top: var(--space-2xl);
-      padding: 24px 0;
-      border-top: 1px solid rgba(201,169,110,0.15);
-      border-bottom: 1px solid rgba(201,169,110,0.15);
-    }
-    .review-badge {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 4px;
-    }
-    .review-badge .badge-platform { font-size: 14px; font-weight: 600; color: var(--text-primary); }
-    .review-badge .badge-rating { font-size: 13px; color: var(--gold); }
-    .review-badge .badge-count { font-size: 12px; color: var(--text-light); }
-
     /* ===== PROBLEM SECTION (PAS) ===== */
     .problem-section {
-      background: var(--gold-ultralight);
+      background: var(--white);
       padding: var(--space-4xl) 0;
     }
     .problem-grid {
@@ -297,14 +222,13 @@
     .problem-content h2 { margin-bottom: var(--space-md); }
     .problem-content h2 em { font-style: normal; color: var(--gold); }
     .problem-content p { margin-bottom: var(--space-md); font-size: 17px; line-height: 1.7; }
-    .problem-future-pace {
-      background: var(--white);
+    .problem-story {
+      background: var(--gold-ultralight);
       border-radius: var(--radius-lg);
       padding: var(--space-xl);
       border-left: 4px solid var(--gold);
-      margin: var(--space-lg) 0;
     }
-    .problem-future-pace .pace-label {
+    .problem-story .story-label {
       font-size: 13px;
       font-weight: 600;
       color: var(--gold);
@@ -312,90 +236,10 @@
       letter-spacing: 1px;
       margin-bottom: var(--space-sm);
     }
-    .problem-future-pace p { font-size: 16px; font-style: italic; color: var(--text-secondary); line-height: 1.7; margin-bottom: 0; }
+    .problem-story p { font-size: 16px; font-style: italic; color: var(--text-secondary); line-height: 1.7; margin-bottom: var(--space-sm); }
+    .problem-story p:last-child { margin-bottom: 0; }
     .problem-image img { border-radius: var(--radius-lg); width: 100%; object-fit: cover; }
-
-    /* ===== CTA BAND ===== */
-    .cta-band {
-      background: var(--bg-dark);
-      padding: 56px 0;
-      text-align: center;
-    }
-    .cta-band h2 { color: var(--white); font-size: 30px; margin-bottom: var(--space-sm); }
-    .cta-band p { color: #BBBBBB; font-size: 17px; margin-bottom: var(--space-xl); max-width: 620px; margin-left: auto; margin-right: auto; }
-    .cta-band .btn-primary { font-size: 18px; padding: 20px 48px; }
-    .cta-band-micro { font-size: 14px; color: #888888; margin-top: var(--space-md); }
-    .cta-band--loss {
-      background: linear-gradient(135deg, #1C1C1C 0%, #2A2420 100%);
-    }
-    .cta-band--loss .loss-text {
-      font-size: 18px;
-      font-style: italic;
-      color: var(--gold-light);
-      margin-bottom: var(--space-lg);
-      max-width: 640px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    /* ===== OBJECTION CRUSHING ===== */
-    .objections {
-      background: var(--white);
-      padding: var(--space-4xl) 0;
-    }
-    .objections-subtitle {
-      font-size: 17px;
-      color: var(--text-secondary);
-      text-align: center;
-      max-width: 620px;
-      margin: 0 auto var(--space-2xl);
-    }
-    .objection-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: var(--space-lg);
-      max-width: 960px;
-      margin: 0 auto;
-    }
-    .objection-card {
-      background: var(--gold-ultralight);
-      border-radius: var(--radius-lg);
-      padding: 28px;
-      border: 1px solid rgba(201,169,110,0.15);
-      transition: all 0.25s ease;
-    }
-    .objection-card:hover { box-shadow: 0 4px 24px rgba(0,0,0,0.06); border-color: var(--gold); }
-    .objection-card .objection-q {
-      font-family: var(--font-serif);
-      font-size: 18px;
-      font-weight: 600;
-      color: var(--text-primary);
-      margin-bottom: var(--space-sm);
-      display: flex;
-      align-items: flex-start;
-      gap: 10px;
-    }
-    .objection-card .objection-q .q-icon {
-      flex-shrink: 0;
-      width: 28px;
-      height: 28px;
-      background: var(--gold);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--white);
-      font-size: 14px;
-      font-weight: 700;
-      margin-top: 1px;
-    }
-    .objection-card .objection-a {
-      font-size: 16px;
-      color: var(--text-secondary);
-      line-height: 1.65;
-      padding-left: 38px;
-    }
-    .objection-card .objection-a strong { color: var(--text-primary); }
+    .problem-cta { margin-top: var(--space-xl); }
 
     /* ===== TEAM / SOLUTION ===== */
     .team-section {
@@ -455,6 +299,49 @@
     .team-value-text strong { font-weight: 600; color: var(--text-primary); display: block; font-size: 16px; }
     .team-value-text span { font-size: 15px; color: var(--text-secondary); }
 
+    /* ===== TESTIMONIALS ===== */
+    .testimonials {
+      background: var(--white);
+      padding: var(--space-4xl) 0;
+    }
+    .testimonial-subtitle { font-style: italic; font-size: 18px; color: var(--gold); text-align: center; margin-bottom: var(--space-2xl); }
+    .testimonial-video { max-width: 680px; margin: 0 auto var(--space-2xl); }
+    .testimonial-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-lg); max-width: 960px; margin: 0 auto; }
+    .testimonial-card {
+      background: var(--gold-ultralight);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      border-left: 4px solid var(--gold);
+      transition: box-shadow 0.25s ease;
+    }
+    .testimonial-card:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.06); }
+    .testimonial-stars { color: var(--gold); font-size: 16px; margin-bottom: var(--space-sm); }
+    .testimonial-quote { font-style: italic; font-size: 16px; color: var(--text-secondary); line-height: 1.6; margin-bottom: var(--space-md); }
+    .testimonial-author { font-weight: 600; font-size: 14px; color: var(--text-primary); }
+    .testimonial-source { font-size: 13px; color: var(--text-light); }
+    .awards-strip { text-align: center; font-size: 14px; font-weight: 500; color: var(--text-light); margin-top: var(--space-2xl); }
+
+    /* ===== USP COMPARE ===== */
+    .usp-compare {
+      background: var(--gold-ultralight);
+      padding: var(--space-4xl) 0;
+    }
+    .compare-subtitle { font-size: 17px; color: var(--text-secondary); text-align: center; max-width: 680px; margin: 0 auto var(--space-2xl); }
+    .compare-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-xl); max-width: 960px; margin: 0 auto; }
+    .compare-col { border-radius: var(--radius-md); overflow: hidden; background: var(--white); box-shadow: 0 2px 20px rgba(0,0,0,0.06); border: 1px solid rgba(201,169,110,0.15); }
+    .compare-header { padding: var(--space-md) var(--space-lg); font-weight: 600; font-size: 18px; font-family: var(--font-serif); }
+    .compare-header--gold { background: linear-gradient(135deg, var(--gold), var(--gold-dark)); color: var(--white); }
+    .compare-header--muted { background: var(--gold-ultralight); color: var(--text-primary); border-bottom: 2px solid rgba(201,169,110,0.25); }
+    .compare-body { padding: var(--space-lg); }
+    .compare-body ul { list-style: none; }
+    .compare-body li { display: flex; align-items: flex-start; gap: 10px; font-size: 16px; margin-bottom: 18px; line-height: 1.5; }
+    .compare-body li:last-child { margin-bottom: 0; }
+    .compare-icon { flex-shrink: 0; width: 20px; height: 20px; margin-top: 2px; }
+    .compare-col--other { background: var(--gold-ultralight); border: 1px solid rgba(201,169,110,0.12); }
+    .compare-col--other .compare-body li { color: var(--text-secondary); }
+    .compare-footer { text-align: center; font-style: italic; font-size: 15px; color: var(--text-light); margin-top: var(--space-xl); }
+    .compare-cta { text-align: center; margin-top: 40px; }
+
     /* ===== METHOD ===== */
     .method {
       background: var(--white);
@@ -491,6 +378,8 @@
     .method-card h4 { font-size: 18px; margin-bottom: 6px; }
     .method-card p { font-size: 16px; color: var(--text-secondary); line-height: 1.6; }
     .method-image img { border-radius: var(--radius-lg); object-fit: cover; width: 100%; max-height: 420px; }
+    .method-objection { font-size: 15px; color: var(--text-light); font-style: italic; margin-top: var(--space-sm); }
+    .method-transition { font-style: italic; font-size: 16px; color: var(--text-light); margin-top: var(--space-xl); text-align: center; }
 
     /* ===== METHODS BOXES ===== */
     .methods-section {
@@ -519,6 +408,7 @@
     .methods-card p { font-size: 15px; color: var(--text-secondary); line-height: 1.6; margin-bottom: var(--space-md); }
     .methods-tag { display: inline-block; background: rgba(201,169,110,0.1); color: var(--gold-dark); padding: 4px 14px; border-radius: 20px; font-size: 13px; font-weight: 600; }
     .methods-subtitle { font-size: 17px; color: var(--text-secondary); text-align: center; max-width: 680px; margin: 0 auto var(--space-2xl); }
+    .methods-cta { text-align: center; margin-top: var(--space-2xl); }
 
     /* ===== RESULTS ===== */
     .results {
@@ -605,26 +495,11 @@
     }
     .contact-grid { display: grid; grid-template-columns: 55% 45%; gap: var(--space-2xl); align-items: start; }
     .contact-form h2 { margin-bottom: var(--space-sm); }
-    .contact-form .form-sub { font-size: 16px; color: var(--text-secondary); margin-bottom: var(--space-md); }
-    .form-step-indicator {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: rgba(201,169,110,0.08);
-      border: 1px solid rgba(201,169,110,0.2);
-      border-radius: 20px;
-      padding: 6px 16px;
-      font-size: 13px;
-      font-weight: 600;
-      color: var(--gold-dark);
-      margin-bottom: var(--space-lg);
-    }
-    .form-step-indicator .step-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--gold); }
-    .form-step-indicator .step-dot--inactive { background: rgba(201,169,110,0.3); }
+    .contact-form .form-sub { font-size: 16px; color: var(--text-secondary); margin-bottom: var(--space-lg); }
     .contact-risk-reversal {
       display: flex;
       gap: var(--space-lg);
-      margin-bottom: var(--space-lg);
+      margin-bottom: var(--space-xl);
     }
     .risk-item {
       display: flex;
@@ -643,7 +518,7 @@
       border: 1px solid rgba(201,169,110,0.2);
       border-radius: var(--radius-md);
       padding: 14px 18px;
-      margin-bottom: var(--space-lg);
+      margin-bottom: var(--space-xl);
     }
     .form-social-proof .proof-dot {
       width: 10px;
@@ -658,7 +533,6 @@
     .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-md); margin-bottom: var(--space-md); }
     .form-group { margin-bottom: var(--space-md); }
     .form-group label { display: block; font-weight: 500; font-size: 14px; color: var(--text-primary); margin-bottom: 6px; }
-    .form-group label .optional { color: var(--text-light); font-weight: 400; }
     .form-group input,
     .form-group textarea {
       width: 100%;
@@ -677,23 +551,13 @@
     .form-group textarea.error { border-color: var(--error); }
     .form-group .error-msg { font-size: 13px; color: var(--error); margin-top: 4px; display: none; }
     .form-group.has-error .error-msg { display: block; }
-    .form-group textarea { resize: vertical; min-height: 80px; }
+    .form-group textarea { resize: vertical; min-height: 100px; }
     .checkbox-group { display: flex; align-items: flex-start; gap: 10px; margin-bottom: var(--space-lg); }
     .checkbox-group input[type="checkbox"] { margin-top: 3px; accent-color: var(--gold); width: 18px; height: 18px; flex-shrink: 0; }
     .checkbox-group label { font-size: 13px; color: var(--text-light); line-height: 1.5; }
     .checkbox-group label a { color: var(--gold); text-decoration: underline; }
-    .form-submit { width: 100%; padding: 20px; font-size: 18px; }
-    .form-trust {
-      text-align: center;
-      font-size: 13px;
-      color: var(--text-light);
-      margin-top: var(--space-md);
-      padding: 12px 0;
-      display: flex;
-      justify-content: center;
-      gap: 16px;
-      flex-wrap: wrap;
-    }
+    .form-submit { width: 100%; padding: 18px; font-size: 17px; }
+    .form-trust { text-align: center; font-size: 13px; color: var(--text-light); margin-top: var(--space-md); padding: 12px 0; }
     .form-success {
       background: rgba(201,169,110,0.06);
       border: 1px solid rgba(201,169,110,0.2);
@@ -732,24 +596,6 @@
     .sidebar-trust-item .trust-icon svg { width: 18px; height: 18px; color: var(--gold); }
     .sidebar-trust-item span { font-size: 14px; color: var(--text-secondary); line-height: 1.4; }
     .sidebar-trust-item strong { color: var(--text-primary); }
-    .sidebar-testimonial {
-      margin-top: var(--space-lg);
-      padding-top: var(--space-lg);
-      border-top: 1px solid rgba(201,169,110,0.15);
-    }
-    .sidebar-testimonial .sidebar-stars { color: var(--gold); font-size: 14px; margin-bottom: 6px; }
-    .sidebar-testimonial .sidebar-quote { font-size: 14px; font-style: italic; color: var(--text-secondary); line-height: 1.6; margin-bottom: 6px; }
-    .sidebar-testimonial .sidebar-author { font-size: 13px; color: var(--text-light); font-weight: 500; }
-
-    /* ===== EXIT BANNER ===== */
-    .exit-banner {
-      background: var(--gold-ultralight);
-      border-top: 2px solid var(--gold);
-      padding: 48px 0;
-      text-align: center;
-    }
-    .exit-banner h3 { font-size: 24px; margin-bottom: var(--space-sm); }
-    .exit-banner p { font-size: 16px; color: var(--text-secondary); margin-bottom: var(--space-lg); max-width: 560px; margin-left: auto; margin-right: auto; }
 
     /* ===== FOOTER ===== */
     .site-footer {
@@ -799,6 +645,17 @@
       line-height: 24px;
     }
 
+    /* ===== INLINE CTA BAND ===== */
+    .cta-band {
+      background: var(--bg-dark);
+      padding: 56px 0;
+      text-align: center;
+    }
+    .cta-band h2 { color: var(--white); font-size: 32px; margin-bottom: var(--space-sm); }
+    .cta-band p { color: #BBBBBB; font-size: 17px; margin-bottom: var(--space-xl); }
+    .cta-band .btn-primary { font-size: 18px; padding: 20px 48px; }
+    .cta-band-micro { font-size: 14px; color: #888888; margin-top: var(--space-md); }
+
     /* ===== RESPONSIVE ===== */
     @media (max-width: 1024px) {
       h1 { font-size: 36px; }
@@ -807,7 +664,7 @@
       .hero-image { display: none; }
       .hero-video-mobile { display: block; }
       .hero { padding: 100px 0 0; }
-      .hero-trust-badges { flex-wrap: wrap; gap: 16px; }
+      .hero-subheadline { font-size: 17px; }
       .problem-grid { grid-template-columns: 1fr; }
       .problem-image { order: 2; }
       .team-grid { grid-template-columns: 1fr; }
@@ -815,15 +672,15 @@
       .team-founder-badge { position: relative; bottom: 0; right: 0; margin-top: var(--space-md); display: inline-flex; }
       .method-layout { grid-template-columns: 1fr; }
       .method-image { order: 2; }
-      .objection-grid { grid-template-columns: 1fr; }
+      .compare-grid { grid-template-columns: 1fr; }
       .contact-grid { grid-template-columns: 1fr; }
       .contact-sidebar { display: none; }
       .footer-grid { grid-template-columns: 1fr; gap: var(--space-xl); }
     }
 
     @media (max-width: 768px) {
-      h1 { font-size: 28px; }
-      h2 { font-size: 24px; }
+      h1 { font-size: 30px; }
+      h2 { font-size: 26px; }
       h3 { font-size: 22px; }
 
       .site-header { height: 64px; }
@@ -831,26 +688,22 @@
       .header-logo img { height: 30px; }
       .header-cta { padding: 10px 18px; font-size: 14px; }
 
-      .hero { padding: 90px 20px 0; }
-      .btn-primary { font-size: 16px; padding: 18px 32px; width: 100%; }
-      .btn-primary--lg { font-size: 17px; padding: 18px 32px; }
+      .hero { padding: 100px 20px 0; }
+      .hero-bullets li { font-size: 15px; }
+      .btn-primary { font-size: 16px; padding: 16px 32px; width: 100%; }
       .btn-secondary-outline { width: 100%; }
+      .hero-cta-group { flex-direction: column; }
 
       .trust-strip { padding: 20px 16px; }
-      .trust-strip-inner { flex-wrap: wrap; gap: 8px; }
       .trust-divider { display: none; }
-      .trust-item { flex: 0 0 48%; }
       .trust-number { font-size: 24px; }
-      .trust-label { font-size: 12px; }
-
-      .social-proof { padding: var(--space-3xl) 20px; }
-      .testimonial-grid { grid-template-columns: 1fr; }
-      .review-badges { flex-wrap: wrap; gap: 24px; }
+      .trust-label { font-size: 13px; }
 
       .problem-section { padding: var(--space-3xl) 20px; }
-      .objections { padding: var(--space-3xl) 20px; }
-      .objection-grid { grid-template-columns: 1fr; }
       .team-section { padding: var(--space-3xl) 20px; }
+      .testimonials { padding: var(--space-3xl) 20px; }
+      .testimonial-grid { grid-template-columns: 1fr; }
+      .usp-compare { padding: var(--space-3xl) 20px; }
       .method { padding: var(--space-3xl) 20px; }
       .methods-section { padding: var(--space-3xl) 20px; }
       .methods-grid { grid-template-columns: 1fr; }
@@ -866,11 +719,7 @@
       .form-row { grid-template-columns: 1fr; }
       .contact-risk-reversal { flex-direction: column; gap: var(--space-sm); }
       .cta-band { padding: 40px 20px; }
-      .cta-band h2 { font-size: 24px; }
-      .exit-banner { padding: 36px 20px; }
-
-      .hero-micro { flex-direction: column; gap: 6px; }
-      .hero-trust-badges { flex-direction: column; gap: 10px; }
+      .cta-band h2 { font-size: 26px; }
 
       .site-footer { padding: 48px 20px 24px; }
       .mobile-sticky-cta { display: block; }
@@ -887,7 +736,7 @@
       <a href="#hero" class="header-logo">
         <img src="https://cdn.prod.website-files.com/6569a841ec1461c605d92a91/6569a841ec1461c605d92cfd_logo-092020.png" alt="Villa Bella München Logo" width="140" height="36">
       </a>
-      <a href="#kontakt" class="header-cta">Ja, ich möchte eine Beratung →</a>
+      <a href="#kontakt" class="header-cta">Kostenlose Beratung →</a>
     </div>
   </header>
 
@@ -897,45 +746,36 @@
       <div class="hero-grid">
         <div class="hero-text">
           <span class="hero-eyebrow">Bruststraffung in München</span>
+          <h1>Endlich wieder <em>selbstbewusst</em> fühlen — mit einer Brust, die zu Ihnen passt</h1>
+          <p class="hero-subheadline">Natürliche Straffung durch Münchens erfahrenstes Spezialistenteam. Über 3.000 Brust-OPs. Narbenarme Technik. Ihr Ergebnis vorab in 3D sehen.</p>
 
-          <h1>Endlich wieder in den Spiegel schauen — und <em>sich selbst</em> wiedererkennen</h1>
+          <ul class="hero-bullets">
+            <li><img src="https://cdn.prod.website-files.com/6569a841ec1461c605d92a91/6569a841ec1461c605d92d2d_checkmark-min.png" alt="✓" width="18" height="18"> Ergebnis hält bis zu 10 Jahre — sichtbar und spürbar</li>
+            <li><img src="https://cdn.prod.website-files.com/6569a841ec1461c605d92a91/6569a841ec1461c605d92d2d_checkmark-min.png" alt="✓" width="18" height="18"> Kaum sichtbare Narben dank spezieller Schnittführung</li>
+            <li><img src="https://cdn.prod.website-files.com/6569a841ec1461c605d92a91/6569a841ec1461c605d92d2d_checkmark-min.png" alt="✓" width="18" height="18"> Jameda Note 1,0 — über 5.000 zufriedene Patientinnen</li>
+            <li><img src="https://cdn.prod.website-files.com/6569a841ec1461c605d92a91/6569a841ec1461c605d92d2d_checkmark-min.png" alt="✓" width="18" height="18"> 3D-Simulation: Sehen Sie Ihr Ergebnis vor dem Eingriff</li>
+          </ul>
 
-          <p class="hero-subline"><strong>3.127 erfolgreiche Brust-OPs.</strong> Narbenarme Technik. Münchens erfahrenstes Spezialistenteam. Ihr Ergebnis vorab in 3D sehen — bevor Sie sich entscheiden.</p>
-
-          <div class="hero-cta-area">
-            <a href="#kontakt" class="btn-primary btn-primary--lg">Ja, ich möchte mein Beratungsgespräch →</a>
+          <div class="hero-cta-group">
+            <a href="#kontakt" class="btn-primary">Kostenlose Beratung anfragen →</a>
+            <a href="#methode" class="btn-secondary-outline">Wie es funktioniert</a>
           </div>
+          <p class="hero-micro">✓ 100% unverbindlich &amp; kostenlos · ✓ Antwort innerhalb von 24h · ✓ Nur 8 Beratungstermine pro Woche</p>
 
-          <div class="hero-micro">
-            <span>✓ In 60 Sekunden ausgefüllt</span>
-            <span>✓ Antwort innerhalb von 24h</span>
-            <span>✓ 100% kostenlos &amp; unverbindlich</span>
-          </div>
-
-          <div class="hero-trust-badges">
-            <div class="hero-badge">
-              <span class="badge-stars">★★★★★</span>
-              <span><strong>Note 1,0</strong> Jameda</span>
-            </div>
-            <div class="hero-badge">
-              <span class="badge-stars">★★★★★</span>
-              <span><strong>5 Sterne</strong> Google</span>
-            </div>
-            <div class="hero-badge">
-              <span class="badge-stars">★★★★★</span>
-              <span><strong>Empfohlen</strong> Doctify</span>
-            </div>
+          <!-- Testimonial Snippet -->
+          <div class="hero-testimonial-snippet">
+            <div class="snippet-stars">★★★★★</div>
+            <p class="snippet-quote">"Nach langem Zögern habe ich mich endlich entschieden — und bin überglücklich. Das Ergebnis ist natürlich und wunderschön."</p>
+            <span class="snippet-author">— K. Jäger, Jameda Bewertung 2025</span>
           </div>
 
           <!-- Mobile Video -->
           <div class="hero-video-mobile">
             <div class="wistia-wrapper">
-              <iframe src="https://fast.wistia.net/embed/iframe/tgb40wwjfl?seo=true&videoFoam=false" title="Patientin teilt ihre Erfahrung" allow="autoplay; fullscreen" loading="lazy"></iframe>
+              <iframe src="https://fast.wistia.net/embed/iframe/hhivyzxxeq?seo=true&videoFoam=false" title="Villa Bella Philosophie" allow="autoplay; fullscreen" loading="lazy"></iframe>
             </div>
-            <p class="video-caption">Eine Patientin teilt ihre persönliche Erfahrung</p>
           </div>
         </div>
-
         <div class="hero-image">
           <img src="https://cdn.prod.website-files.com/6569a841ec1461c605d92a91/6739c960d98f28ed5abfd12e_DSC07805.webp" alt="Villa Bella Klinik Interior München — Luxuriöse Praxis" width="500" height="600" loading="eager">
         </div>
@@ -947,191 +787,55 @@
   <section class="trust-strip">
     <div class="trust-strip-inner">
       <div class="trust-item">
-        <div class="trust-number">3.127</div>
-        <div class="trust-label">Erfolgreiche Brust-OPs</div>
+        <div class="trust-number">3.000+</div>
+        <div class="trust-label">Brust-OPs durchgeführt</div>
       </div>
       <div class="trust-divider"></div>
       <div class="trust-item">
         <div class="trust-number">Note 1,0</div>
-        <div class="trust-label">Jameda Top-Bewertung</div>
+        <div class="trust-label">Top-Bewertung auf Jameda</div>
       </div>
       <div class="trust-divider"></div>
       <div class="trust-item">
         <div class="trust-number">25+ Jahre</div>
-        <div class="trust-label">Chirurgische Erfahrung</div>
+        <div class="trust-label">chirurgische Erfahrung</div>
       </div>
       <div class="trust-divider"></div>
       <div class="trust-item">
-        <div class="trust-number">5.247+</div>
-        <div class="trust-label">Zufriedene Patientinnen</div>
+        <div class="trust-number">5.000+</div>
+        <div class="trust-label">zufriedene Patientinnen</div>
       </div>
     </div>
   </section>
 
-  <!-- ===== SOCIAL PROOF (Moved up — right after trust) ===== -->
-  <section class="social-proof" id="erfahrungen">
-    <div class="container">
-      <div class="section-header">
-        <div class="gold-line"></div>
-        <h2>Frauen wie Sie teilen ihre Geschichte</h2>
-      </div>
-      <p class="social-proof-framing">Mütter, Berufstätige, Frauen die sich endlich etwas Gutes tun — und es nicht bereuen</p>
-
-      <div class="testimonial-video">
-        <div class="wistia-wrapper">
-          <iframe src="https://fast.wistia.net/embed/iframe/tgb40wwjfl?seo=true&videoFoam=false" title="Patientin erzählt ihre Erfahrung bei Villa Bella" allow="autoplay; fullscreen" loading="lazy"></iframe>
-        </div>
-        <p class="video-caption">Eine Patientin teilt ihre persönliche Erfahrung — ungeschnitten &amp; ehrlich</p>
-      </div>
-
-      <div class="testimonial-grid">
-        <div class="testimonial-card">
-          <div class="testimonial-stars">★★★★★</div>
-          <div class="testimonial-context">Nach 2 Schwangerschaften &amp; 4 Jahren Unsicherheit</div>
-          <p class="testimonial-quote">"Ich habe mich jahrelang fremd in meinem Körper gefühlt. Nach dem Eingriff bei Villa Bella bin ich zum ersten Mal seit der Geburt meiner Kinder wieder gerne in den Spiegel geschaut. Das Ergebnis ist so natürlich — niemand würde es erahnen."</p>
-          <div class="testimonial-author">K. Jäger</div>
-          <div class="testimonial-source">Jameda Bewertung (2025)</div>
-        </div>
-
-        <div class="testimonial-card">
-          <div class="testimonial-stars">★★★★★</div>
-          <div class="testimonial-context">3 Kliniken verglichen — Villa Bella gewählt</div>
-          <p class="testimonial-quote">"Das Ärzteteam ist ein Meister seines Fachs — hier sind Mensch, Kunst und Können vereint. Ich habe drei Kliniken besucht, aber nur hier fühlte ich mich wirklich verstanden. Sie nehmen sich Zeit, bis alle Fragen und Unsicherheiten geklärt sind."</p>
-          <div class="testimonial-author">Catrin G. &amp; Jasmin M.</div>
-          <div class="testimonial-source">Google Bewertung</div>
-        </div>
-
-        <div class="testimonial-card">
-          <div class="testimonial-stars">★★★★★</div>
-          <div class="testimonial-context">Berufstätige Mutter, 41 Jahre</div>
-          <p class="testimonial-quote">"Mega netter und kompetenter Arzt, der sich wirklich Zeit nimmt. Als berufstätige Mutter hatte ich Angst vor dem ganzen Prozess — das Team hat mir alles genommen. Eine Praxis, die nicht nur sagt, dass sie dir helfen werden, sondern es auch tatsächlich umsetzen!"</p>
-          <div class="testimonial-author">Paula D.</div>
-          <div class="testimonial-source">Google Bewertung</div>
-        </div>
-
-        <div class="testimonial-card">
-          <div class="testimonial-stars">★★★★★</div>
-          <div class="testimonial-context">Langes Zögern — heute überglücklich</div>
-          <p class="testimonial-quote">"Tolle Praxis mit einem ganz tollen Team! Ich habe monatelang gezögert und mich nicht getraut. Heute bin ich so froh, dass ich es endlich gemacht habe. Selten eine so herzliche, aber auch professionelle Praxis gesehen. Ich habe mich jederzeit sicher gefühlt."</p>
-          <div class="testimonial-author">Zufriedene Patientin</div>
-          <div class="testimonial-source">Doctify Bewertung</div>
-        </div>
-      </div>
-
-      <div class="review-badges">
-        <div class="review-badge">
-          <span class="badge-platform">Jameda</span>
-          <span class="badge-rating">★★★★★ Note 1,0</span>
-          <span class="badge-count">Top-Arzt Auszeichnung</span>
-        </div>
-        <div class="review-badge">
-          <span class="badge-platform">Google</span>
-          <span class="badge-rating">★★★★★ 5,0 Sterne</span>
-          <span class="badge-count">Über 200 Bewertungen</span>
-        </div>
-        <div class="review-badge">
-          <span class="badge-platform">Doctify</span>
-          <span class="badge-rating">★★★★★ Empfohlen</span>
-          <span class="badge-count">Verifizierte Erfahrungen</span>
-        </div>
-      </div>
-
-      <div class="cta-wrapper">
-        <a href="#kontakt" class="btn-primary">Ja, ich möchte mein Beratungsgespräch →</a>
-        <p class="cta-micro">✓ Kostenlos · ✓ Unverbindlich · ✓ Inkl. 3D-Simulation</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== PROBLEM SECTION (Emotional, Sensory) ===== -->
+  <!-- ===== PROBLEM SECTION (PAS) ===== -->
   <section class="problem-section" id="problem">
     <div class="container">
       <div class="problem-grid">
         <div class="problem-content">
-          <h2>Sie wissen genau, <em>wovon wir sprechen</em></h2>
+          <h2>Kennen Sie <em>dieses Gefühl</em>?</h2>
 
-          <p>Das Zögern vor dem Kleiderschrank. Der Griff zum weiten Pullover, obwohl es Sommer ist. Der Moment, in dem Sie sich abwenden, bevor Ihr Blick im Spiegel landet.</p>
+          <p>Sie stehen vor dem Spiegel — und erkennen sich nicht wieder. Nach Schwangerschaft, Stillzeit oder Gewichtsverlust hat sich Ihre Brust verändert. Die Festigkeit ist verschwunden.</p>
 
-          <p>Vielleicht war es die Schwangerschaft. Vielleicht das Stillen, der Gewichtsverlust, oder einfach die Zeit. Ihre Brust hat sich verändert — aber <strong>Ihr inneres Bild von sich selbst nicht.</strong></p>
+          <p>Vielleicht vermeiden Sie bestimmte Kleidung. Vielleicht fühlen Sie sich unsicher, wenn Sie sich ausziehen. Vielleicht haben Sie das Gefühl, dass Ihr Körper nicht mehr zu der Frau passt, die Sie innerlich sind.</p>
 
-          <p>Und genau diese Diskrepanz spüren Sie. Jeden Tag. Beim Anziehen, im Schwimmbad, in intimen Momenten. Es ist nicht Eitelkeit — es ist das Gefühl, dass Ihr Körper nicht mehr zu der Frau passt, die Sie sind.</p>
+          <p><strong>Sie sind nicht allein.</strong> Über 80% unserer Patientinnen beschreiben genau dieses Gefühl beim ersten Beratungsgespräch.</p>
 
-          <p><strong>Über 80% unserer Patientinnen beschreiben genau dieses Gefühl</strong> beim ersten Beratungsgespräch. Und fast alle sagen dasselbe: <em>„Ich hätte mich viel früher melden sollen."</em></p>
+          <p>Und die meisten sagen dasselbe: <em>„Ich hätte mich viel früher melden sollen."</em></p>
 
-          <div class="problem-future-pace">
-            <div class="pace-label">Stellen Sie sich jetzt das Gegenteil vor</div>
-            <p>Sie stehen morgens vor dem Spiegel — und lächeln. Sie greifen ins Regal und nehmen das Kleid, das Sie seit Jahren nicht getragen haben. Im Sommer gehen Sie mit Ihren Kindern ins Freibad, ohne darüber nachzudenken. Sie fühlen sich wieder wie Sie selbst. Nicht wie eine neue Frau — wie <strong>die Frau, die Sie immer waren.</strong></p>
+          <div class="problem-story">
+            <div class="story-label">Typische Patientin</div>
+            <p>„Nach zwei Kindern und dem Abstillen fühlte ich mich fremd in meinem eigenen Körper. Ich habe Bikinis vermieden, mich unter weiten Pullovern versteckt. Erst als ich zu Villa Bella kam und das Team mir alles in Ruhe erklärte, wusste ich: Das ist der richtige Schritt."</p>
           </div>
 
-          <div class="cta-wrapper" style="text-align:left; padding: 24px 0 0;">
-            <a href="#kontakt" class="btn-primary">Mein persönliches Beratungsgespräch sichern →</a>
-            <p class="cta-micro" style="text-align:left;">100% unverbindlich. Kein Risiko. Kein Druck.</p>
+          <div class="problem-cta">
+            <a href="#kontakt" class="btn-primary">Der erste Schritt: Kostenloses Beratungsgespräch →</a>
+            <p style="font-size:14px; color:var(--text-light); margin-top:8px;">100% unverbindlich. Kein Risiko. Kein Druck.</p>
           </div>
         </div>
         <div class="problem-image">
           <img src="https://cdn.prod.website-files.com/6569a841ec1461c605d92a91/6739ccbf64a0b2e7a7abdef7_DSC07545%202-p-500.webp" alt="Villa Bella Klinik München — Einladende Atmosphäre" width="500" height="600" loading="lazy">
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== CTA BAND #1 — Loss Aversion ===== -->
-  <section class="cta-band cta-band--loss">
-    <div class="container">
-      <p class="loss-text">„Jeden Monat, den Sie warten, ist ein Monat weniger mit dem Körpergefühl, das Sie verdienen."</p>
-      <h2>Bereit für den ersten Schritt?</h2>
-      <p>Nur 8 Erstberatungen pro Woche — damit wir jeder Patientin unsere volle Aufmerksamkeit geben.</p>
-      <a href="#kontakt" class="btn-primary">Ja, ich möchte mein Beratungsgespräch →</a>
-      <p class="cta-band-micro">✓ Antwort innerhalb von 24h · ✓ Inkl. persönlicher 3D-Simulation</p>
-    </div>
-  </section>
-
-  <!-- ===== OBJECTION CRUSHING (NEW) ===== -->
-  <section class="objections" id="bedenken">
-    <div class="container">
-      <div class="section-header">
-        <div class="gold-line"></div>
-        <h2>Was Sie vielleicht noch zögern lässt — und warum Sie es nicht müssen</h2>
-      </div>
-      <p class="objections-subtitle">Die vier häufigsten Bedenken, die wir im Erstgespräch hören. Und ehrliche Antworten darauf.</p>
-
-      <div class="objection-grid">
-        <div class="objection-card">
-          <div class="objection-q">
-            <span class="q-icon">€</span>
-            <span>„Ist das nicht zu teuer?"</span>
-          </div>
-          <p class="objection-a">Eine Bruststraffung ist <strong>eine Investition in 10+ Jahre neues Selbstbewusstsein.</strong> Kein Kleidungsstück, kein Urlaub wird Ihnen dieses Gefühl geben. Im Beratungsgespräch erhalten Sie eine transparente Kostenaufstellung — ohne versteckte Gebühren, ohne Überraschungen.</p>
-        </div>
-
-        <div class="objection-card">
-          <div class="objection-q">
-            <span class="q-icon">♡</span>
-            <span>„Tut das weh?"</span>
-          </div>
-          <p class="objection-a"><strong>Während des Eingriffs spüren Sie nichts</strong> — modernste Vollnarkose. Danach: eine leichte Spannung, vergleichbar mit Muskelkater. Gut behandelbar mit normalen Schmerzmedikamenten. Die meisten Patientinnen sagen: „Es war viel besser als befürchtet."</p>
-        </div>
-
-        <div class="objection-card">
-          <div class="objection-q">
-            <span class="q-icon">✦</span>
-            <span>„Bleiben sichtbare Narben?"</span>
-          </div>
-          <p class="objection-a">Unsere spezielle Schnittführung am unteren Brustpol sorgt dafür, dass Narben in der natürlichen Kontur verlaufen. <strong>Nach 6 Monaten suchen Sie selbst danach.</strong> Gezielte Narbenpflege ab der zweiten Woche unterstützt die optimale Heilung.</p>
-        </div>
-
-        <div class="objection-card">
-          <div class="objection-q">
-            <span class="q-icon">?</span>
-            <span>„Was, wenn mir das Ergebnis nicht gefällt?"</span>
-          </div>
-          <p class="objection-a"><strong>Sie sehen Ihr Ergebnis, bevor Sie sich entscheiden.</strong> Mit unserer Crisalix 3D-Simulation zeigen wir Ihnen im Beratungsgespräch, wie Ihre Brust nach dem Eingriff aussehen wird. So treffen Sie Ihre Entscheidung mit voller Klarheit — nicht mit Hoffnung.</p>
-        </div>
-      </div>
-
-      <div class="cta-wrapper">
-        <a href="#kontakt" class="btn-primary">Alle meine Fragen im Beratungsgespräch klären →</a>
-        <p class="cta-micro">Kostenlos, persönlich, ohne Zeitdruck</p>
       </div>
     </div>
   </section>
@@ -1151,11 +855,13 @@
           </div>
         </div>
         <div class="team-text">
-          <h2>Nicht ein Arzt. Ein ganzes Spezialistenteam — nur für Ihr Ergebnis.</h2>
+          <h2>Ein ganzes Spezialistenteam — nur für Ihr Ergebnis</h2>
 
-          <p>Bei Villa Bella werden Sie nicht von einem einzelnen Arzt behandelt. Hinter Ihrem Ergebnis steht ein <strong>eingespieltes Team aus spezialisierten Fachärztinnen und Fachärzten</strong>, die gemeinsam über tausende Bruststraffungen durchgeführt haben.</p>
+          <p>Bei Villa Bella werden Sie nicht von einem einzelnen Arzt behandelt — sondern von einem eingespielten Team aus spezialisierten Fachärztinnen und Fachärzten.</p>
 
-          <p>Gegründet von Dr. Ludger Meyer, einem der erfahrensten plastischen Chirurgen Münchens, hat unser Team seine bewährten Techniken weiterentwickelt und perfektioniert. Das bedeutet für Sie: Nicht die Erfahrung eines Arztes fließt in Ihr Ergebnis ein — sondern <strong>die gebündelte Expertise eines ganzen Teams.</strong></p>
+          <p>Gegründet von Dr. Ludger Meyer, einem der erfahrensten plastischen Chirurgen Münchens, hat unser Ärzteteam seine bewährten Techniken weiterentwickelt und perfektioniert. Jede einzelne Ärztin und jeder Arzt unseres Teams hat hunderte Bruststraffungen durchgeführt.</p>
+
+          <p><strong>Das bedeutet für Sie:</strong> Nicht nur die Erfahrung eines Arztes fließt in Ihr Ergebnis ein — sondern die gebündelte Expertise eines ganzen Teams.</p>
 
           <!-- Video -->
           <div style="margin: 24px 0;">
@@ -1172,7 +878,7 @@
               </div>
               <div class="team-value-text">
                 <strong>Höchste Präzision</strong>
-                <span>Jede Bruststraffung wird individuell geplant — kein Ergebnis gleicht dem anderen</span>
+                <span>Jede Bruststraffung ist individuell geplant — kein Ergebnis gleicht dem anderen</span>
               </div>
             </div>
             <div class="team-value">
@@ -1181,7 +887,7 @@
               </div>
               <div class="team-value-text">
                 <strong>Echte Empathie</strong>
-                <span>Wir hören zu, bevor wir beraten. Ihre Wünsche stehen im Mittelpunkt</span>
+                <span>Wir hören zu, bevor wir beraten. Ihre Wünsche stehen im Mittelpunkt — nicht unsere</span>
               </div>
             </div>
             <div class="team-value">
@@ -1190,7 +896,7 @@
               </div>
               <div class="team-value-text">
                 <strong>Sicherheit an erster Stelle</strong>
-                <span>Modernste Ausstattung, lückenlose Nachsorge, keine Kompromisse</span>
+                <span>Modernste Ausstattung, lückenlose Nachsorge, keine Kompromisse bei der Qualität</span>
               </div>
             </div>
           </div>
@@ -1201,13 +907,105 @@
     </div>
   </section>
 
-  <!-- ===== CTA BAND #2 — Social Proof + Urgency ===== -->
-  <section class="cta-band">
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="testimonials" id="testimonials">
     <div class="container">
-      <h2>14 Frauen haben sich diese Woche bereits beraten lassen</h2>
-      <p>Nächste verfügbare Beratungstermine: März 2026. Sichern Sie sich Ihren Platz.</p>
-      <a href="#kontakt" class="btn-primary">Mein Beratungsgespräch sichern →</a>
-      <p class="cta-band-micro">Nur 8 Erstberatungen pro Woche · 100% kostenlos &amp; unverbindlich</p>
+      <div class="section-header">
+        <div class="gold-line"></div>
+        <h2>Was Patientinnen über Villa Bella sagen</h2>
+      </div>
+      <p class="testimonial-subtitle">Über 5.000 zufriedene Patientinnen — echte Stimmen, echte Ergebnisse</p>
+
+      <div class="testimonial-video">
+        <div class="wistia-wrapper">
+          <iframe src="https://fast.wistia.net/embed/iframe/tgb40wwjfl?seo=true&videoFoam=false" title="Patientin erzählt ihre Erfahrung bei Villa Bella" allow="autoplay; fullscreen" loading="lazy"></iframe>
+        </div>
+        <p class="video-caption">Eine Patientin teilt ihre persönliche Erfahrung</p>
+      </div>
+
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-quote">"Mega netter und kompetenter Arzt, der sich wirklich Zeit nimmt. Das ist eine Praxis, die nicht nur sagt, dass sie dir helfen werden, sondern es auch tatsächlich umsetzen und sehr gut machen! Nur zu empfehlen."</p>
+          <div class="testimonial-author">Paula D.</div>
+          <div class="testimonial-source">Google Bewertung</div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-quote">"Das Ärzteteam ist ein Meister seines Fachs — hier sind Mensch, Kunst und Können vereint. Sie nehmen sich Zeit, bis alle Fragen und Unsicherheiten geklärt sind. Ein beispielloses Team."</p>
+          <div class="testimonial-author">Catrin G. &amp; Jasmin M.</div>
+          <div class="testimonial-source">Google Bewertung</div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-quote">"Nach langem Hin und Her habe ich mich endlich entschieden — und bin mehr als glücklich! Schon das Vorgespräch war sehr vertrauensvoll, ehrlich und informativ. Das Ergebnis ist großartig und natürlich."</p>
+          <div class="testimonial-author">K. Jäger</div>
+          <div class="testimonial-source">Jameda Bewertung (2025)</div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-quote">"Tolle Praxis mit einem ganz tollen Team! Selten eine so herzliche, aber auch lustige Praxis gesehen! Die Lage ist toll, alles war sauber und ordentlich. Ich habe mich jederzeit sicher gefühlt."</p>
+          <div class="testimonial-author">Zufriedene Patientin</div>
+          <div class="testimonial-source">Doctify Bewertung</div>
+        </div>
+      </div>
+
+      <p class="awards-strip">Ausgezeichnet auf: Jameda Top-Arzt · Doctify Empfehlung · Google 5-Sterne</p>
+
+      <div style="text-align:center; margin-top:32px;">
+        <a href="#kontakt" class="btn-primary">Auch Sie verdienen dieses Ergebnis →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== USP COMPARE ===== -->
+  <section class="usp-compare" id="vergleich">
+    <div class="container">
+      <div class="section-header">
+        <div class="gold-line"></div>
+        <h2>Was Villa Bella von anderen Anbietern unterscheidet</h2>
+      </div>
+      <p class="compare-subtitle">Bruststraffung ist Vertrauenssache. Vergleichen Sie selbst, warum Frauen aus ganz Deutschland zu uns kommen.</p>
+
+      <div class="compare-grid">
+        <div class="compare-col">
+          <div class="compare-header compare-header--gold">Villa Bella München</div>
+          <div class="compare-body">
+            <ul>
+              <li><svg class="compare-icon" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="#27AE60"/><path d="M6 10l3 3 5-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> <strong>3.000+ Brust-OPs</strong> — echte Spezialisierung statt Allround-Chirurgie</li>
+              <li><svg class="compare-icon" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="#27AE60"/><path d="M6 10l3 3 5-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> <strong>Narbenarme Technik</strong> — Schnittführung am unteren Brustpol</li>
+              <li><svg class="compare-icon" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="#27AE60"/><path d="M6 10l3 3 5-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> <strong>3D-Simulation</strong> — Ihr Ergebnis vorab sehen (Crisalix)</li>
+              <li><svg class="compare-icon" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="#27AE60"/><path d="M6 10l3 3 5-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> <strong>Kombinations-OPs</strong> ohne zusätzliche Schnitte möglich</li>
+              <li><svg class="compare-icon" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="#27AE60"/><path d="M6 10l3 3 5-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> <strong>Persönliche Betreuung</strong> — keine Massenabfertigung</li>
+              <li><svg class="compare-icon" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="#27AE60"/><path d="M6 10l3 3 5-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> <strong>Note 1,0</strong> auf Jameda, Doctify &amp; Google</li>
+              <li><svg class="compare-icon" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="#27AE60"/><path d="M6 10l3 3 5-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> <strong>Ganzes Spezialistenteam</strong> — gebündelte Expertise</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="compare-col compare-col--other">
+          <div class="compare-header compare-header--muted">Typische Anbieter</div>
+          <div class="compare-body">
+            <ul>
+              <li><svg class="compare-icon" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="#C0392B"/><path d="M7 7l6 6M13 7l-6 6" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg> Wenig Spezialisierung bei Bruststraffungen</li>
+              <li><svg class="compare-icon" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="#C0392B"/><path d="M7 7l6 6M13 7l-6 6" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg> Sichtbare Narben durch unpräzise Schnittführung</li>
+              <li><svg class="compare-icon" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="#C0392B"/><path d="M7 7l6 6M13 7l-6 6" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg> Kein 3D-Vorab-Bild des Ergebnisses</li>
+              <li><svg class="compare-icon" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="#C0392B"/><path d="M7 7l6 6M13 7l-6 6" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg> Zusätzliche Schnitte bei Kombinations-Eingriffen</li>
+              <li><svg class="compare-icon" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="#C0392B"/><path d="M7 7l6 6M13 7l-6 6" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg> Massenabfertigung, wenig Zeit für die Patientin</li>
+              <li><svg class="compare-icon" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="#C0392B"/><path d="M7 7l6 6M13 7l-6 6" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg> Durchschnittliche Bewertungen</li>
+              <li><svg class="compare-icon" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="#C0392B"/><path d="M7 7l6 6M13 7l-6 6" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg> Ein einzelner Arzt statt eingespieltes Team</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <p class="compare-footer">Spezialisierung macht den Unterschied. Villa Bella ist eine der renommiertesten Adressen für Brustoperationen in München.</p>
+      <div class="compare-cta">
+        <a href="#kontakt" class="btn-primary">Kostenlose Beratung inkl. 3D-Simulation →</a>
+      </div>
     </div>
   </section>
 
@@ -1221,28 +1019,31 @@
 
       <div class="method-layout">
         <div class="method-content">
-          <p class="method-intro">Bei einer Bruststraffung (Mastopexie) wird überschüssiges Hautgewebe entfernt, das Brustgewebe gestrafft und neu modelliert. Die Brustwarze wird in ihre natürliche Position versetzt. Das Ergebnis: eine straffere, jugendlichere Brust — die sich anfühlt wie Ihre eigene. Und die <strong>bis zu 10 Jahre hält.</strong></p>
+          <p class="method-intro">Bei einer Bruststraffung (Mastopexie) wird überschüssiges Hautgewebe entfernt, das Brustgewebe gestrafft und neu modelliert. Die Brustwarze wird in ihre natürliche, ästhetische Position versetzt. Das Ergebnis: eine straffere, jugendlichere Brust — die sich anfühlt wie Ihre eigene.</p>
 
           <div class="method-cards">
             <div class="method-card">
               <div class="method-num">1</div>
               <div>
                 <h4>Narbenarme Schnittführung</h4>
-                <p>Unsere Ärzte schneiden entlang des unteren Brustpols — so verlaufen die Narben in der natürlichen Kontur Ihrer Brust. <strong>Nach wenigen Monaten sind sie fast unsichtbar.</strong></p>
+                <p>Unsere Ärzte schneiden entlang des unteren Brustpols. Die Narben sind nach der Heilung kaum sichtbar und verlaufen in der natürlichen Brustkontur.</p>
+                <p class="method-objection">→ Angst vor sichtbaren Narben? Bei unserer Technik sind sie nach wenigen Monaten fast unsichtbar.</p>
               </div>
             </div>
             <div class="method-card">
               <div class="method-num">2</div>
               <div>
                 <h4>3D-Simulation — Ihr Ergebnis vorab sehen</h4>
-                <p>Mit der Crisalix 3D-Technologie sehen Sie <strong>vor dem Eingriff, wie Ihr Ergebnis aussehen wird.</strong> Keine Hoffnung, sondern Gewissheit. Ihre Entscheidung, mit voller Klarheit.</p>
+                <p>Mit der Crisalix 3D-Simulation sehen Sie vor dem Eingriff, wie Ihr Ergebnis aussehen wird. So treffen Sie Ihre Entscheidung mit voller Klarheit.</p>
+                <p class="method-objection">→ Unsicher, ob das Ergebnis Ihren Vorstellungen entspricht? Sehen Sie es vorher.</p>
               </div>
             </div>
             <div class="method-card">
               <div class="method-num">3</div>
               <div>
                 <h4>Flexibel kombinierbar</h4>
-                <p>Straffung + Vergrößerung oder Verkleinerung — <strong>ohne zusätzliche Schnitte, in einem Eingriff.</strong> Zwei Ziele, eine OP, eine Heilungsphase.</p>
+                <p>Bruststraffung + Vergrößerung oder Verkleinerung — ohne zusätzliche Schnitte, in einem Eingriff. Zwei Ziele, eine OP, eine Heilungsphase.</p>
+                <p class="method-objection">→ Wünschen Sie neben der Straffung auch mehr oder weniger Volumen? Kein Problem.</p>
               </div>
             </div>
           </div>
@@ -1253,10 +1054,7 @@
         </div>
       </div>
 
-      <div class="cta-wrapper">
-        <p style="font-style:italic; font-size:16px; color:var(--text-light); margin-bottom:16px;">Welche Methode genau zu Ihnen passt, erfahren Sie im kostenlosen Beratungsgespräch — denn jede Bruststraffung ist so individuell wie Sie selbst.</p>
-        <a href="#kontakt" class="btn-primary">Welche Methode passt zu mir? →</a>
-      </div>
+      <p class="method-transition">Welche Methode genau zu Ihnen passt, erfahren Sie im kostenlosen Beratungsgespräch — denn jede Bruststraffung ist so individuell wie Sie selbst.</p>
     </div>
   </section>
 
@@ -1287,8 +1085,8 @@
         </div>
       </div>
 
-      <div class="cta-wrapper">
-        <a href="#kontakt" class="btn-primary">Welche Methode passt zu mir? Jetzt beraten lassen →</a>
+      <div class="methods-cta">
+        <a href="#kontakt" class="btn-primary">Welche Methode passt zu mir? →</a>
       </div>
     </div>
   </section>
@@ -1298,9 +1096,9 @@
     <div class="container">
       <div class="section-header">
         <div class="gold-line"></div>
-        <h2>Echte Ergebnisse. Echte Frauen. Echtes Selbstbewusstsein.</h2>
+        <h2>Echte Ergebnisse unserer Patientinnen</h2>
       </div>
-      <p class="results-sub">Natürlich, harmonisch, langanhaltend — so sehen die Ergebnisse unseres Spezialistenteams aus.</p>
+      <p class="results-sub">Natürlich, harmonisch, langanhaltend — so sehen die Ergebnisse unseres Ärzteteams aus.</p>
 
       <div class="results-grid">
         <img src="https://cdn.prod.website-files.com/6569a841ec1461c605d92a91/6829df3e9aa73fececcad857_Design%20ohne%20Titel%20(20).webp" alt="Ergebnis Bruststraffung — Patientin Villa Bella München" width="400" height="500" loading="lazy">
@@ -1308,19 +1106,19 @@
       </div>
       <p class="results-note">* Ergebnisse können individuell variieren. Die gezeigten Bilder sind echte Patientinnen der Villa Bella.</p>
 
-      <div class="cta-wrapper">
-        <a href="#kontakt" class="btn-primary">Mein persönliches Ergebnis in der 3D-Simulation sehen →</a>
-        <p class="cta-micro">Kostenlos im Beratungsgespräch — Sie sehen Ihr Ergebnis, bevor Sie sich entscheiden</p>
+      <div style="text-align:center; margin-top:32px;">
+        <a href="#kontakt" class="btn-secondary-outline">Ihr persönliches Ergebnis in der 3D-Simulation sehen →</a>
       </div>
     </div>
   </section>
 
-  <!-- ===== CTA BAND #3 — Urgency ===== -->
+  <!-- ===== CTA BAND ===== -->
   <section class="cta-band">
     <div class="container">
-      <h2>Nächste verfügbare Beratungstermine: März 2026</h2>
-      <p>Wir nehmen nur 8 Erstberatungen pro Woche an — damit wir jeder Patientin die volle Aufmerksamkeit schenken, die sie verdient.</p>
-      <a href="#kontakt" class="btn-primary">Ja, ich möchte meinen Termin sichern →</a>
+      <h2>Bereit für den ersten Schritt?</h2>
+      <p>Ihr kostenloses Beratungsgespräch — unverbindlich, persönlich, inklusive 3D-Simulation.</p>
+      <a href="#kontakt" class="btn-primary">Jetzt Beratungstermin sichern →</a>
+      <p class="cta-band-micro">Nur 8 Beratungstermine pro Woche verfügbar · Antwort innerhalb von 24h</p>
     </div>
   </section>
 
@@ -1329,9 +1127,9 @@
     <div class="container">
       <div class="section-header">
         <div class="gold-line"></div>
-        <h2>Ihr Weg zum neuen Lebensgefühl — in 6 Schritten</h2>
+        <h2>Ihr Weg zur straffen Brust — in 6 Schritten</h2>
       </div>
-      <p class="timeline-sub">Von der ersten Beratung bis zum Moment, in dem Sie sich wieder wie Sie selbst fühlen — wir begleiten Sie auf jedem Schritt.</p>
+      <p class="timeline-sub">Von der ersten Beratung bis zum neuen Lebensgefühl — wir begleiten Sie auf jedem Schritt.</p>
 
       <div class="timeline">
         <div class="timeline-step">
@@ -1341,33 +1139,29 @@
         </div>
         <div class="timeline-step">
           <div class="timeline-num">2</div>
-          <h4>Ihr Wunschergebnis gemeinsam definieren</h4>
-          <p>Anhand der 3D-Simulation und Ihrer Vorstellungen definieren wir das optimale Ergebnis. Sie entscheiden — wir beraten ehrlich, was möglich und sinnvoll ist.</p>
+          <h4>Ihr Wunschergebnis definieren</h4>
+          <p>Anhand der 3D-Simulation und Ihrer Vorstellungen definieren wir gemeinsam das optimale Ergebnis. Sie entscheiden — wir beraten.</p>
         </div>
         <div class="timeline-step">
           <div class="timeline-num">3</div>
           <h4>OP-Tag: Herzlicher Empfang</h4>
-          <p>Am Tag Ihrer Operation empfangen wir Sie persönlich, führen einen finalen Check-up durch und bereiten alles vor. Sie sind in besten Händen.</p>
+          <p>Am Tag Ihrer Operation empfangen wir Sie herzlich, führen einen finalen Check-up durch und bereiten alles vor. Sie sind in besten Händen.</p>
         </div>
         <div class="timeline-step">
           <div class="timeline-num">4</div>
-          <h4>Der Eingriff — Sie spüren nichts</h4>
+          <h4>Der Eingriff unter Vollnarkose</h4>
           <p>Die Bruststraffung wird in Vollnarkose durchgeführt. Unser Team arbeitet mit präziser Schnittführung für ein narbenarmes, natürliches Ergebnis. Sie spüren nichts.</p>
         </div>
         <div class="timeline-step">
           <div class="timeline-num">5</div>
-          <h4>1–2 Tage sanfte Erholung</h4>
+          <h4>1–2 Tage Erholung</h4>
           <p>Nach dem Eingriff bleiben Sie 1–2 Tage stationär. Stütz-BH wird angelegt, optimale Wundversorgung sichergestellt. Bereits jetzt sehen Sie das Ergebnis.</p>
         </div>
         <div class="timeline-step">
           <div class="timeline-num">6</div>
           <h4>Nachsorge &amp; Ihr neues Lebensgefühl</h4>
-          <p>Regelmäßige Kontrolltermine begleiten Ihre Heilung. Nach ca. 6 Wochen Stütz-BH und 4 Wochen Sportpause genießen Sie Ihr neues, straffes Ergebnis — für bis zu 10 Jahre.</p>
+          <p>Regelmäßige Kontrolluntersuchungen begleiten Ihre Heilung. Nach ca. 6 Wochen Stütz-BH und 4 Wochen Sportpause genießen Sie Ihr neues, straffes Ergebnis — für bis zu 10 Jahre.</p>
         </div>
-      </div>
-
-      <div class="cta-wrapper">
-        <a href="#kontakt" class="btn-primary">Ja, ich möchte den ersten Schritt machen →</a>
       </div>
     </div>
   </section>
@@ -1398,7 +1192,7 @@
           <div class="faq-answer-inner">
             <p>Wenn Ihre Brust durch Schwangerschaft, Stillzeit, Gewichtsverlust oder den natürlichen Alterungsprozess an Spannkraft verloren hat, könnte eine Bruststraffung für Sie geeignet sein.</p>
             <p>Grundsätzlich ist der Eingriff für alle volljährigen Frauen bei gutem Gesundheitszustand möglich. Ob eine reine Straffung oder eine Kombination mit Vergrößerung/Verkleinerung ideal ist, klären wir gemeinsam — inklusive 3D-Simulation Ihres persönlichen Ergebnisses.</p>
-            <a href="#kontakt" class="btn-text faq-answer-cta">→ Kostenlos herausfinden, ob eine Bruststraffung für mich passt</a>
+            <a href="#kontakt" class="btn-text faq-answer-cta">→ Kostenlos herausfinden, ob eine Bruststraffung für Sie passt</a>
           </div>
         </div>
       </div>
@@ -1410,9 +1204,9 @@
         </div>
         <div class="faq-answer">
           <div class="faq-answer-inner">
-            <p>Während des Eingriffs spüren Sie nichts — die Operation findet in Vollnarkose statt. In den ersten Tagen danach können leichte Spannungsgefühle auftreten, die mit normalen Schmerzmedikamenten gut behandelbar sind. Die meisten Patientinnen sagen: „Es war viel besser als gedacht."</p>
+            <p>Während des Eingriffs spüren Sie nichts — die Operation findet in Vollnarkose statt. In den ersten Tagen danach können leichte Schmerzen auftreten, die mit normalen Schmerzmedikamenten gut behandelbar sind. Die meisten Patientinnen beschreiben es als „sehr erträglich".</p>
             <p>Wie bei jedem chirurgischen Eingriff gibt es Risiken, über die wir Sie im Beratungsgespräch umfassend und ehrlich aufklären. Bitte verzichten Sie 2 Wochen vor und nach dem Eingriff auf Alkohol, Nikotin und blutverdünnende Medikamente.</p>
-            <a href="#kontakt" class="btn-text faq-answer-cta">→ Alle meine Fragen persönlich klären</a>
+            <a href="#kontakt" class="btn-text faq-answer-cta">→ Alle Fragen klären — Beratungstermin vereinbaren</a>
           </div>
         </div>
       </div>
@@ -1424,9 +1218,9 @@
         </div>
         <div class="faq-answer">
           <div class="faq-answer-inner">
-            <p>Unser Team setzt die Schnitte gezielt entlang des unteren Brustpols, so dass sie in der natürlichen Kontur der Brust verlaufen. Nach der Heilung sind die Narben kaum sichtbar — nach 6 Monaten suchen Sie selbst danach.</p>
-            <p>Leichte Rötungen in den ersten Wochen bilden sich von selbst zurück. Regelmäßige Narbenpflege ab der zweiten Woche unterstützt die optimale Heilung.</p>
-            <a href="#kontakt" class="btn-text faq-answer-cta">→ Mehr über die narbenarme Technik erfahren</a>
+            <p>Unser Team setzt die Schnitte gezielt entlang des unteren Brustpols, so dass sie in der natürlichen Kontur der Brust verlaufen. Nach der Heilung sind die Narben kaum sichtbar.</p>
+            <p>Leichte Rötungen in den ersten Wochen bilden sich von selbst zurück. Regelmäßige Narbenpflege ab der zweiten Woche unterstützt die optimale Heilung. Das Ergebnis: Eine natürlich straffe Brust ohne auffällige Spuren.</p>
+            <a href="#kontakt" class="btn-text faq-answer-cta">→ Mehr über unsere narbenarme Technik erfahren</a>
           </div>
         </div>
       </div>
@@ -1447,7 +1241,7 @@
               <li>Vollständige Heilung: ca. 3 Monate</li>
             </ul>
             <p>Das Ergebnis hält in der Regel <strong>bis zu 10 Jahre</strong>.</p>
-            <a href="#kontakt" class="btn-text faq-answer-cta">→ Meinen persönlichen Heilungsplan besprechen</a>
+            <a href="#kontakt" class="btn-text faq-answer-cta">→ Persönlichen Heilungsplan besprechen</a>
           </div>
         </div>
       </div>
@@ -1460,8 +1254,9 @@
         <div class="faq-answer">
           <div class="faq-answer-inner">
             <p>Die Kosten richten sich nach Ihrem persönlichen Befund und dem Umfang des Eingriffs. Eine transparente Aufstellung nach der Gebührenordnung für Ärzte (GOÄ) erhalten Sie im Beratungsgespräch.</p>
-            <p><strong>Unsere Philosophie:</strong> Eine Bruststraffung ist eine Investition in Ihr Wohlbefinden für die nächsten 10+ Jahre. Qualität hat ihren Preis — und zahlt sich aus. Einmal richtig gemacht, genießen Sie das Ergebnis jeden einzelnen Tag.</p>
-            <a href="#kontakt" class="btn-text faq-answer-cta">→ Mein individuelles Kostenangebot erhalten</a>
+            <p>Eine Kostenübernahme durch die Krankenkasse ist bei einer Bruststraffung selten — in der Regel nur bei medizinischer Notwendigkeit (z.B. chronische Rückenschmerzen).</p>
+            <p><strong>Unsere Philosophie:</strong> Qualität hat ihren Preis — und zahlt sich aus. Einmal richtig gemacht, hält das Ergebnis bis zu 10 Jahre.</p>
+            <a href="#kontakt" class="btn-text faq-answer-cta">→ Individuelles Kostenangebot erhalten</a>
           </div>
         </div>
       </div>
@@ -1478,8 +1273,8 @@
               <li><strong>Brustvergrößerung</strong> — mit Implantaten oder Eigenfett, für mehr Volumen</li>
               <li><strong>Brustverkleinerung</strong> — weniger Volumen plus straffere Form</li>
             </ul>
-            <p>Das Besondere: Beide Kombinationen sind <strong>ohne zusätzliche Schnitte</strong> in einem einzigen Eingriff möglich.</p>
-            <a href="#kontakt" class="btn-text faq-answer-cta">→ Meine Kombinationsmöglichkeiten besprechen</a>
+            <p>Das Besondere: Beide Kombinationen sind <strong>ohne zusätzliche Schnitte</strong> in einem einzigen Eingriff möglich. Welche Option optimal ist, sehen wir gemeinsam in der 3D-Simulation.</p>
+            <a href="#kontakt" class="btn-text faq-answer-cta">→ Kombinationsmöglichkeiten besprechen</a>
           </div>
         </div>
       </div>
@@ -1493,26 +1288,20 @@
           <div class="faq-answer-inner">
             <p><strong>Ja, zu 100%.</strong> Das Beratungsgespräch inklusive 3D-Simulation ist komplett kostenlos und unverbindlich. Es gibt keinen Druck, keine versteckten Kosten und keine Verpflichtung.</p>
             <p>Unser Ziel ist es, dass Sie mit allen Informationen nach Hause gehen, die Sie für Ihre Entscheidung brauchen — in Ihrem eigenen Tempo.</p>
-            <a href="#kontakt" class="btn-text faq-answer-cta">→ Ja, ich möchte mein kostenloses Beratungsgespräch</a>
+            <a href="#kontakt" class="btn-text faq-answer-cta">→ Jetzt kostenloses Beratungsgespräch anfragen</a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== CONTACT FORM (Optimized) ===== -->
+  <!-- ===== CONTACT ===== -->
   <section class="contact" id="kontakt">
     <div class="container">
       <div class="contact-grid">
         <div class="contact-form">
-          <div class="form-step-indicator">
-            <span class="step-dot"></span>
-            <span>Schritt 1 von 2 — Ihre Kontaktdaten</span>
-            <span class="step-dot step-dot--inactive"></span>
-          </div>
-
-          <h2>Sichern Sie sich Ihr persönliches Beratungsgespräch</h2>
-          <p class="form-sub">Füllen Sie das kurze Formular aus — wir melden uns innerhalb von 24 Stunden persönlich bei Ihnen. 100% kostenlos, unverbindlich, inklusive 3D-Simulation.</p>
+          <h2>Ihr kostenloser Beratungstermin</h2>
+          <p class="form-sub">Füllen Sie das Formular aus — wir melden uns innerhalb von 24 Stunden. 100% unverbindlich. Inklusive 3D-Simulation.</p>
 
           <div class="contact-risk-reversal">
             <div class="risk-item">
@@ -1538,25 +1327,31 @@
             <div class="form-row">
               <div class="form-group">
                 <label for="vorname">Vorname *</label>
-                <input type="text" id="vorname" name="vorname" placeholder="Ihr Vorname" required autocomplete="given-name">
-                <div class="error-msg">Bitte geben Sie Ihren Vornamen ein.</div>
+                <input type="text" id="vorname" name="vorname" placeholder="Ihr Vorname" required>
+                <div class="error-msg">Bitte geben Sie Ihren Vornamen ein (mind. 2 Zeichen).</div>
               </div>
               <div class="form-group">
-                <label for="telefon">Telefon *</label>
-                <input type="tel" id="telefon" name="telefon" placeholder="Ihre Telefonnummer" required autocomplete="tel">
-                <div class="error-msg">Bitte geben Sie eine gültige Telefonnummer ein.</div>
+                <label for="nachname">Nachname *</label>
+                <input type="text" id="nachname" name="nachname" placeholder="Ihr Nachname" required>
+                <div class="error-msg">Bitte geben Sie Ihren Nachnamen ein (mind. 2 Zeichen).</div>
               </div>
             </div>
 
             <div class="form-group">
-              <label for="email">E-Mail <span class="optional">(optional)</span></label>
-              <input type="email" id="email" name="email" placeholder="Ihre E-Mail-Adresse" autocomplete="email">
+              <label for="email">E-Mail *</label>
+              <input type="email" id="email" name="email" placeholder="Ihre E-Mail-Adresse" required>
               <div class="error-msg">Bitte geben Sie eine gültige E-Mail-Adresse ein.</div>
             </div>
 
             <div class="form-group">
-              <label for="nachricht">Erzählen Sie uns kurz von Ihrem Wunsch <span class="optional">(optional)</span></label>
-              <textarea id="nachricht" name="nachricht" placeholder="z.B. was Sie sich vorstellen, ob Sie Fragen haben..." rows="3"></textarea>
+              <label for="telefon">Telefon *</label>
+              <input type="tel" id="telefon" name="telefon" placeholder="Ihre Telefonnummer" required>
+              <div class="error-msg">Bitte geben Sie eine gültige Telefonnummer ein (mind. 6 Ziffern).</div>
+            </div>
+
+            <div class="form-group">
+              <label for="nachricht">Nachricht (optional)</label>
+              <textarea id="nachricht" name="nachricht" placeholder="Erzählen Sie uns kurz von Ihrem Wunsch — z.B. was Sie sich vorstellen, ob Sie Fragen haben..." rows="4"></textarea>
             </div>
 
             <div class="checkbox-group">
@@ -1567,26 +1362,16 @@
               <div class="error-msg">Bitte stimmen Sie der Datenschutzerklärung zu.</div>
             </div>
 
-            <button type="submit" class="btn-primary form-submit">Ja, Beratungstermin sichern →</button>
+            <button type="submit" class="btn-primary form-submit">Kostenlose Beratung anfragen →</button>
 
-            <div class="form-trust">
-              <span>🔒 256-Bit verschlüsselt</span>
-              <span>Ihre Daten sind bei uns sicher</span>
-              <span>Kein Spam, versprochen</span>
-            </div>
+            <p class="form-trust">🔒 Ihre Daten sind sicher · 100% unverbindlich · Antwort innerhalb von 24h</p>
           </form>
 
           <div class="form-success" id="form-success">
             <div style="font-size:32px;margin-bottom:12px;">✅</div>
-            <div style="font-size:20px;font-weight:700;color:var(--text-primary);margin-bottom:12px;">Geschafft! Ihr Beratungsgespräch ist angefragt.</div>
-            <p style="margin-bottom:16px;">Unser Team meldet sich innerhalb von 24 Stunden persönlich bei Ihnen, um einen passenden Termin zu vereinbaren — inklusive Ihrer persönlichen 3D-Simulation.</p>
-            <div style="background:var(--white);border-radius:var(--radius-md);padding:16px;margin-bottom:12px;border:1px solid rgba(201,169,110,0.2);">
-              <p style="font-size:14px;color:var(--text-light);margin-bottom:4px;">Was passiert als nächstes?</p>
-              <p style="font-size:15px;color:var(--text-primary);font-weight:500;">1. Wir rufen Sie an (innerhalb von 24h)</p>
-              <p style="font-size:15px;color:var(--text-primary);font-weight:500;">2. Gemeinsam finden wir Ihren Wunschtermin</p>
-              <p style="font-size:15px;color:var(--text-primary);font-weight:500;">3. Im Beratungsgespräch sehen Sie Ihr 3D-Ergebnis</p>
-            </div>
-            <p style="font-size:14px;color:var(--text-light);">Speichern Sie sich unsere Nummer: <strong style="color:var(--text-primary);">089 / XXX XXX XX</strong></p>
+            <div style="font-size:20px;font-weight:700;color:var(--text-primary);margin-bottom:8px;">Geschafft! Ihre Anfrage ist eingegangen.</div>
+            <p style="margin-bottom:12px;">Unser Team meldet sich innerhalb von 24 Stunden bei Ihnen, um einen passenden Beratungstermin zu vereinbaren — inklusive persönlicher 3D-Simulation Ihres Wunschergebnisses.</p>
+            <p style="font-size:14px;color:var(--text-light);">Sie können uns auch direkt telefonisch erreichen: <strong style="color:var(--text-primary);">089 / XXX XXX XX</strong></p>
           </div>
         </div>
 
@@ -1603,7 +1388,7 @@
               <div class="trust-icon">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
               </div>
-              <span><strong>5.247+</strong> zufriedene Patientinnen</span>
+              <span><strong>5.000+</strong> zufriedene Patientinnen</span>
             </div>
             <div class="sidebar-trust-item">
               <div class="trust-icon">
@@ -1617,24 +1402,9 @@
               </div>
               <span>Beratung <strong>100% kostenlos</strong> &amp; unverbindlich</span>
             </div>
-
-            <div class="sidebar-testimonial">
-              <div class="sidebar-stars">★★★★★</div>
-              <p class="sidebar-quote">"Ich habe 3 Kliniken verglichen — nur hier fühlte ich mich wirklich verstanden. Das Ergebnis hat meine Erwartungen übertroffen."</p>
-              <span class="sidebar-author">— Catrin G., Google Bewertung</span>
-            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- ===== EXIT BANNER ===== -->
-  <section class="exit-banner">
-    <div class="container">
-      <h3>Noch unsicher? Das ist völlig normal.</h3>
-      <p>Über 80% unserer Patientinnen haben gezögert — und sind heute überglücklich, dass sie den ersten Schritt gemacht haben. Ein kostenloses Beratungsgespräch verpflichtet Sie zu nichts.</p>
-      <a href="#kontakt" class="btn-primary">Ja, ich mache den ersten Schritt →</a>
     </div>
   </section>
 
@@ -1646,17 +1416,16 @@
           <div class="footer-logo">
             <img src="https://cdn.prod.website-files.com/6569a841ec1461c605d92a91/6569a841ec1461c605d92cfd_logo-092020.png" alt="Villa Bella Logo" width="120" height="32">
           </div>
-          <p class="footer-mission">Ihre neue Schönheit ist unsere Mission. Villa Bella München — Premium-Klinik für Plastisch-Ästhetische Chirurgie. Spezialisiert auf Brustoperationen. Über 3.127 erfolgreiche Brust-OPs.</p>
+          <p class="footer-mission">Ihre neue Schönheit ist unsere Mission. Villa Bella München — Premium-Klinik für Plastisch-Ästhetische Chirurgie. Spezialisiert auf Brustoperationen.</p>
         </div>
 
         <div class="footer-links">
           <h4>Schnellzugriff</h4>
-          <a href="#erfahrungen">Patientinnenstimmen</a>
           <a href="#team">Unser Team</a>
           <a href="#methode">Methode</a>
           <a href="#ergebnisse">Ergebnisse</a>
           <a href="#faq">FAQ</a>
-          <a href="#kontakt">Beratung anfragen</a>
+          <a href="#kontakt">Kontakt</a>
         </div>
 
         <div class="footer-contact">
@@ -1679,7 +1448,7 @@
 
   <!-- ===== STICKY MOBILE CTA ===== -->
   <div class="mobile-sticky-cta" id="mobile-sticky-cta">
-    <a href="#kontakt">Ja, ich möchte mein Beratungsgespräch →</a>
+    <a href="#kontakt">Kostenlose Beratung anfragen →</a>
   </div>
 
   <script>
@@ -1718,12 +1487,14 @@
         question.addEventListener('click', function() {
           var isOpen = item.classList.contains('open');
 
+          // Close all
           items.forEach(function(other) {
             other.classList.remove('open');
             other.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
             other.querySelector('.faq-answer').style.maxHeight = '0';
           });
 
+          // Open clicked if was closed
           if (!isOpen) {
             item.classList.add('open');
             question.setAttribute('aria-expanded', 'true');
@@ -1740,7 +1511,7 @@
       });
     })();
 
-    /* === Simplified Form Validation === */
+    /* === Form Validation === */
     (function() {
       var form = document.getElementById('contact-form');
       var success = document.getElementById('form-success');
@@ -1748,19 +1519,17 @@
 
       var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-      function validateField(input, type) {
+      function validateField(input, minLen) {
         var group = input.closest('.form-group');
         if (!group) return false;
         var val = input.value.trim();
-        var valid = true;
+        var valid = val.length >= minLen;
 
-        if (type === 'name') {
-          valid = val.length >= 2;
-        } else if (type === 'tel') {
+        if (input.type === 'email') {
+          valid = emailRegex.test(val);
+        }
+        if (input.type === 'tel') {
           valid = val.replace(/\D/g, '').length >= 6;
-        } else if (type === 'email-optional') {
-          // Only validate if something is entered
-          valid = val === '' || emailRegex.test(val);
         }
 
         if (!valid) {
@@ -1774,34 +1543,42 @@
       }
 
       // Real-time validation on blur
-      var vorname = document.getElementById('vorname');
-      var telefon = document.getElementById('telefon');
-      var email = document.getElementById('email');
-
-      if (vorname) vorname.addEventListener('blur', function() { validateField(vorname, 'name'); });
-      if (telefon) telefon.addEventListener('blur', function() { validateField(telefon, 'tel'); });
-      if (email) email.addEventListener('blur', function() { validateField(email, 'email-optional'); });
+      ['vorname', 'nachname', 'email', 'telefon'].forEach(function(id) {
+        var input = document.getElementById(id);
+        if (input) {
+          input.addEventListener('blur', function() {
+            var minLen = (id === 'email' || id === 'telefon') ? 1 : 2;
+            validateField(input, minLen);
+          });
+        }
+      });
 
       form.addEventListener('submit', function(e) {
         e.preventDefault();
 
+        var vorname = document.getElementById('vorname');
+        var nachname = document.getElementById('nachname');
+        var email = document.getElementById('email');
+        var telefon = document.getElementById('telefon');
         var datenschutz = document.getElementById('datenschutz');
         var checkboxError = document.getElementById('checkbox-error');
 
-        var v1 = validateField(vorname, 'name');
-        var v2 = validateField(telefon, 'tel');
-        var v3 = validateField(email, 'email-optional');
+        var v1 = validateField(vorname, 2);
+        var v2 = validateField(nachname, 2);
+        var v3 = validateField(email, 1);
+        var v4 = validateField(telefon, 1);
 
-        var v4 = datenschutz.checked;
-        if (!v4) {
+        var v5 = datenschutz.checked;
+        if (!v5) {
           checkboxError.classList.add('has-error');
         } else {
           checkboxError.classList.remove('has-error');
         }
 
-        if (v1 && v2 && v3 && v4) {
+        if (v1 && v2 && v3 && v4 && v5) {
           form.style.display = 'none';
           success.style.display = 'block';
+          // Scroll to success message
           success.scrollIntoView({ behavior: 'smooth', block: 'center' });
         }
       });
@@ -1829,9 +1606,9 @@
       checkVisibility();
     })();
 
-    /* === Scroll-triggered fade-in === */
+    /* === Scroll-triggered fade-in (subtle) === */
     (function() {
-      if (window.innerWidth <= 768) return;
+      if (window.innerWidth <= 768) return; // Skip on mobile for performance
       var observer = new IntersectionObserver(function(entries) {
         entries.forEach(function(entry) {
           if (entry.isIntersecting) {
@@ -1841,56 +1618,12 @@
         });
       }, { threshold: 0.1 });
 
-      document.querySelectorAll('.method-card, .methods-card, .testimonial-card, .timeline-step, .objection-card').forEach(function(el) {
+      document.querySelectorAll('.method-card, .methods-card, .testimonial-card, .timeline-step').forEach(function(el) {
         el.style.opacity = '0';
         el.style.transform = 'translateY(20px)';
         el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
         observer.observe(el);
       });
-    })();
-
-    /* === Trust Strip Counter Animation === */
-    (function() {
-      var animated = false;
-      var strip = document.querySelector('.trust-strip');
-      if (!strip) return;
-
-      function animateCounter(el, target, suffix) {
-        var start = 0;
-        var duration = 1500;
-        var startTime = null;
-
-        function step(timestamp) {
-          if (!startTime) startTime = timestamp;
-          var progress = Math.min((timestamp - startTime) / duration, 1);
-          var eased = 1 - Math.pow(1 - progress, 3); // easeOutCubic
-          var current = Math.floor(eased * target);
-          el.textContent = current.toLocaleString('de-DE') + suffix;
-          if (progress < 1) {
-            requestAnimationFrame(step);
-          }
-        }
-        requestAnimationFrame(step);
-      }
-
-      var observer = new IntersectionObserver(function(entries) {
-        entries.forEach(function(entry) {
-          if (entry.isIntersecting && !animated) {
-            animated = true;
-            var numbers = strip.querySelectorAll('.trust-number');
-            // 3.127
-            if (numbers[0]) animateCounter(numbers[0], 3127, '');
-            // Note 1,0 — no animation, set directly
-            if (numbers[1]) numbers[1].textContent = 'Note 1,0';
-            // 25+ Jahre — no animation
-            if (numbers[2]) numbers[2].textContent = '25+ Jahre';
-            // 5.247+
-            if (numbers[3]) animateCounter(numbers[3], 5247, '+');
-          }
-        });
-      }, { threshold: 0.3 });
-
-      observer.observe(strip);
     })();
   </script>
 </body>
