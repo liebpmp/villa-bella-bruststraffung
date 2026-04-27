@@ -379,7 +379,9 @@
       .methods-grid { grid-template-columns: 1fr; }
       .results-grid { grid-template-columns: 1fr; }
       .form-row { grid-template-columns: 1fr; }
-      .contact-risk-reversal { flex-direction: column; gap: var(--space-sm); }
+      .contact-risk-reversal { flex-direction: row; gap: var(--space-sm); justify-content: flex-start; flex-wrap: wrap; }
+      .risk-item { font-size: 13px; gap: 5px; }
+      .risk-item svg { width: 16px; height: 16px; }
       .cta-band { padding: 40px 20px; }
       .cta-band h2 { font-size: 26px; }
       .mobile-sticky-cta { display: block; }
@@ -391,6 +393,14 @@
       .timeline-num { left: -50px; width: 36px; height: 36px; font-size: 15px; }
       .faq-accordion { padding: 0; }
       .form-trust { flex-direction: column; align-items: center; gap: 4px; }
+      .form-group { margin-bottom: 10px; }
+      .form-row { margin-bottom: 10px; }
+      .form-group label { margin-bottom: 4px; }
+      .form-group input, .form-group textarea, .form-group select { padding: 12px 14px; }
+      .contact-risk-reversal { margin-bottom: var(--space-md); }
+      .form-social-proof { padding: 10px 14px; margin-bottom: var(--space-md); }
+      .contact-form .form-sub { margin-bottom: var(--space-md); }
+      .form-step-indicator { margin-bottom: var(--space-md); }
     }
   </style>
 </head>
