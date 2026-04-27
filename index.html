@@ -37,7 +37,7 @@
     .container { max-width: var(--container); margin: 0 auto; padding: 0 24px; }
     .container-narrow { max-width: var(--container-narrow); margin: 0 auto; padding: 0 24px; }
     h1, h2, h3 { font-family: var(--font-serif); color: var(--text-primary); }
-    h1 { font-weight: 700; font-size: 48px; line-height: 1.15; }
+    h1 { font-weight: 700; font-size: 44px; line-height: 1.15; }
     h2 { font-weight: 700; font-size: 38px; line-height: 1.2; margin-bottom: var(--space-lg); }
     h3 { font-weight: 600; font-size: 26px; line-height: 1.3; }
     h4 { font-family: var(--font-sans); font-weight: 600; font-size: 20px; line-height: 1.35; color: var(--text-primary); }
@@ -65,9 +65,10 @@
     .header-cta:hover { background: var(--gold-dark); }
 
     /* HERO */
-    .hero { background: var(--white); padding: 120px 0 0; }
+    .hero { background: var(--white); padding: 120px 0 var(--space-2xl); }
     .hero-grid { display: grid; grid-template-columns: 55% 45%; gap: var(--space-xl); align-items: center; }
-    .hero-eyebrow { display: inline-block; font-size: 14px; font-weight: 600; color: var(--gold); text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: var(--space-md); }
+    .hero-eyebrow { display: inline-block; font-size: 14px; font-weight: 600; color: var(--gold); text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: var(--space-sm); }
+    .hero-eyebrow-line { width: 48px; height: 2px; background: var(--gold); margin-bottom: var(--space-md); }
     .hero-text h1 { margin-bottom: var(--space-md); }
     .hero-text h1 em { font-style: normal; color: var(--gold); }
     .hero-subheadline { font-size: 19px; color: var(--text-secondary); margin-bottom: 28px; line-height: 1.6; }
@@ -83,7 +84,8 @@
     .hero-testimonial-snippet .snippet-stars { color: var(--gold); font-size: 14px; margin-bottom: 4px; }
     .hero-testimonial-snippet .snippet-quote { font-size: 15px; font-style: italic; color: var(--text-secondary); line-height: 1.5; margin-bottom: 4px; }
     .hero-testimonial-snippet .snippet-author { font-size: 13px; color: var(--text-light); font-weight: 500; }
-    .hero-image img { border-radius: var(--radius-lg); box-shadow: 0 8px 30px rgba(0,0,0,0.1); width: 100%; object-fit: cover; }
+    .hero-image img { border-radius: var(--radius-lg); box-shadow: 0 8px 30px rgba(0,0,0,0.1); width: 100%; object-fit: cover; display: none; }
+    .hero-image .wistia-wrapper { box-shadow: 0 8px 30px rgba(0,0,0,0.1); }
     .hero-video-mobile { display: none; margin-top: var(--space-xl); }
 
     /* TRUST STRIP */
@@ -109,7 +111,7 @@
     .review-badge .badge-count { font-size: 12px; color: var(--text-light); margin-top: 2px; }
 
     /* SOCIAL PROOF / PATIENT STORIES */
-    .social-proof { background: var(--gold-ultralight); padding: var(--space-4xl) 0; }
+    .social-proof { background: var(--white); padding: var(--space-4xl) 0; }
     .social-proof-framing { font-style: italic; font-size: 18px; color: var(--gold); text-align: center; margin-bottom: var(--space-2xl); }
     .testimonial-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-lg); max-width: 960px; margin: 0 auto; }
     .testimonial-card { background: var(--white); border-radius: var(--radius-lg); padding: 28px; border-left: 4px solid var(--gold); transition: box-shadow 0.25s ease; }
@@ -121,7 +123,16 @@
     .testimonial-source { font-size: 13px; color: var(--text-light); }
 
     /* PROBLEM SECTION (PAS) */
-    .problem-section { background: var(--white); padding: var(--space-4xl) 0; }
+    .problem-section { background: #1a2744; padding: var(--space-4xl) 0; color: rgba(255,255,255,0.85); }
+    .problem-section h2 { color: var(--white); }
+    .problem-section h2 em { color: var(--gold); }
+    .problem-section p { color: rgba(255,255,255,0.8); }
+    .problem-section strong { color: var(--white); }
+    .problem-section em { color: var(--gold-light); }
+    .problem-section .problem-story { background: rgba(255,255,255,0.06); border-left-color: var(--gold); }
+    .problem-section .problem-story .story-label { color: var(--gold); }
+    .problem-section .problem-story p { color: rgba(255,255,255,0.75); }
+    .problem-section .problem-cta p { color: rgba(255,255,255,0.5); }
     .problem-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-3xl); align-items: center; }
     .problem-content h2 { margin-bottom: var(--space-md); }
     .problem-content h2 em { font-style: normal; color: var(--gold); }
@@ -176,7 +187,7 @@
     .compare-icon { flex-shrink: 0; width: 22px; height: 22px; margin-top: 1px; }
     .compare-row strong { color: var(--text-primary); }
     .compare-col--other .compare-row { color: var(--text-light); }
-    .compare-badge { display: inline-block; background: linear-gradient(135deg, var(--gold), var(--gold-dark)); color: var(--white); font-size: 12px; font-weight: 700; padding: 4px 12px; border-radius: 20px; text-transform: uppercase; letter-spacing: 0.5px; text-align: center; margin: var(--space-md) auto 0; display: block; width: fit-content; }
+    .compare-badge { display: inline-block; background: linear-gradient(135deg, var(--gold), var(--gold-dark)); color: var(--white); font-size: 12px; font-weight: 700; padding: 4px 12px; border-radius: 20px; text-transform: uppercase; letter-spacing: 0.5px; text-align: center; margin: var(--space-md) auto var(--space-lg); display: block; width: fit-content; }
     .compare-footer { text-align: center; font-style: italic; font-size: 15px; color: var(--text-light); margin-top: var(--space-xl); }
     .compare-cta { text-align: center; margin-top: 40px; }
 
@@ -257,8 +268,23 @@
     .faq-answer-cta { display: block; margin-top: var(--space-md); }
 
     /* CONTACT */
-    .contact { background: var(--white); padding: var(--space-4xl) 0; }
-    .contact-grid { display: grid; grid-template-columns: 55% 45%; gap: var(--space-2xl); align-items: start; }
+    .contact { background: #1a2744; padding: var(--space-4xl) 0; color: rgba(255,255,255,0.85); }
+    .contact h2 { color: var(--white); }
+    .contact .form-sub { color: rgba(255,255,255,0.7); }
+    .contact .risk-item span { color: rgba(255,255,255,0.8); }
+    .contact .risk-item svg { color: var(--gold); }
+    .contact .form-social-proof { background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.12); }
+    .contact .form-social-proof span { color: rgba(255,255,255,0.8); }
+    .contact .form-group label { color: rgba(255,255,255,0.9); }
+    .contact .form-group label .optional { color: rgba(255,255,255,0.5); }
+    .contact .form-group input, .contact .form-group textarea { background: var(--white); border-color: rgba(255,255,255,0.2); color: var(--text-primary); }
+    .contact .checkbox-group label { color: rgba(255,255,255,0.6); }
+    .contact .checkbox-group label a { color: var(--gold); }
+    .contact .form-trust span { color: rgba(255,255,255,0.5); }
+    .contact .form-step-indicator { font-size: 14px; font-weight: 600; color: var(--gold); margin-bottom: var(--space-sm); text-transform: uppercase; letter-spacing: 1px; }
+    .contact .form-step-title { font-size: 16px; color: rgba(255,255,255,0.7); margin-bottom: var(--space-lg); }
+    .contact .contact-risk-reversal { border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: var(--space-lg); }
+    .contact-grid { display: grid; grid-template-columns: 1fr; gap: var(--space-2xl); align-items: start; max-width: var(--container-narrow); margin: 0 auto; }
     .contact-form h2 { margin-bottom: var(--space-sm); }
     .contact-form .form-sub { font-size: 16px; color: var(--text-secondary); margin-bottom: var(--space-lg); }
     .contact-risk-reversal { display: flex; gap: var(--space-lg); margin-bottom: var(--space-xl); }
@@ -287,7 +313,7 @@
     .form-success { background: rgba(201,169,110,0.06); border: 1px solid rgba(201,169,110,0.2); padding: var(--space-2xl); border-radius: var(--radius-lg); display: none; text-align: center; line-height: 1.6; }
     .contact-sidebar { position: sticky; top: 96px; }
     .contact-sidebar img { border-radius: var(--radius-lg); width: 100%; object-fit: cover; margin-bottom: var(--space-lg); }
-    .sidebar-trust { background: var(--gold-ultralight); border-radius: var(--radius-lg); padding: var(--space-lg); box-shadow: 0 2px 16px rgba(0,0,0,0.04); }
+    .sidebar-trust { background: var(--white); border-radius: var(--radius-lg); padding: var(--space-lg); box-shadow: 0 2px 16px rgba(0,0,0,0.08); }
     .sidebar-trust-item { display: flex; align-items: center; gap: 12px; margin-bottom: var(--space-md); }
     .sidebar-trust-item:last-child { margin-bottom: 0; }
     .sidebar-trust-item .trust-icon { width: 36px; height: 36px; background: var(--white); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
@@ -300,14 +326,14 @@
     .sidebar-author { font-size: 12px; color: var(--text-light); }
 
     /* EXIT BANNER */
-    .exit-banner { background: var(--gold-ultralight); padding: var(--space-2xl) 0; text-align: center; border-top: 1px solid rgba(201,169,110,0.15); }
-    .exit-banner h3 { margin-bottom: var(--space-sm); }
-    .exit-banner p { font-size: 16px; color: var(--text-secondary); max-width: 640px; margin: 0 auto var(--space-lg); }
+    .exit-banner { background: var(--bg-dark); padding: var(--space-2xl) 0; text-align: center; border-top: 3px solid var(--gold); }
+    .exit-banner h3 { margin-bottom: var(--space-sm); color: var(--white); }
+    .exit-banner p { font-size: 16px; color: #BBBBBB; max-width: 640px; margin: 0 auto var(--space-lg); }
 
     /* FOOTER */
     .site-footer { background: var(--bg-dark); padding: 64px 0 32px; }
     .footer-grid { display: grid; grid-template-columns: 1.2fr 0.8fr 1fr; gap: var(--space-2xl); }
-    .footer-logo img { height: 32px; margin-bottom: var(--space-md); filter: brightness(10); }
+    .footer-logo img { height: 32px; margin-bottom: var(--space-md); filter: brightness(0) invert(1); -webkit-filter: brightness(0) invert(1); }
     .footer-mission { font-size: 14px; color: #AAAAAA; line-height: 1.6; }
     .footer-links h4 { font-size: 16px; color: var(--white); margin-bottom: var(--space-md); }
     .footer-links a { display: block; font-size: 14px; color: #CCCCCC; text-decoration: none; margin-bottom: var(--space-sm); transition: color 0.2s ease; }
@@ -392,7 +418,7 @@
       <a href="#hero" class="header-logo">
         <img src="https://cdn.prod.website-files.com/6569a841ec1461c605d92a91/6569a841ec1461c605d92cfd_logo-092020.png" alt="Villa Bella München Logo" width="140" height="36">
       </a>
-      <a href="#kontakt" class="header-cta">Ja, ich möchte eine Beratung →</a>
+      <a href="#kontakt" class="header-cta">Kostenlose Beratung →</a>
     </div>
   </header>
 
@@ -402,7 +428,8 @@
       <div class="hero-grid">
         <div class="hero-text">
           <span class="hero-eyebrow">Bruststraffung in München</span>
-          <h1>Endlich wieder <em>selbstbewusst</em> fühlen — mit einer Brust, die zu Ihnen passt</h1>
+          <div class="hero-eyebrow-line"></div>
+          <h1>Endlich wieder <em>selbstsicher</em> fühlen — mit einer Brust, die zu Ihnen passt</h1>
           <p class="hero-subheadline">Natürliche Straffung durch Münchens erfahrenstes Spezialistenteam. <strong>3.127 erfolgreiche Brust-OPs.</strong> Narbenarme Technik. Ihr Ergebnis vorab in 3D sehen.</p>
 
           <ul class="hero-bullets">
@@ -413,7 +440,7 @@
           </ul>
 
           <div class="hero-cta-group">
-            <a href="#kontakt" class="btn-primary">Ja, ich möchte mein Beratungsgespräch →</a>
+            <a href="#kontakt" class="btn-primary">Kostenlose Beratung anfragen →</a>
             <a href="#methode" class="btn-secondary-outline">Wie es funktioniert</a>
           </div>
           <p class="hero-micro">✓ In 60 Sekunden ausgefüllt · ✓ Antwort innerhalb von 24h · ✓ 100% kostenlos &amp; unverbindlich</p>
@@ -439,7 +466,10 @@
           </div>
         </div>
         <div class="hero-image">
-          <img src="https://cdn.prod.website-files.com/6569a841ec1461c605d92a91/6739c960d98f28ed5abfd12e_DSC07805.webp" alt="Villa Bella Klinik Interior München" width="500" height="600" loading="eager">
+          <div class="wistia-wrapper">
+            <iframe src="https://fast.wistia.net/embed/iframe/hhivyzxxeq?seo=true&videoFoam=false" title="Villa Bella Philosophie — Dr. Meyer stellt sich vor" allow="autoplay; fullscreen" loading="lazy"></iframe>
+          </div>
+          <p class="video-caption">Lernen Sie unser Team kennen — in 2 Minuten</p>
         </div>
       </div>
     </div>
@@ -470,43 +500,7 @@
     </div>
   </section>
 
-  <!-- TESTIMONIAL HIGHLIGHT (Dr. Meyer Video + featured review) -->
-  <section class="testimonial-highlight" id="erfahrungen">
-    <div class="container">
-      <div class="testimonial-highlight-grid">
-        <div>
-          <div class="wistia-wrapper">
-            <iframe src="https://fast.wistia.net/embed/iframe/hhivyzxxeq?seo=true&videoFoam=false" title="Villa Bella Philosophie — Unser Team stellt sich vor" allow="autoplay; fullscreen" loading="lazy"></iframe>
-          </div>
-          <p class="video-caption">Lernen Sie unser Team und unsere Philosophie kennen — in 2 Minuten</p>
-        </div>
-        <div class="testimonial-highlight-review">
-          <div class="review-stars">★★★★★</div>
-          <p class="review-quote">"Nach langem Hin und Her habe ich mich endlich entschieden — und bin mehr als glücklich! Schon das Vorgespräch war sehr vertrauensvoll, ehrlich und informativ. Das Ergebnis ist großartig und natürlich."</p>
-          <div class="review-author">K. Jäger</div>
-          <div class="review-source">Jameda Bewertung (2025)</div>
-        </div>
-      </div>
-
-      <div class="review-badges">
-        <div class="review-badge">
-          <span class="badge-platform">Jameda</span>
-          <span class="badge-rating">★★★★★ Note 1,0</span>
-          <span class="badge-count">Top-Arzt Auszeichnung</span>
-        </div>
-        <div class="review-badge">
-          <span class="badge-platform">Google</span>
-          <span class="badge-rating">★★★★★ 5,0 Sterne</span>
-          <span class="badge-count">Über 200 Bewertungen</span>
-        </div>
-        <div class="review-badge">
-          <span class="badge-platform">Doctify</span>
-          <span class="badge-rating">★★★★★ Empfohlen</span>
-          <span class="badge-count">Verifizierte Erfahrungen</span>
-        </div>
-      </div>
-    </div>
-  </section>
+  <!-- TESTIMONIAL HIGHLIGHT REMOVED — Video now in hero desktop + mobile -->
 
   <!-- PATIENT STORIES (V7) -->
   <section class="social-proof" id="patientenstimmen">
@@ -548,8 +542,27 @@
         </div>
       </div>
 
+      <!-- Review Badges -->
+      <div class="review-badges" style="margin-top:var(--space-2xl);">
+        <div class="review-badge">
+          <span class="badge-platform">Jameda</span>
+          <span class="badge-rating">★★★★★ Note 1,0</span>
+          <span class="badge-count">Top-Arzt Auszeichnung</span>
+        </div>
+        <div class="review-badge">
+          <span class="badge-platform">Google</span>
+          <span class="badge-rating">★★★★★ 5,0</span>
+          <span class="badge-count">Über 200 Bewertungen</span>
+        </div>
+        <div class="review-badge">
+          <span class="badge-platform">Doctify</span>
+          <span class="badge-rating">★★★★★ Empfohlen</span>
+          <span class="badge-count">Verifizierte Erfahrungen</span>
+        </div>
+      </div>
+
       <div class="cta-wrapper">
-        <a href="#kontakt" class="btn-primary">Ja, ich möchte mein Beratungsgespräch →</a>
+        <a href="#kontakt" class="btn-primary">Kostenlose Beratung anfragen →</a>
         <p class="cta-micro">✓ Kostenlos · ✓ Unverbindlich · ✓ Inkl. 3D-Simulation</p>
       </div>
     </div>
@@ -586,7 +599,7 @@
     <div class="container">
       <h2>Bereit für den ersten Schritt?</h2>
       <p>Nur 8 Erstberatungen pro Woche — damit wir jeder Patientin unsere volle Aufmerksamkeit geben.</p>
-      <a href="#kontakt" class="btn-primary">Ja, ich möchte mein Beratungsgespräch →</a>
+      <a href="#kontakt" class="btn-primary">Kostenlose Beratung anfragen →</a>
       <p class="cta-band-micro">✓ Antwort innerhalb von 24h · ✓ Inkl. persönlicher 3D-Simulation</p>
     </div>
   </section>
@@ -737,7 +750,7 @@
     <div class="container">
       <h2>Bereit für den ersten Schritt?</h2>
       <p>Ihr kostenloses Beratungsgespräch — unverbindlich, persönlich, inklusive 3D-Simulation.</p>
-      <a href="#kontakt" class="btn-primary">Ja, ich möchte mein Beratungsgespräch →</a>
+      <a href="#kontakt" class="btn-primary">Kostenlose Beratung anfragen →</a>
       <p class="cta-band-micro">Nur 8 Beratungstermine pro Woche verfügbar · Antwort innerhalb von 24h</p>
     </div>
   </section>
@@ -788,17 +801,17 @@
               <span>25+ Jahre chirurgische Erfahrung</span>
             </div>
           </div>
-        </div>
-        <div class="team-text">
-          <h2>Nicht ein Arzt. Ein ganzes Spezialistenteam — nur für Ihr Ergebnis.</h2>
-          <p>Bei Villa Bella werden Sie nicht von einem einzelnen Arzt behandelt. Hinter Ihrem Ergebnis steht ein <strong>eingespieltes Team aus spezialisierten Fachärztinnen und Fachärzten</strong>, die gemeinsam über tausende Bruststraffungen durchgeführt haben.</p>
-          <p>Gegründet von Dr. Ludger Meyer hat unser Team seine bewährten Techniken weiterentwickelt und perfektioniert. Das bedeutet: Nicht die Erfahrung eines Arztes fließt in Ihr Ergebnis ein — sondern <strong>die gebündelte Expertise eines ganzen Teams.</strong></p>
-          <div style="margin: 24px 0;">
+          <div style="margin-top: 24px;">
             <div class="wistia-wrapper">
               <iframe src="https://fast.wistia.net/embed/iframe/hhivyzxxeq?seo=true&videoFoam=false" title="Villa Bella Philosophie" allow="autoplay; fullscreen" loading="lazy"></iframe>
             </div>
             <p class="video-caption">Lernen Sie unser Team kennen — in 2 Minuten</p>
           </div>
+        </div>
+        <div class="team-text">
+          <h2>Nicht ein Arzt. Ein ganzes Spezialistenteam — nur für Ihr Ergebnis.</h2>
+          <p>Bei Villa Bella werden Sie nicht von einem einzelnen Arzt behandelt. Hinter Ihrem Ergebnis steht ein <strong>eingespieltes Team aus spezialisierten Fachärztinnen und Fachärzten</strong>, die gemeinsam über tausende Bruststraffungen durchgeführt haben.</p>
+          <p>Gegründet von Dr. Ludger Meyer hat unser Team seine bewährten Techniken weiterentwickelt und perfektioniert. Das bedeutet: Nicht die Erfahrung eines Arztes fließt in Ihr Ergebnis ein — sondern <strong>die gebündelte Expertise eines ganzen Teams.</strong></p>
           <div class="team-values">
             <div class="team-value">
               <div class="team-value-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></svg></div>
@@ -881,7 +894,8 @@
     <div class="container">
       <div class="contact-grid">
         <div class="contact-form">
-          <h2>Sichern Sie sich Ihr persönliches Beratungsgespräch</h2>
+          <div class="form-step-indicator">Schritt 1 von 2</div>
+          <h2>Ihre Kontaktdaten</h2>
           <p class="form-sub">Füllen Sie das kurze Formular aus — wir melden uns innerhalb von 24 Stunden. 100% kostenlos, unverbindlich, inklusive 3D-Simulation.</p>
           <div class="contact-risk-reversal">
             <div class="risk-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span>100% kostenlos</span></div>
