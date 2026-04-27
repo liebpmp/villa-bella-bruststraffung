@@ -343,7 +343,8 @@
       .method-layout { grid-template-columns: 1fr; }
       .method-image { order: 2; }
       .compare-grid { grid-template-columns: 1fr; }
-      .compare-col.animate-left, .compare-col.animate-right { transform: translateY(30px); }
+      .compare-col.animate-left, .compare-col.animate-right { transform: none; opacity: 1; }
+      .compare-row { opacity: 1; transform: none; }
       .contact-grid { grid-template-columns: 1fr; }
       .contact-sidebar { display: none; }
       .footer-grid { grid-template-columns: 1fr; gap: var(--space-xl); }
@@ -370,7 +371,11 @@
       .trust-number { font-size: 24px; }
       .trust-label { font-size: 13px; }
       .testimonial-grid { grid-template-columns: 1fr; }
-      .review-badges { flex-direction: column; align-items: center; }
+      .review-badges { flex-direction: row; justify-content: center; gap: var(--space-sm); }
+      .review-badge { min-width: auto; padding: 12px 10px; }
+      .review-badge .badge-platform { font-size: 12px; }
+      .review-badge .badge-rating { font-size: 12px; }
+      .review-badge .badge-count { font-size: 10px; }
       .methods-grid { grid-template-columns: 1fr; }
       .results-grid { grid-template-columns: 1fr; }
       .form-row { grid-template-columns: 1fr; }
