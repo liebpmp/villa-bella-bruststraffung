@@ -66,7 +66,7 @@
 
     /* HERO */
     .hero { background: var(--white); padding: 120px 0 var(--space-2xl); }
-    .hero-grid { display: grid; grid-template-columns: 55% 45%; gap: var(--space-xl); align-items: center; }
+    .hero-grid { display: grid; grid-template-columns: 50% 50%; gap: var(--space-xl); align-items: center; }
     .hero-eyebrow { display: inline-block; font-size: 14px; font-weight: 600; color: var(--gold); text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: var(--space-sm); }
     .hero-eyebrow-line { width: 48px; height: 2px; background: var(--gold); margin-bottom: var(--space-md); }
     .hero-text h1 { margin-bottom: var(--space-md); }
@@ -77,9 +77,9 @@
     .hero-bullets li img { width: 18px; height: 18px; margin-top: 3px; flex-shrink: 0; }
     .hero-cta-group { display: flex; gap: var(--space-md); align-items: center; flex-wrap: wrap; margin-bottom: var(--space-md); }
     .hero-micro { font-size: 14px; color: var(--text-light); margin-bottom: var(--space-lg); }
-    .hero-trust-badges { display: flex; gap: var(--space-md); margin-bottom: var(--space-xl); flex-wrap: wrap; }
-    .hero-badge { display: flex; align-items: center; gap: 6px; background: var(--gold-ultralight); border: 1px solid rgba(201,169,110,0.2); border-radius: 20px; padding: 6px 14px; font-size: 13px; color: var(--text-secondary); }
-    .hero-badge .badge-stars { color: var(--gold); font-size: 12px; }
+    .hero-trust-badges { display: flex; gap: var(--space-sm); margin-bottom: var(--space-xl); flex-wrap: nowrap; }
+    .hero-badge { display: flex; align-items: center; gap: 4px; background: var(--gold-ultralight); border: 1px solid rgba(201,169,110,0.2); border-radius: 20px; padding: 5px 10px; font-size: 11px; color: var(--text-secondary); white-space: nowrap; }
+    .hero-badge .badge-stars { color: var(--gold); font-size: 10px; }
     .hero-testimonial-snippet { background: var(--gold-ultralight); border-left: 3px solid var(--gold); padding: 16px 20px; border-radius: 0 var(--radius-sm) var(--radius-sm) 0; }
     .hero-testimonial-snippet .snippet-stars { color: var(--gold); font-size: 14px; margin-bottom: 4px; }
     .hero-testimonial-snippet .snippet-quote { font-size: 15px; font-style: italic; color: var(--text-secondary); line-height: 1.5; margin-bottom: 4px; }
@@ -242,7 +242,7 @@
     .timeline-step p { font-size: 16px; color: var(--text-secondary); line-height: 1.6; }
 
     /* FAQ */
-    .faq { background: var(--gold-ultralight); padding: var(--space-4xl) 0; }
+    .faq { background: var(--white); padding: var(--space-4xl) 0; border-top: 2px solid var(--gold); }
     .faq-video { max-width: 600px; margin: 0 auto var(--space-2xl); }
     .faq-accordion { max-width: var(--container-narrow); margin: 0 auto; padding: 0 24px; }
     .faq-item { border: 1px solid rgba(201,169,110,0.2); border-radius: var(--radius-md); margin-bottom: 12px; background: var(--white); overflow: hidden; }
@@ -489,6 +489,13 @@
         <h2>Frauen wie Sie teilen ihre Geschichte</h2>
       </div>
       <p class="social-proof-framing">Mütter, Berufstätige, Frauen die sich endlich etwas Gutes tun — und es nicht bereuen</p>
+
+      <div class="testimonial-video" style="max-width:680px;margin:0 auto var(--space-2xl);">
+        <div class="wistia-wrapper">
+          <iframe src="https://fast.wistia.net/embed/iframe/tgb40wwjfl?seo=true&videoFoam=false" title="Patientin erzählt ihre Erfahrung bei Villa Bella" allow="autoplay; fullscreen" loading="lazy"></iframe>
+        </div>
+        <p class="video-caption">Eine Patientin teilt ihre persönliche Erfahrung</p>
+      </div>
 
       <div class="testimonial-grid">
         <div class="testimonial-card">
@@ -874,7 +881,7 @@
       <div class="contact-grid">
         <div class="contact-form">
           <div class="form-step-indicator"><span class="step-dot"></span><span class="step-dot step-dot--inactive"></span> Schritt 1 von 2</div>
-          <h2>Ihre Kontaktdaten</h2>
+          <h2>Sichern Sie sich Ihr persönliches Beratungsgespräch</h2>
           <p class="form-sub">Füllen Sie das kurze Formular aus — wir melden uns innerhalb von 24 Stunden. 100% kostenlos, unverbindlich, inklusive 3D-Simulation.</p>
           <div class="contact-risk-reversal">
             <div class="risk-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span>100% kostenlos</span></div>
