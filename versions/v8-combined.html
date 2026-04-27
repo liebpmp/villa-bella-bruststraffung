@@ -277,7 +277,7 @@
     .form-group { margin-bottom: var(--space-md); }
     .form-group label { display: block; font-weight: 500; font-size: 14px; color: var(--text-primary); margin-bottom: 6px; }
     .form-group label .optional { font-weight: 400; color: var(--text-light); }
-    .form-group input, .form-group textarea { width: 100%; background: var(--gold-ultralight); border: 1px solid #D0D0D0; border-radius: var(--radius-sm); padding: 14px 16px; font-family: var(--font-sans); font-size: 16px; color: var(--text-primary); transition: border-color 0.2s ease, box-shadow 0.2s ease; }
+    .form-group input, .form-group textarea, .form-group select { width: 100%; background: var(--white); border: 1px solid #D0D0D0; border-radius: var(--radius-sm); padding: 14px 16px; font-family: var(--font-sans); font-size: 16px; color: var(--text-primary); transition: border-color 0.2s ease, box-shadow 0.2s ease; }
     .form-group input:focus, .form-group textarea:focus { outline: none; border-color: var(--gold); box-shadow: 0 0 0 3px rgba(201,169,110,0.15); }
     .form-group input.error, .form-group textarea.error { border-color: var(--error); }
     .form-group .error-msg { font-size: 13px; color: var(--error); margin-top: 4px; display: none; }
@@ -896,7 +896,7 @@
           <div class="form-social-proof"><div class="proof-dot"></div><span>14 Frauen haben sich diese Woche bereits beraten lassen</span></div>
           <form id="contact-form" novalidate>
             <div class="form-row">
-              <div class="form-group"><label for="anrede">Ihre Anrede *</label><select id="anrede" name="anrede" required style="width:100%;background:var(--gold-ultralight);border:1px solid #D0D0D0;border-radius:var(--radius-sm);padding:14px 16px;font-family:var(--font-sans);font-size:16px;color:var(--text-primary);appearance:auto;cursor:pointer;"><option value="Herr/Frau" selected>Herr/Frau</option><option value="Herr">Herr</option><option value="Frau">Frau</option></select></div>
+              <div class="form-group"><label for="anrede">Ihre Anrede *</label><select id="anrede" name="anrede" required style="width:100%;background:var(--white);border:1px solid #D0D0D0;border-radius:var(--radius-sm);padding:14px 16px;font-family:var(--font-sans);font-size:16px;color:var(--text-primary);appearance:auto;cursor:pointer;"><option value="Herr/Frau" selected>Herr/Frau</option><option value="Herr">Herr</option><option value="Frau">Frau</option></select></div>
               <div class="form-group"><label for="name">Ihr Name *</label><input type="text" id="name" name="name" placeholder="Vorname und Nachname" required autocomplete="name"><div class="error-msg">Bitte geben Sie Ihren Namen ein.</div></div>
             </div>
             <div class="form-row">
