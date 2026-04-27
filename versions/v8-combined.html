@@ -123,16 +123,7 @@
     .testimonial-source { font-size: 13px; color: var(--text-light); }
 
     /* PROBLEM SECTION (PAS) */
-    .problem-section { background: #1a2744; padding: var(--space-4xl) 0; color: rgba(255,255,255,0.85); }
-    .problem-section h2 { color: var(--white); }
-    .problem-section h2 em { color: var(--gold); }
-    .problem-section p { color: rgba(255,255,255,0.8); }
-    .problem-section strong { color: var(--white); }
-    .problem-section em { color: var(--gold-light); }
-    .problem-section .problem-story { background: rgba(255,255,255,0.06); border-left-color: var(--gold); }
-    .problem-section .problem-story .story-label { color: var(--gold); }
-    .problem-section .problem-story p { color: rgba(255,255,255,0.75); }
-    .problem-section .problem-cta p { color: rgba(255,255,255,0.5); }
+    .problem-section { background: var(--gold-ultralight); padding: var(--space-4xl) 0; }
     .problem-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-3xl); align-items: center; }
     .problem-content h2 { margin-bottom: var(--space-md); }
     .problem-content h2 em { font-style: normal; color: var(--gold); }
@@ -268,23 +259,11 @@
     .faq-answer-cta { display: block; margin-top: var(--space-md); }
 
     /* CONTACT */
-    .contact { background: #1a2744; padding: var(--space-4xl) 0; color: rgba(255,255,255,0.85); }
-    .contact h2 { color: var(--white); }
-    .contact .form-sub { color: rgba(255,255,255,0.7); }
-    .contact .risk-item span { color: rgba(255,255,255,0.8); }
-    .contact .risk-item svg { color: var(--gold); }
-    .contact .form-social-proof { background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.12); }
-    .contact .form-social-proof span { color: rgba(255,255,255,0.8); }
-    .contact .form-group label { color: rgba(255,255,255,0.9); }
-    .contact .form-group label .optional { color: rgba(255,255,255,0.5); }
-    .contact .form-group input, .contact .form-group textarea { background: var(--white); border-color: rgba(255,255,255,0.2); color: var(--text-primary); }
-    .contact .checkbox-group label { color: rgba(255,255,255,0.6); }
-    .contact .checkbox-group label a { color: var(--gold); }
-    .contact .form-trust span { color: rgba(255,255,255,0.5); }
-    .contact .form-step-indicator { font-size: 14px; font-weight: 600; color: var(--gold); margin-bottom: var(--space-sm); text-transform: uppercase; letter-spacing: 1px; }
-    .contact .form-step-title { font-size: 16px; color: rgba(255,255,255,0.7); margin-bottom: var(--space-lg); }
-    .contact .contact-risk-reversal { border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: var(--space-lg); }
-    .contact-grid { display: grid; grid-template-columns: 1fr; gap: var(--space-2xl); align-items: start; max-width: var(--container-narrow); margin: 0 auto; }
+    .contact { background: var(--gold-ultralight); padding: var(--space-4xl) 0; }
+    .form-step-indicator { display: inline-flex; align-items: center; gap: 8px; background: rgba(201,169,110,0.08); border: 1px solid rgba(201,169,110,0.2); border-radius: 20px; padding: 6px 16px; font-size: 13px; font-weight: 600; color: var(--gold-dark); margin-bottom: var(--space-lg); }
+    .form-step-indicator .step-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--gold); }
+    .form-step-indicator .step-dot--inactive { background: rgba(201,169,110,0.3); }
+    .contact-grid { display: grid; grid-template-columns: 55% 45%; gap: var(--space-2xl); align-items: start; }
     .contact-form h2 { margin-bottom: var(--space-sm); }
     .contact-form .form-sub { font-size: 16px; color: var(--text-secondary); margin-bottom: var(--space-lg); }
     .contact-risk-reversal { display: flex; gap: var(--space-lg); margin-bottom: var(--space-xl); }
@@ -313,7 +292,7 @@
     .form-success { background: rgba(201,169,110,0.06); border: 1px solid rgba(201,169,110,0.2); padding: var(--space-2xl); border-radius: var(--radius-lg); display: none; text-align: center; line-height: 1.6; }
     .contact-sidebar { position: sticky; top: 96px; }
     .contact-sidebar img { border-radius: var(--radius-lg); width: 100%; object-fit: cover; margin-bottom: var(--space-lg); }
-    .sidebar-trust { background: var(--white); border-radius: var(--radius-lg); padding: var(--space-lg); box-shadow: 0 2px 16px rgba(0,0,0,0.08); }
+    .sidebar-trust { background: var(--white); border-radius: var(--radius-lg); padding: var(--space-lg); box-shadow: 0 2px 16px rgba(0,0,0,0.04); }
     .sidebar-trust-item { display: flex; align-items: center; gap: 12px; margin-bottom: var(--space-md); }
     .sidebar-trust-item:last-child { margin-bottom: 0; }
     .sidebar-trust-item .trust-icon { width: 36px; height: 36px; background: var(--white); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
@@ -326,9 +305,9 @@
     .sidebar-author { font-size: 12px; color: var(--text-light); }
 
     /* EXIT BANNER */
-    .exit-banner { background: var(--bg-dark); padding: var(--space-2xl) 0; text-align: center; border-top: 3px solid var(--gold); }
-    .exit-banner h3 { margin-bottom: var(--space-sm); color: var(--white); }
-    .exit-banner p { font-size: 16px; color: #BBBBBB; max-width: 640px; margin: 0 auto var(--space-lg); }
+    .exit-banner { background: var(--gold-ultralight); padding: 48px 0; text-align: center; border-top: 2px solid var(--gold); }
+    .exit-banner h3 { font-size: 24px; margin-bottom: var(--space-sm); }
+    .exit-banner p { font-size: 16px; color: var(--text-secondary); max-width: 560px; margin: 0 auto var(--space-lg); }
 
     /* FOOTER */
     .site-footer { background: var(--bg-dark); padding: 64px 0 32px; }
@@ -793,6 +772,12 @@
     <div class="container">
       <div class="team-grid">
         <div class="team-image">
+          <div style="margin-bottom: 24px;">
+            <div class="wistia-wrapper">
+              <iframe src="https://fast.wistia.net/embed/iframe/hhivyzxxeq?seo=true&videoFoam=false" title="Villa Bella Philosophie" allow="autoplay; fullscreen" loading="lazy"></iframe>
+            </div>
+            <p class="video-caption">Lernen Sie unser Team kennen — in 2 Minuten</p>
+          </div>
           <img src="https://cdn.prod.website-files.com/6569a841ec1461c605d92a91/6919aa27a8ba8dc040abe687_rsz_fabian_lou_nadja-min.webp" alt="Villa Bella Ärzte-Team" width="540" height="400" loading="lazy">
           <div class="team-founder-badge">
             <img src="https://cdn.prod.website-files.com/6569a841ec1461c605d92a91/6846a689484243f47e3fe5b2_Design%20ohne%20Titel%20(33)-p-500.webp" alt="Dr. Ludger Meyer" width="48" height="48">
@@ -800,12 +785,6 @@
               <strong>Gegründet von Dr. Ludger Meyer</strong>
               <span>25+ Jahre chirurgische Erfahrung</span>
             </div>
-          </div>
-          <div style="margin-top: 24px;">
-            <div class="wistia-wrapper">
-              <iframe src="https://fast.wistia.net/embed/iframe/hhivyzxxeq?seo=true&videoFoam=false" title="Villa Bella Philosophie" allow="autoplay; fullscreen" loading="lazy"></iframe>
-            </div>
-            <p class="video-caption">Lernen Sie unser Team kennen — in 2 Minuten</p>
           </div>
         </div>
         <div class="team-text">
@@ -894,7 +873,7 @@
     <div class="container">
       <div class="contact-grid">
         <div class="contact-form">
-          <div class="form-step-indicator">Schritt 1 von 2</div>
+          <div class="form-step-indicator"><span class="step-dot"></span><span class="step-dot step-dot--inactive"></span> Schritt 1 von 2</div>
           <h2>Ihre Kontaktdaten</h2>
           <p class="form-sub">Füllen Sie das kurze Formular aus — wir melden uns innerhalb von 24 Stunden. 100% kostenlos, unverbindlich, inklusive 3D-Simulation.</p>
           <div class="contact-risk-reversal">
