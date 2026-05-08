@@ -83,6 +83,7 @@
     .hero-testimonial-snippet .snippet-quote { font-size: 15px; font-style: italic; color: var(--text-secondary); line-height: 1.5; margin-bottom: 4px; }
     .hero-testimonial-snippet .snippet-author { font-size: 13px; color: var(--text-light); font-weight: 500; }
     .hero-image img { border-radius: var(--radius-lg); box-shadow: 0 8px 30px rgba(0,0,0,0.1); width: 100%; object-fit: cover; }
+    .hero-image .wistia-wrapper { box-shadow: 0 8px 30px rgba(0,0,0,0.1); }
     .hero-video-mobile { display: none; margin-top: var(--space-xl); }
 
     .trust-strip { background: var(--gold-ultralight); padding: 28px 0; }
@@ -414,8 +415,10 @@
             </div>
           </div>
         </div>
-        <div class="hero-image">
-          <img src="images/hero-male-web.jpg" alt="Villa Bella München — Premium-Klinik für Männer" width="500" height="600" loading="lazy" style="aspect-ratio:4/3;">
+        <div class="hero-image hero-video-desktop">
+          <div class="wistia-wrapper">
+            <iframe src="https://fast.wistia.net/embed/iframe/hp4n7734k0?seo=true&videoFoam=false" title="Villa Bella Imagefilm" allow="autoplay; fullscreen" allowfullscreen></iframe>
+          </div>
         </div>
       </div>
     </div>
@@ -716,10 +719,8 @@
   <section class="team-section" id="team">
     <div class="container">
       <div class="team-grid">
-        <div class="team-image team-video-desktop">
-          <div class="wistia-wrapper">
-            <iframe src="https://fast.wistia.net/embed/iframe/hp4n7734k0?seo=true&videoFoam=false" title="Villa Bella Imagefilm" allow="autoplay; fullscreen" allowfullscreen></iframe>
-          </div>
+        <div class="team-image">
+          <img src="https://villa-bella.org/wp-content/uploads/2025/11/aerztegruppe-schreibtisch-01-2026.jpg" alt="Villa Bella Ärzte-Team — 5 Spezialisten" width="540" height="400" loading="lazy">
           <div class="team-founder-badge">
             <img src="https://cdn.prod.website-files.com/6569a841ec1461c605d92a91/6846a689484243f47e3fe5b2_Design%20ohne%20Titel%20(33)-p-500.webp" alt="Dr. Ludger Meyer" width="48" height="48">
             <div class="badge-text">
