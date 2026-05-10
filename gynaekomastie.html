@@ -382,11 +382,9 @@
       .trust-number { font-size: 24px; }
       .trust-label { font-size: 13px; }
       .testimonial-grid { grid-template-columns: 1fr; }
-      .review-badges { display: flex; flex-direction: column; gap: var(--space-sm); }
-      .review-badge { min-width: unset; padding: 14px 16px; flex-direction: row; gap: var(--space-md); justify-content: center; }
-      .review-badge .badge-platform { margin-bottom: 0; }
-      .review-badge .badge-count { margin-top: 0; }
-      .review-badge .badge-cta { margin-top: 0; }
+      .review-badges { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-sm); }
+      .review-badge { min-width: unset; padding: 14px 12px; }
+      .review-badge:last-child { grid-column: 1 / -1; max-width: 60%; margin: 0 auto; }
       .methods-grid { grid-template-columns: 1fr; }
       .form-row { grid-template-columns: 1fr; }
       .contact-risk-reversal { flex-direction: row; gap: var(--space-sm); justify-content: flex-start; flex-wrap: wrap; }
