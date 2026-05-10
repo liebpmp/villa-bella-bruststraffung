@@ -84,13 +84,8 @@
     .hero-testimonial-snippet .snippet-author { font-size: 13px; color: var(--text-light); font-weight: 500; }
     .hero-image img { border-radius: var(--radius-lg); box-shadow: 0 8px 30px rgba(0,0,0,0.1); width: 100%; object-fit: cover; }
     .hero-image .wistia-wrapper { box-shadow: 0 8px 30px rgba(0,0,0,0.1); }
-    .hero-video-desktop { margin-right: -80px; align-self: flex-start; margin-top: -8px; }
+    .hero-video-desktop { margin-right: -80px; }
     .hero-video-mobile { display: none; margin-top: var(--space-xl); }
-    .hero-grid { align-items: flex-start; }
-    .hero-badges-under-video { display: flex; gap: var(--space-sm); margin-top: var(--space-md); flex-wrap: wrap; justify-content: flex-start; margin-right: -80px; }
-    .hero-badges-under-video .hero-badge { background: var(--gold-ultralight); border: 1px solid rgba(201,169,110,0.25); border-radius: 20px; padding: 6px 12px; font-size: 12px; color: var(--text-secondary); display: inline-flex; align-items: center; gap: 5px; white-space: nowrap; }
-    .hero-badges-under-video .hero-badge .badge-stars { color: var(--gold); font-size: 11px; }
-    .hero-badges-mobile { display: none; }
 
     .trust-strip { background: var(--gold-ultralight); padding: 28px 0; }
     .trust-strip-inner { display: flex; justify-content: center; align-items: center; gap: 0; max-width: var(--container); margin: 0 auto; padding: 0 24px; }
@@ -110,35 +105,10 @@
     .testimonial-author { font-weight: 600; font-size: 14px; color: var(--text-primary); }
     .testimonial-source { font-size: 13px; color: var(--text-light); }
     .review-badges { display: flex; gap: var(--space-md); justify-content: center; margin-top: var(--space-2xl); flex-wrap: wrap; }
-    .review-badge { display: flex; flex-direction: column; align-items: center; background: var(--white); border: 1px solid rgba(201,169,110,0.2); border-radius: var(--radius-md); padding: 16px 24px; min-width: 180px; flex: 1 1 auto; text-decoration: none; color: inherit; transition: all 0.25s ease; cursor: pointer; }
-    .review-badge:hover { border-color: var(--gold); box-shadow: 0 4px 20px rgba(201,169,110,0.18); transform: translateY(-2px); }
+    .review-badge { display: flex; flex-direction: column; align-items: center; background: var(--white); border: 1px solid rgba(201,169,110,0.2); border-radius: var(--radius-md); padding: 16px 24px; min-width: 160px; flex: 1 1 auto; }
     .review-badge .badge-platform { font-weight: 700; font-size: 14px; color: var(--text-primary); margin-bottom: 4px; }
     .review-badge .badge-rating { color: var(--gold); font-size: 14px; font-weight: 600; }
     .review-badge .badge-count { font-size: 12px; color: var(--text-light); margin-top: 2px; }
-    .review-badge .badge-cta { font-size: 12px; color: var(--gold-dark); font-weight: 600; margin-top: 8px; }
-
-    .process-stack { position: relative; }
-    .process-card { position: sticky; background: var(--white); border-radius: var(--radius-lg); box-shadow: 0 6px 32px rgba(0,0,0,0.08); border: 1px solid rgba(201,169,110,0.18); padding: var(--space-xl) var(--space-2xl); margin-bottom: var(--space-lg); display: flex; gap: var(--space-lg); align-items: flex-start; transition: opacity 0.6s ease, transform 0.6s ease; }
-    .process-card:nth-child(1) { top: 96px; }
-    .process-card:nth-child(2) { top: 112px; }
-    .process-card:nth-child(3) { top: 128px; }
-    .process-card:nth-child(4) { top: 144px; }
-    .process-card:nth-child(5) { top: 160px; }
-    .method-image.method-image-sticky { position: sticky; top: 96px; align-self: flex-start; }
-    .process-card .process-num { width: 48px; height: 48px; min-width: 48px; border-radius: 50%; border: 2px solid var(--gold); background: var(--white); color: var(--gold); display: flex; align-items: center; justify-content: center; font-family: var(--font-serif); font-weight: 700; font-size: 20px; }
-    .process-card h4 { font-size: 19px; margin-bottom: 10px; color: var(--text-primary); line-height: 1.35; }
-    .process-card p { font-size: 16px; color: var(--text-secondary); line-height: 1.65; margin-bottom: 10px; }
-    .process-card p:last-child { margin-bottom: 0; }
-    .process-card .process-outcome { color: var(--gold-dark); font-weight: 600; font-style: normal; }
-    .process-card.is-enter { opacity: 0; transform: translateY(24px) scale(0.985); }
-    .process-card.is-visible { opacity: 1; transform: translateY(0) scale(1); }
-
-    @media (prefers-reduced-motion: reduce) {
-      .process-card { position: static; transition: none; }
-      .process-card.is-enter { opacity: 1; transform: none; }
-      .compare-col.animate-left, .compare-col.animate-right { opacity: 1; transform: none; }
-      .compare-row { opacity: 1; transform: none; }
-    }
 
     .problem-section { background: var(--gold-ultralight); padding: var(--space-4xl) 0; }
     .problem-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-3xl); align-items: center; }
@@ -328,9 +298,6 @@
       .hero-grid { grid-template-columns: 1fr; }
       .hero-image { display: none; }
       .hero-video-mobile { display: block; }
-      .hero-badges-mobile { display: flex; flex-wrap: wrap; gap: var(--space-sm); margin-top: var(--space-md); justify-content: center; }
-      .hero-badges-mobile .hero-badge { background: var(--gold-ultralight); border: 1px solid rgba(201,169,110,0.25); border-radius: 20px; padding: 6px 12px; font-size: 12px; color: var(--text-secondary); display: inline-flex; align-items: center; gap: 5px; white-space: nowrap; }
-      .hero-badges-mobile .hero-badge .badge-stars { color: var(--gold); font-size: 11px; }
       .hero { padding: 100px 0 0; }
       .problem-grid { grid-template-columns: 1fr; }
       .problem-image { order: 2; }
@@ -346,9 +313,6 @@
       .contact-sidebar { display: none; }
       .footer-grid { grid-template-columns: 1fr; gap: var(--space-xl); }
       .objection-grid { grid-template-columns: 1fr; }
-      .process-card { position: static; box-shadow: 0 4px 20px rgba(0,0,0,0.06); padding: var(--space-lg); }
-      .process-card:nth-child(n) { top: auto; }
-      .method-image.method-image-sticky { position: static; }
     }
     @media (max-width: 768px) {
       h1 { font-size: 30px; }
@@ -363,10 +327,7 @@
       .btn-primary { font-size: 16px; padding: 16px 32px; width: 100%; }
       .btn-secondary-outline { width: 100%; }
       .hero-cta-group { flex-direction: column; }
-      .hero-badges-mobile { gap: 6px; }
-      .hero-badges-mobile .hero-badge { font-size: 11px; padding: 5px 10px; }
-      .process-card { flex-direction: column; gap: var(--space-sm); }
-      .process-card .process-num { width: 40px; height: 40px; min-width: 40px; font-size: 17px; }
+      .hero-trust-badges { flex-direction: column; gap: 8px; }
       .trust-strip { padding: 20px 16px; }
       .trust-strip-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
       .trust-divider { display: none; }
@@ -419,42 +380,45 @@
     <div class="container">
       <div class="hero-grid">
         <div class="hero-text">
-          <span class="hero-eyebrow">Diskret. Männlich. Individuell.</span>
+          <span class="hero-eyebrow">Gynäkomastie-Korrektur in München</span>
           <div class="hero-eyebrow-line"></div>
           <h1>Gynäkomastie-Korrektur in München: Für einen <em>flachen, maskulinen</em> Oberkörper</h1>
-          <p class="hero-subheadline">Schluss mit dem Verstecken der eigenen Brust: Erfahren Sie, wie eine diskrete, individuell geplante und narbenarme Korrektur zu einem neuen Körpergefühl verhelfen kann.</p>
+          <p class="hero-subheadline"><strong>Über 24.000 erfolgreiche Operationen.</strong> Diskrete Korrektur der vergrößerten Männerbrust. Narbenarme Technik, oft ambulant möglich. Münchens erfahrenstes Spezialistenteam.</p>
 
           <ul class="hero-bullets">
-            <li><img src="https://cdn.prod.website-files.com/6569a841ec1461c605d92a91/6569a841ec1461c605d92d2d_checkmark-min.png" alt="✓" width="18" height="18"> Hunderte zufriedene Männer vertrauen auf Villa Bella</li>
-            <li><img src="https://cdn.prod.website-files.com/6569a841ec1461c605d92a91/6569a841ec1461c605d92d2d_checkmark-min.png" alt="✓" width="18" height="18"> Spezialistenteam mit teils über 30 Jahren OP-Erfahrung</li>
-            <li><img src="https://cdn.prod.website-files.com/6569a841ec1461c605d92a91/6569a841ec1461c605d92d2d_checkmark-min.png" alt="✓" width="18" height="18"> Wieder selbstbewusst im Shirt, beim Sport und vor dem Spiegel</li>
+            <li><img src="https://cdn.prod.website-files.com/6569a841ec1461c605d92a91/6569a841ec1461c605d92d2d_checkmark-min.png" alt="✓" width="18" height="18"> Diskret &amp; narbenfrei — Schnitt am Brustwarzrand</li>
+            <li><img src="https://cdn.prod.website-files.com/6569a841ec1461c605d92a91/6569a841ec1461c605d92d2d_checkmark-min.png" alt="✓" width="18" height="18"> Ambulant oder stationär — je nach Befund</li>
+            <li><img src="https://cdn.prod.website-files.com/6569a841ec1461c605d92a91/6569a841ec1461c605d92d2d_checkmark-min.png" alt="✓" width="18" height="18"> Jameda Note 1,0 — über 200 Google-Bewertungen</li>
+            <li><img src="https://cdn.prod.website-files.com/6569a841ec1461c605d92a91/6569a841ec1461c605d92d2d_checkmark-min.png" alt="✓" width="18" height="18"> Leichte Tätigkeiten nach wenigen Tagen</li>
           </ul>
 
           <div class="hero-cta-group">
             <a href="#kontakt" class="btn-primary">Beratungstermin anfragen →</a>
             <a href="#methode" class="btn-secondary-outline">Wie es funktioniert</a>
           </div>
-          <p class="hero-micro">Termin online in 2 Minuten buchen · Rückmeldung innerhalb von 24h · 100% vertraulich</p>
+          <p class="hero-micro">✓ 100% unverbindlich · ✓ Antwort innerhalb von 24h · ✓ Absolut diskret</p>
+
+          <div class="hero-trust-badges">
+            <div class="hero-badge"><span class="badge-stars">★★★★★</span> <strong>Note 1,0</strong> Jameda</div>
+            <div class="hero-badge"><span class="badge-stars">★★★★★</span> <strong>5 Sterne</strong> Google</div>
+            <div class="hero-badge"><span class="badge-stars">★★★★★</span> <strong>Empfohlen</strong> Doctify</div>
+          </div>
+
+          <div class="hero-testimonial-snippet">
+            <div class="snippet-stars">★★★★★</div>
+            <p class="snippet-quote">"Ich kann endlich wieder ins Schwimmbad und T-Shirts tragen, ohne mich unwohl zu fühlen. Die OP war unkompliziert und das Ergebnis natürlich."</p>
+            <span class="snippet-author">— Zufriedener Patient, Google Bewertung 2025</span>
+          </div>
 
           <div class="hero-video-mobile">
             <div class="wistia-wrapper">
               <iframe src="https://fast.wistia.net/embed/iframe/hhivyzxxeq?seo=true&videoFoam=false" title="Villa Bella Philosophie" allow="autoplay; fullscreen" loading="lazy"></iframe>
             </div>
           </div>
-          <div class="hero-badges-mobile">
-            <div class="hero-badge"><span class="badge-stars">★★★★★</span> <strong>Note 1,0</strong> Jameda</div>
-            <div class="hero-badge"><span class="badge-stars">★★★★★</span> <strong>5 Sterne</strong> Google</div>
-            <div class="hero-badge"><span class="badge-stars">★★★★★</span> <strong>Empfohlen</strong> Doctify</div>
-          </div>
         </div>
         <div class="hero-image hero-video-desktop">
           <div class="wistia-wrapper">
             <iframe src="https://fast.wistia.net/embed/iframe/hp4n7734k0?seo=true&videoFoam=false" title="Villa Bella Imagefilm" allow="autoplay; fullscreen" allowfullscreen></iframe>
-          </div>
-          <div class="hero-badges-under-video">
-            <div class="hero-badge"><span class="badge-stars">★★★★★</span> <strong>Note 1,0</strong> Jameda</div>
-            <div class="hero-badge"><span class="badge-stars">★★★★★</span> <strong>5 Sterne</strong> Google</div>
-            <div class="hero-badge"><span class="badge-stars">★★★★★</span> <strong>Empfohlen</strong> Doctify</div>
           </div>
         </div>
       </div>
@@ -498,15 +462,15 @@
       <div class="testimonial-grid">
         <div class="testimonial-card">
           <div class="testimonial-stars">★★★★★</div>
-          <div class="testimonial-context">Zurück zu Selbstachtung</div>
-          <p class="testimonial-quote">"Trotz Normalgewicht und einem athletischen Körper litt ich seit meiner Jugend an einer Gynäkomastie. Mit der Hilfe von Dr. Ludger Meyer zog ich die Reißleine und fand zurück zu Selbstachtung. Unmittelbar nach der OP war eine beeindruckende Verbesserung zu erkennen. Die zuvor weibliche Brust war endlich männlich."</p>
+          <div class="testimonial-context">Dr. Meyer ist ein Meister seines Fachs…</div>
+          <p class="testimonial-quote">"Zeit nimmt er sich, bis alle Fragen und Unsicherheiten geklärt sind. Er ist ein Empath, kein Standesdünkler, er setzt auf Erfolg und Zufriedenheit, sowohl auf Patientenseite, aber auch für sich und sein beispielloses Team, das ich ausgesprochen loben möchte. Bei ihm sind Mensch, Kunst und Können vereint."</p>
           <div class="testimonial-author">Verifizierter Patient</div>
           <div class="testimonial-source">Google Bewertung</div>
         </div>
         <div class="testimonial-card">
           <div class="testimonial-stars">★★★★★</div>
-          <div class="testimonial-context">Dr. Meyer ist ein Meister seines Fachs…</div>
-          <p class="testimonial-quote">"Zeit nimmt er sich, bis alle Fragen und Unsicherheiten geklärt sind. Er ist ein Empath, kein Standesdünkler, er setzt auf Erfolg und Zufriedenheit, sowohl auf Patientenseite, aber auch für sich und sein beispielloses Team, das ich ausgesprochen loben möchte. Bei ihm sind Mensch, Kunst und Können vereint."</p>
+          <div class="testimonial-context">Zurück zu Selbstachtung</div>
+          <p class="testimonial-quote">"Trotz Normalgewicht und einem athletischen Körper litt ich seit meiner Jugend an einer Gynäkomastie. Mit der Hilfe von Dr. Ludger Meyer zog ich die Reißleine und fand zurück zu Selbstachtung. Unmittelbar nach der OP war eine beeindruckende Verbesserung zu erkennen. Die zuvor weibliche Brust war endlich männlich."</p>
           <div class="testimonial-author">Verifizierter Patient</div>
           <div class="testimonial-source">Google Bewertung</div>
         </div>
@@ -528,24 +492,21 @@
       </div>
 
       <div class="review-badges">
-        <a class="review-badge" href="https://www.google.com/search?q=VILLA+BELLA+%7C+Praxis+f%C3%BCr+Plastische+Chirurgie+%26+Sch%C3%B6nheitschirurgie+Rezensionen" target="_blank" rel="noopener">
-          <span class="badge-platform">Google</span>
-          <span class="badge-rating">★★★★★ 5,0 Sterne</span>
-          <span class="badge-count">80+ Bewertungen</span>
-          <span class="badge-cta">Bewertungen ansehen →</span>
-        </a>
-        <a class="review-badge" href="https://www.jameda.de/gesundheitseinrichtungen/praxisklinik-villa-bella-dr-med-ludger-meyer-facharzt-fuer-plastische-und-aesthetische-chirurgie" target="_blank" rel="noopener">
+        <div class="review-badge">
           <span class="badge-platform">Jameda</span>
-          <span class="badge-rating">★★★★★ 5,0 Sterne</span>
-          <span class="badge-count">150+ Bewertungen</span>
-          <span class="badge-cta">Bewertungen ansehen →</span>
-        </a>
-        <a class="review-badge" href="https://www.doctify.com/de/practice/praxis-brienner-str-14-12" target="_blank" rel="noopener">
+          <span class="badge-rating">★★★★★ Note 1,0</span>
+          <span class="badge-count">Top-Arzt Auszeichnung</span>
+        </div>
+        <div class="review-badge">
+          <span class="badge-platform">Google</span>
+          <span class="badge-rating">★★★★★ 5,0</span>
+          <span class="badge-count">Über 200 Bewertungen</span>
+        </div>
+        <div class="review-badge">
           <span class="badge-platform">Doctify</span>
-          <span class="badge-rating">★★★★★ 4,94 / 5 Sterne</span>
-          <span class="badge-count">50+ Bewertungen</span>
-          <span class="badge-cta">Bewertungen ansehen →</span>
-        </a>
+          <span class="badge-rating">★★★★★ Empfohlen</span>
+          <span class="badge-count">Verifizierte Erfahrungen</span>
+        </div>
       </div>
 
       <div class="cta-wrapper">
@@ -561,16 +522,21 @@
       <div class="problem-grid">
         <div class="problem-content">
           <h2>Kennen Sie <em>dieses Gefühl</em>?</h2>
-          <p>Sie meiden das Schwimmbad. Enge T-Shirts sind tabu. Beim Sport tragen Sie lieber weite Kleidung, um Ihre Brust zu verstecken. In der Umkleidekabine drehen Sie sich weg.</p>
-          <p>Vielleicht haben Sie schon alles versucht — hartes Training, strenge Diät, Disziplin. Doch die Brust bleibt. Denn bei einer echten Gynäkomastie liegt die Ursache häufig im Drüsengewebe oder im hormonellen Gleichgewicht — <strong>kein Training der Welt kann das verändern.</strong></p>
-          <p>Eine vergrößerte Männerbrust betrifft mehr Männer, als viele denken. Sie ist kein Zeichen mangelnder Fitness oder Disziplin, sondern oft eine medizinische Gegebenheit — und sie lässt sich korrigieren.</p>
-          <p>Viele Männer sagen nach der Behandlung: <em>„Warum habe ich so lange gewartet?"</em></p>
+          <p>Sie meiden das Schwimmbad. Enge T-Shirts sind tabu. Beim Sport tragen Sie weite Kleidung, um die Brust zu verstecken. In der Umkleidekabine drehen Sie sich weg.</p>
+          <p>Vielleicht haben Sie alles versucht — hartes Training, strenge Diät. Aber die Brust bleibt. Denn bei einer echten Gynäkomastie liegt das Problem im Drüsengewebe oder den Hormonen — <strong>kein Training der Welt kann das ändern.</strong></p>
+          <p>Eine vergrößerte Männerbrust betrifft mehr Männer als Sie denken. Es ist keine Frage von Fitness oder Disziplin — es ist eine medizinische Gegebenheit. Und sie lässt sich korrigieren.</p>
+          <p>Die meisten unserer Patienten sagen dasselbe: <em>„Warum habe ich so lange gewartet?"</em></p>
+          <div class="problem-story">
+            <div class="story-label">Typischer Patient</div>
+            <p>„Ich war durchtrainiert, aber meine Brust sah trotzdem weiblich aus. Ich habe nie am Strand mein Shirt ausgezogen. Als mein Arzt mir erklärte, dass es Drüsengewebe ist und Sport nichts bringt, war ich erleichtert — und gleichzeitig wütend, dass mir das niemand früher gesagt hat. Bei Villa Bella wurde ich endlich ernst genommen."</p>
+          </div>
           <div class="problem-cta">
             <a href="#kontakt" class="btn-primary">Mein persönliches Beratungsgespräch sichern →</a>
+            <p style="font-size:14px; color:var(--text-light); margin-top:8px;">100% unverbindlich. Absolut diskret. Kein Druck.</p>
           </div>
         </div>
         <div class="problem-image">
-          <img src="images/kennen-sie-v3.jpg" alt="Sportlicher Mann — emotional relatable für Gynäkomastie-Zielgruppe" width="500" height="600" loading="lazy" style="aspect-ratio:3/2;">
+          <img src="images/gefuehl-male-web.jpg" alt="Mann — Gynäkomastie belastet im Alltag" width="500" height="600" loading="lazy" style="aspect-ratio:3/2;">
         </div>
       </div>
     </div>
@@ -580,9 +546,9 @@
   <section class="cta-band">
     <div class="container">
       <h2>Bereit für einen flachen, maskulinen Oberkörper?</h2>
-      <p>Diskret geplant, narbenarm umgesetzt — für ein Ergebnis, das natürlich männlich wirkt.</p>
+      <p>Diskreter Eingriff — oft ambulant, in 1–2 Stunden. Das Ergebnis ist dauerhaft.</p>
       <a href="#kontakt" class="btn-primary">Beratungstermin anfragen →</a>
-      <p class="cta-band-micro">✓ Narbenarm geplant · ✓ Oft ambulant möglich · ✓ Langfristiges Ergebnis</p>
+      <p class="cta-band-micro">✓ Antwort innerhalb von 24h · ✓ Absolut diskret &amp; vertraulich</p>
     </div>
   </section>
 
@@ -595,58 +561,36 @@
       </div>
       <div class="method-layout">
         <div class="method-content">
-          <p class="method-intro">Im persönlichen Beratungsgespräch wird zunächst geklärt, welche Ursache hinter der vergrößerten Männerbrust steckt: Drüsengewebe, Fettgewebe oder eine Mischform. Anschließend wird gemeinsam besprochen, welches Ergebnis realistisch erreichbar ist, welche Methode sinnvoll ist und wie der Eingriff möglichst narbenarm, sicher und effizient geplant werden kann.</p>
-          <p class="method-intro">Auf Wunsch können Ihnen passende Vorher-Nachher-Ergebnisse gezeigt werden, damit Sie ein besseres Gefühl dafür bekommen, welche Veränderung möglich ist und welches Ergebnis zu Ihrem Körper passt.</p>
-          <div class="process-stack">
-            <div class="process-card">
-              <div class="process-num">1</div>
+          <p class="method-intro">Bei einer Gynäkomastie-Korrektur wird überschüssiges Fett- und/oder Drüsengewebe aus der männlichen Brust entfernt. Je nach Ursache — hormonell (echte Gynäkomastie) oder fettbedingt (Lipomastie) — wählen wir die optimale Technik. Der Eingriff dauert ca. 1–2 Stunden und kann oft ambulant unter örtlicher Betäubung durchgeführt werden.</p>
+          <div class="method-cards">
+            <div class="method-card">
+              <div class="method-num">1</div>
               <div>
-                <h4>Ursachenklärung &amp; Zielbild im Beratungsgespräch</h4>
-                <p>Im ersten Schritt wird untersucht, ob vor allem Drüsengewebe, Fettgewebe oder eine Kombination aus beidem vorliegt. Genau diese Unterscheidung entscheidet darüber, ob eine Fettabsaugung, eine Entfernung von Drüsengewebe oder eine kombinierte Behandlung sinnvoll ist.</p>
-                <p>Gemeinsam wird außerdem direkt am eigenen Körper besprochen, wie die spätere Brustkontur wirken soll — damit Arzt und Patient dasselbe Zielbild vor Augen haben.</p>
-                <p class="process-outcome">→ Sie wissen danach genau, was bei Ihnen die Ursache ist, welche Methode passt und welches Ergebnis realistisch erwartet werden kann.</p>
+                <h4>Ursachenklärung im Beratungsgespräch</h4>
+                <p>Dr. Meyer klärt mit Ihnen, ob es sich um eine hormonelle Gynäkomastie oder eine Lipomastie (Fetteinlagerung) handelt. Diese Unterscheidung bestimmt die Behandlungsmethode — und ob eine begleitende Hormontherapie sinnvoll ist.</p>
+                <p class="method-objection">→ Unsicher über die Ursache? Im Beratungsgespräch klären wir alles — ehrlich und transparent.</p>
               </div>
             </div>
-            <div class="process-card">
-              <div class="process-num">2</div>
+            <div class="method-card">
+              <div class="method-num">2</div>
               <div>
-                <h4>Individuelle Planung mit Vorher-Nachher-Einordnung</h4>
-                <p>Viele Männer wünschen sich vor dem Eingriff mehr Sicherheit: Wie kann das Ergebnis aussehen? Wird es natürlich wirken? Passt es zu meinem Körper?</p>
-                <p>Im Beratungsgespräch können passende Vorher-Nachher-Ergebnisse eingeordnet werden. So entsteht ein realistisches Gefühl dafür, welche Veränderung möglich ist — ohne falsche Erwartungen oder übertriebene Versprechen.</p>
-                <p class="process-outcome">→ Das Ziel ist kein künstlicher Look, sondern eine flachere, natürlich männliche Brustkontur.</p>
+                <h4>Diskreter Schnitt am Brustwarzrand</h4>
+                <p>Der Zugang erfolgt über einen kleinen Schnitt am Rand der Brustwarze. Durch diesen wird das Gewebe per Kanüle abgesaugt oder chirurgisch entfernt. Die Narbe ist nach der Heilungsphase im Regelfall sehr unauffällig.</p>
+                <p class="method-objection">→ Angst vor sichtbaren Narben? Der Schnitt ist so platziert, dass er selbst beim Sport nicht auffällt.</p>
               </div>
             </div>
-            <div class="process-card">
-              <div class="process-num">3</div>
+            <div class="method-card">
+              <div class="method-num">3</div>
               <div>
-                <h4>Narbenarme Korrektur mit moderner Technik</h4>
-                <p>Der Zugang erfolgt in vielen Fällen über einen kleinen, diskret platzierten Schnitt am Rand der Brustwarze. Je nach Befund wird überschüssiges Fett abgesaugt, Drüsengewebe entfernt oder beides kombiniert.</p>
-                <p>Dabei kommen moderne, hochwertige Geräte und eine gewebeschonende Vorgehensweise zum Einsatz. Gerade bei Gynäkomastie ist Erfahrung entscheidend, um effizient zu arbeiten, die Kontur sauber zu formen und sichtbare Spuren möglichst gering zu halten.</p>
-                <p class="process-outcome">→ Die Narbe ist nach der Heilungsphase im Regelfall sehr unauffällig.</p>
-              </div>
-            </div>
-            <div class="process-card">
-              <div class="process-num">4</div>
-              <div>
-                <h4>Sicherer Ablauf &amp; kurze Ausfallzeit</h4>
-                <p>Der Eingriff wird individuell geplant und je nach Umfang ambulant oder stationär durchgeführt. Viele Patienten können nach kurzer Zeit wieder leichten Alltagstätigkeiten nachgehen. Sportliche Belastung erfolgt nach ärztlicher Freigabe — häufig nach einigen Wochen.</p>
-                <p>Von außen ist der Eingriff im Alltag meist gut zu verbergen, da Kompression unter weiter Kleidung getragen werden kann und die Schnittführung sehr diskret geplant wird.</p>
-                <p class="process-outcome">→ Sie erhalten klare Empfehlungen für Schonung, Kompression, Alltag und Sport.</p>
-              </div>
-            </div>
-            <div class="process-card">
-              <div class="process-num">5</div>
-              <div>
-                <h4>Langfristiges Ergebnis durch Ursachenbehandlung</h4>
-                <p>Die Behandlung zielt nicht darauf ab, die Brust nur kurzfristig optisch zu kaschieren. Stattdessen wird die Ursache gezielt behandelt: Fettgewebe wird reduziert, Drüsengewebe bei Bedarf entfernt und die Brustkontur neu geformt.</p>
-                <p>Entfernte Fettzellen entstehen an derselben Stelle in der Regel nicht neu. Für ein langfristig stabiles Ergebnis spielen jedoch auch Gewicht, Lebensstil und hormonelle Faktoren eine Rolle.</p>
-                <p class="process-outcome">→ Ziel ist eine dauerhaft harmonischere, flachere und männlichere Brustkontur.</p>
+                <h4>Oft ambulant — zurück in den Alltag</h4>
+                <p>Je nach Umfang ist der Eingriff ambulant unter Lokalanästhesie oder stationär in Vollnarkose möglich. Leichte Tätigkeiten häufig nach wenigen Tagen, sportliche Belastung nach ärztlicher Freigabe — in vielen Fällen nach einigen Wochen.</p>
+                <p class="method-objection">→ Keine Lust auf langen Klinikaufenthalt? In vielen Fällen gehen Sie am selben Tag nach Hause.</p>
               </div>
             </div>
           </div>
         </div>
-        <div class="method-image method-image-sticky">
-          <img src="images/beratung-dr-meyer.jpg" alt="Dr. Meyer im Beratungsgespräch mit einem männlichen Patienten" width="460" height="560" loading="lazy" style="aspect-ratio:4/5;">
+        <div class="method-image">
+          <img src="images/arzt-methoden-web.jpg" alt="Villa Bella Facharzt — Gynäkomastie-Spezialist" width="460" height="420" loading="lazy" style="aspect-ratio:2/3;">
         </div>
       </div>
       <p class="method-transition">Welche Methode genau zu Ihrem Fall passt, erfahren Sie im persönlichen Beratungsgespräch.</p>
@@ -976,30 +920,8 @@
     (function(){var items=document.querySelectorAll('.faq-item');items.forEach(function(item){var q=item.querySelector('.faq-question'),a=item.querySelector('.faq-answer'),inner=item.querySelector('.faq-answer-inner');q.addEventListener('click',function(){var isOpen=item.classList.contains('open');items.forEach(function(o){o.classList.remove('open');o.querySelector('.faq-question').setAttribute('aria-expanded','false');o.querySelector('.faq-answer').style.maxHeight='0'});if(!isOpen){item.classList.add('open');q.setAttribute('aria-expanded','true');a.style.maxHeight=inner.scrollHeight+'px'}});q.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();q.click()}})})})();
     (function(){var form=document.getElementById('contact-form'),success=document.getElementById('form-success');if(!form)return;var emailRegex=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;function validate(input,type){var g=input.closest('.form-group');if(!g)return false;var v=input.value.trim(),ok=true;if(type==='name')ok=v.length>=2;else if(type==='tel')ok=v.replace(/\D/g,'').length>=6;else if(type==='email')ok=emailRegex.test(v);if(!ok){g.classList.add('has-error');input.classList.add('error')}else{g.classList.remove('has-error');input.classList.remove('error')}return ok}var nm=document.getElementById('name'),tel=document.getElementById('telefon'),em=document.getElementById('email');if(nm)nm.addEventListener('blur',function(){validate(nm,'name')});if(tel)tel.addEventListener('blur',function(){validate(tel,'tel')});if(em)em.addEventListener('blur',function(){validate(em,'email')});form.addEventListener('submit',function(e){e.preventDefault();var ds=document.getElementById('datenschutz'),ce=document.getElementById('checkbox-error');var v1=validate(nm,'name'),v2=validate(tel,'tel'),v3=validate(em,'email'),v4=ds.checked;if(!v4)ce.classList.add('has-error');else ce.classList.remove('has-error');if(v1&&v2&&v3&&v4){form.style.display='none';success.style.display='block';success.scrollIntoView({behavior:'smooth',block:'center'})}})})();
     (function(){var s=document.getElementById('mobile-sticky-cta'),k=document.getElementById('kontakt');if(!s||!k)return;function c(){var r=k.getBoundingClientRect();if(r.top<window.innerHeight&&r.bottom>0)s.style.display='none';else if(window.innerWidth<=768)s.style.display='block'}window.addEventListener('scroll',c,{passive:true});window.addEventListener('resize',c,{passive:true});c()})();
-    (function(){if(window.innerWidth<=768)return;var obs=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.style.opacity='1';e.target.style.transform='translateY(0)'}})},{threshold:0.1});document.querySelectorAll('.methods-card,.testimonial-card,.timeline-step,.objection-card').forEach(function(el){el.style.opacity='0';el.style.transform='translateY(20px)';el.style.transition='opacity 0.5s ease, transform 0.5s ease';obs.observe(el)})})();
+    (function(){if(window.innerWidth<=768)return;var obs=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.style.opacity='1';e.target.style.transform='translateY(0)'}})},{threshold:0.1});document.querySelectorAll('.method-card,.methods-card,.testimonial-card,.timeline-step,.objection-card').forEach(function(el){el.style.opacity='0';el.style.transform='translateY(20px)';el.style.transition='opacity 0.5s ease, transform 0.5s ease';obs.observe(el)})})();
     (function(){if(window.innerWidth<=768)return;var cols=document.querySelectorAll('.compare-col');var obs=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');var bodyRows=e.target.querySelectorAll('.compare-row');bodyRows.forEach(function(row,i){setTimeout(function(){row.classList.add('visible')},200+i*120)})}})},{threshold:0.2});cols.forEach(function(c){obs.observe(c)})})();
-    (function(){
-      var reduced=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-      var cards=document.querySelectorAll('.process-card');
-      if(!cards.length||reduced)return;
-      if(window.innerWidth<=768){
-        cards.forEach(function(c){c.style.opacity='0';c.style.transform='translateY(16px)';c.style.transition='opacity 0.5s ease, transform 0.5s ease'});
-        var mObs=new IntersectionObserver(function(entries){
-          entries.forEach(function(e){
-            if(e.isIntersecting){e.target.style.opacity='1';e.target.style.transform='translateY(0)';mObs.unobserve(e.target)}
-          })
-        },{threshold:0.1});
-        cards.forEach(function(c){mObs.observe(c)});
-        return;
-      }
-      cards.forEach(function(c){c.classList.add('is-enter')});
-      var obs=new IntersectionObserver(function(entries){
-        entries.forEach(function(e){
-          if(e.isIntersecting){e.target.classList.add('is-visible');obs.unobserve(e.target)}
-        })
-      },{threshold:0.15,rootMargin:'0px 0px -10% 0px'});
-      cards.forEach(function(c){obs.observe(c)});
-    })();
     (function(){var done=false,strip=document.querySelector('.trust-strip');if(!strip)return;function count(el,target,suffix){var start=null;function step(ts){if(!start)start=ts;var p=Math.min((ts-start)/1500,1);var eased=1-Math.pow(1-p,3);el.textContent=Math.floor(eased*target).toLocaleString('de-DE')+suffix;if(p<1)requestAnimationFrame(step)}requestAnimationFrame(step)}var obs=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting&&!done){done=true;var nums=strip.querySelectorAll('.trust-number');if(nums[0])count(nums[0],24000,'+');if(nums[1])nums[1].textContent='Note 1,0';if(nums[2])nums[2].textContent='37 Jahre';if(nums[3])count(nums[3],88000,'+')}})},{threshold:0.3});obs.observe(strip)})();
   </script>
 </body>
