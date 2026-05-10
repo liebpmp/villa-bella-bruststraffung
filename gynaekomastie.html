@@ -117,28 +117,30 @@
     .review-badge .badge-count { font-size: 12px; color: var(--text-light); margin-top: 2px; }
     .review-badge .badge-cta { font-size: 12px; color: var(--gold-dark); font-weight: 600; margin-top: 8px; }
 
-    .process-stack { position: relative; padding-bottom: 40vh; }
-    .process-card { position: sticky; background: var(--white); border-radius: var(--radius-lg); box-shadow: 0 6px 32px rgba(0,0,0,0.08); border: 1px solid rgba(201,169,110,0.18); padding: var(--space-xl) var(--space-2xl); margin-bottom: 24px; display: flex; gap: var(--space-lg); align-items: flex-start; transition: box-shadow 0.3s ease; }
-    .process-card:nth-child(1) { top: 100px; z-index: 1; }
-    .process-card:nth-child(2) { top: 120px; z-index: 2; }
-    .process-card:nth-child(3) { top: 140px; z-index: 3; }
-    .process-card:nth-child(4) { top: 160px; z-index: 4; }
-    .process-card:nth-child(5) { top: 180px; z-index: 5; }
-    .process-card:nth-child(2) { box-shadow: 0 8px 36px rgba(0,0,0,0.10); }
-    .process-card:nth-child(3) { box-shadow: 0 10px 40px rgba(0,0,0,0.12); }
-    .process-card:nth-child(4) { box-shadow: 0 12px 44px rgba(0,0,0,0.14); }
-    .process-card:nth-child(5) { box-shadow: 0 14px 48px rgba(0,0,0,0.16); }
+    .process-stack { position: relative; }
+    .process-card-wrapper { height: 80vh; display: grid; place-content: center; position: sticky; top: 0; }
+    .process-card-wrapper:nth-child(1) { z-index: 1; }
+    .process-card-wrapper:nth-child(2) { z-index: 2; }
+    .process-card-wrapper:nth-child(3) { z-index: 3; }
+    .process-card-wrapper:nth-child(4) { z-index: 4; }
+    .process-card-wrapper:nth-child(5) { z-index: 5; }
+    .process-card { background: var(--white); border-radius: var(--radius-lg); box-shadow: 0 8px 40px rgba(0,0,0,0.10); border: 1px solid rgba(201,169,110,0.18); padding: var(--space-xl) var(--space-2xl); display: flex; gap: var(--space-lg); align-items: flex-start; max-width: 720px; }
+    .process-card-wrapper:nth-child(2) .process-card { box-shadow: 0 10px 44px rgba(0,0,0,0.12); }
+    .process-card-wrapper:nth-child(3) .process-card { box-shadow: 0 12px 48px rgba(0,0,0,0.14); }
+    .process-card-wrapper:nth-child(4) .process-card { box-shadow: 0 14px 52px rgba(0,0,0,0.16); }
+    .process-card-wrapper:nth-child(5) .process-card { box-shadow: 0 16px 56px rgba(0,0,0,0.18); }
     .method-image.method-image-sticky { position: sticky; top: 96px; align-self: flex-start; }
     .process-card .process-num { width: 48px; height: 48px; min-width: 48px; border-radius: 50%; border: 2px solid var(--gold); background: var(--white); color: var(--gold); display: flex; align-items: center; justify-content: center; font-family: var(--font-serif); font-weight: 700; font-size: 20px; }
     .process-card h4 { font-size: 19px; margin-bottom: 10px; color: var(--text-primary); line-height: 1.35; }
     .process-card p { font-size: 16px; color: var(--text-secondary); line-height: 1.65; margin-bottom: 10px; }
     .process-card p:last-child { margin-bottom: 0; }
     .process-card .process-outcome { color: var(--gold-dark); font-weight: 600; font-style: normal; }
-    .process-card.is-enter { opacity: 0.3; }
+    .process-card.is-enter { opacity: 1; }
     .process-card.is-visible { opacity: 1; }
 
     @media (prefers-reduced-motion: reduce) {
-      .process-card { position: static; transition: none; }
+      .process-card-wrapper { height: auto; position: static; display: block; margin-bottom: var(--space-lg); }
+      .process-card { transition: none; }
       .process-card.is-enter { opacity: 1; transform: none; }
       .compare-col.animate-left, .compare-col.animate-right { opacity: 1; transform: none; }
       .compare-row { opacity: 1; transform: none; }
@@ -350,9 +352,10 @@
       .contact-sidebar { display: none; }
       .footer-grid { grid-template-columns: 1fr; gap: var(--space-xl); }
       .objection-grid { grid-template-columns: 1fr; }
-      .process-stack { padding-bottom: 0; }
-      .process-card { position: static; box-shadow: 0 4px 20px rgba(0,0,0,0.06); padding: var(--space-lg); }
-      .process-card:nth-child(n) { top: auto; z-index: auto; box-shadow: 0 4px 20px rgba(0,0,0,0.06); }
+      .process-card-wrapper { height: auto; position: static; display: block; margin-bottom: var(--space-lg); }
+      .process-card-wrapper:nth-child(n) { z-index: auto; }
+      .process-card { box-shadow: 0 4px 20px rgba(0,0,0,0.06); padding: var(--space-lg); }
+      .process-card-wrapper:nth-child(n) .process-card { box-shadow: 0 4px 20px rgba(0,0,0,0.06); }
       .method-image.method-image-sticky { position: static; }
     }
     @media (max-width: 768px) {
@@ -604,7 +607,7 @@
           <p class="method-intro">Im persönlichen Beratungsgespräch wird zunächst geklärt, welche Ursache hinter der vergrößerten Männerbrust steckt: Drüsengewebe, Fettgewebe oder eine Mischform. Anschließend wird gemeinsam besprochen, welches Ergebnis realistisch erreichbar ist, welche Methode sinnvoll ist und wie der Eingriff möglichst narbenarm, sicher und effizient geplant werden kann.</p>
           <p class="method-intro">Auf Wunsch können Ihnen passende Vorher-Nachher-Ergebnisse gezeigt werden, damit Sie ein besseres Gefühl dafür bekommen, welche Veränderung möglich ist und welches Ergebnis zu Ihrem Körper passt.</p>
           <div class="process-stack">
-            <div class="process-card">
+            <div class="process-card-wrapper"><div class="process-card">
               <div class="process-num">1</div>
               <div>
                 <h4>Ursachenklärung &amp; Zielbild im Beratungsgespräch</h4>
@@ -612,8 +615,8 @@
                 <p>Gemeinsam wird außerdem direkt am eigenen Körper besprochen, wie die spätere Brustkontur wirken soll — damit Arzt und Patient dasselbe Zielbild vor Augen haben.</p>
                 <p class="process-outcome">→ Sie wissen danach genau, was bei Ihnen die Ursache ist, welche Methode passt und welches Ergebnis realistisch erwartet werden kann.</p>
               </div>
-            </div>
-            <div class="process-card">
+            </div></div>
+            <div class="process-card-wrapper"><div class="process-card">
               <div class="process-num">2</div>
               <div>
                 <h4>Individuelle Planung mit Vorher-Nachher-Einordnung</h4>
@@ -621,8 +624,8 @@
                 <p>Im Beratungsgespräch können passende Vorher-Nachher-Ergebnisse eingeordnet werden. So entsteht ein realistisches Gefühl dafür, welche Veränderung möglich ist — ohne falsche Erwartungen oder übertriebene Versprechen.</p>
                 <p class="process-outcome">→ Das Ziel ist kein künstlicher Look, sondern eine flachere, natürlich männliche Brustkontur.</p>
               </div>
-            </div>
-            <div class="process-card">
+            </div></div>
+            <div class="process-card-wrapper"><div class="process-card">
               <div class="process-num">3</div>
               <div>
                 <h4>Narbenarme Korrektur mit moderner Technik</h4>
@@ -630,8 +633,8 @@
                 <p>Dabei kommen moderne, hochwertige Geräte und eine gewebeschonende Vorgehensweise zum Einsatz. Gerade bei Gynäkomastie ist Erfahrung entscheidend, um effizient zu arbeiten, die Kontur sauber zu formen und sichtbare Spuren möglichst gering zu halten.</p>
                 <p class="process-outcome">→ Die Narbe ist nach der Heilungsphase im Regelfall sehr unauffällig.</p>
               </div>
-            </div>
-            <div class="process-card">
+            </div></div>
+            <div class="process-card-wrapper"><div class="process-card">
               <div class="process-num">4</div>
               <div>
                 <h4>Sicherer Ablauf &amp; kurze Ausfallzeit</h4>
@@ -639,8 +642,8 @@
                 <p>Von außen ist der Eingriff im Alltag meist gut zu verbergen, da Kompression unter weiter Kleidung getragen werden kann und die Schnittführung sehr diskret geplant wird.</p>
                 <p class="process-outcome">→ Sie erhalten klare Empfehlungen für Schonung, Kompression, Alltag und Sport.</p>
               </div>
-            </div>
-            <div class="process-card">
+            </div></div>
+            <div class="process-card-wrapper"><div class="process-card">
               <div class="process-num">5</div>
               <div>
                 <h4>Langfristiges Ergebnis durch Ursachenbehandlung</h4>
@@ -648,7 +651,7 @@
                 <p>Entfernte Fettzellen entstehen an derselben Stelle in der Regel nicht neu. Für ein langfristig stabiles Ergebnis spielen jedoch auch Gewicht, Lebensstil und hormonelle Faktoren eine Rolle.</p>
                 <p class="process-outcome">→ Ziel ist eine dauerhaft harmonischere, flachere und männlichere Brustkontur.</p>
               </div>
-            </div>
+            </div></div>
           </div>
         </div>
         <div class="method-image method-image-sticky">
