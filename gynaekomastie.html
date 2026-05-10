@@ -120,14 +120,14 @@
     .review-badge .badge-count { font-size: 12px; color: var(--text-light); margin-top: 2px; }
     .review-badge .badge-cta { font-size: 12px; color: var(--gold-dark); font-weight: 600; margin-top: 8px; }
 
-    .process-stack { position: relative; max-width: var(--container); margin: 0 auto; padding: 0 24px; padding-bottom: var(--space-3xl); }
-    .process-card-wrapper { position: sticky; top: 100px; margin-bottom: var(--space-lg); }
+    .process-stack { position: relative; }
+    .process-card-wrapper { position: sticky; margin-bottom: 40px; }
     .process-card-wrapper:nth-child(1) { z-index: 1; top: 100px; }
-    .process-card-wrapper:nth-child(2) { z-index: 2; top: 120px; }
-    .process-card-wrapper:nth-child(3) { z-index: 3; top: 140px; }
-    .process-card-wrapper:nth-child(4) { z-index: 4; top: 160px; }
-    .process-card-wrapper:nth-child(5) { z-index: 5; top: 180px; }
-    .process-card { background: var(--white); border-radius: var(--radius-lg); box-shadow: 0 8px 40px rgba(0,0,0,0.10); border: 1px solid rgba(201,169,110,0.18); padding: var(--space-xl) var(--space-2xl); display: flex; gap: var(--space-lg); align-items: flex-start; max-width: 800px; width: 100%; transform-origin: top center; transition: transform 0.1s linear, box-shadow 0.2s ease; }
+    .process-card-wrapper:nth-child(2) { z-index: 2; top: 110px; }
+    .process-card-wrapper:nth-child(3) { z-index: 3; top: 120px; }
+    .process-card-wrapper:nth-child(4) { z-index: 4; top: 130px; }
+    .process-card-wrapper:nth-child(5) { z-index: 5; top: 140px; }
+    .process-card { background: var(--white); border-radius: var(--radius-lg); box-shadow: 0 8px 40px rgba(0,0,0,0.10); border: 1px solid rgba(201,169,110,0.18); padding: var(--space-xl) var(--space-2xl); display: flex; gap: var(--space-lg); align-items: flex-start; width: 100%; transform-origin: top center; transition: transform 0.15s linear, box-shadow 0.2s ease; }
     .method-image.method-image-sticky { position: sticky; top: 96px; align-self: flex-start; }
     .process-card .process-num { width: 48px; height: 48px; min-width: 48px; border-radius: 50%; border: 2px solid var(--gold); background: var(--white); color: var(--gold); display: flex; align-items: center; justify-content: center; font-family: var(--font-serif); font-weight: 700; font-size: 20px; }
     .process-card h4 { font-size: 19px; margin-bottom: 10px; color: var(--text-primary); line-height: 1.35; }
@@ -351,8 +351,8 @@
       .contact-sidebar { display: none; }
       .footer-grid { grid-template-columns: 1fr; gap: var(--space-xl); }
       .objection-grid { grid-template-columns: 1fr; }
-      .process-card-wrapper { position: static; display: block; margin-bottom: var(--space-lg); }
-      .process-card-wrapper:nth-child(n) { z-index: auto; top: auto; }
+      .process-card-wrapper { position: static; display: block; margin-bottom: var(--space-lg); top: auto !important; }
+      .process-card-wrapper:nth-child(n) { z-index: auto; top: auto !important; }
       .process-card { box-shadow: 0 4px 20px rgba(0,0,0,0.06); padding: var(--space-lg); }
       .process-card-wrapper:nth-child(n) .process-card { box-shadow: 0 4px 20px rgba(0,0,0,0.06); }
       .method-image.method-image-sticky { position: static; }
@@ -613,6 +613,7 @@
         </div>
       </div>
     </div>
+    <div class="container">
     <div class="process-stack">
       <div class="process-card-wrapper"><div class="process-card">
         <div class="process-num">1</div>
@@ -659,6 +660,7 @@
           <p class="process-outcome">→ Ziel ist eine dauerhaft harmonischere, flachere und männlichere Brustkontur.</p>
         </div>
       </div></div>
+    </div>
     </div>
     <div class="container">
       <p class="method-transition">Welche Methode genau zu Ihrem Fall passt, erfahren Sie im persönlichen Beratungsgespräch.</p>
@@ -1009,19 +1011,21 @@
       }
       var total=wrappers.length;
       function onScroll(){
-        var stackRect=stack.getBoundingClientRect();
-        var stackTop=window.scrollY+stackRect.top;
-        var stackHeight=stack.scrollHeight;
-        var scrolled=window.scrollY-stackTop;
-        var progress=Math.max(0,Math.min(1,scrolled/stackHeight));
         wrappers.forEach(function(w,i){
           var card=w.querySelector('.process-card');
-          var rangeStart=i*(1/total);
-          var targetScale=1-(total-i)*0.04;
-          var cardProgress=Math.max(0,Math.min(1,(progress-rangeStart)/(1-rangeStart)));
-          var scale=1-(1-targetScale)*cardProgress;
-          card.style.transform='scale('+scale+')';
-          card.style.top='calc(-5vh + '+(i*25)+'px)';
+          var rect=w.getBoundingClientRect();
+          var isStuck=rect.top<=140;
+          var nextW=wrappers[i+1];
+          if(isStuck&&nextW){
+            var nextRect=nextW.getBoundingClientRect();
+            var overlap=Math.max(0,1-(nextRect.top-100)/200);
+            var scale=1-overlap*0.03;
+            card.style.transform='scale('+scale+')';
+            card.style.boxShadow='0 '+(8-overlap*4)+'px '+(40-overlap*20)+'px rgba(0,0,0,'+(0.10-overlap*0.04)+')';
+          } else {
+            card.style.transform='scale(1)';
+            card.style.boxShadow='';
+          }
         });
       }
       window.addEventListener('scroll',onScroll,{passive:true});
