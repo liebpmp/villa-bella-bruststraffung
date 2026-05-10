@@ -118,17 +118,13 @@
     .review-badge .badge-cta { font-size: 12px; color: var(--gold-dark); font-weight: 600; margin-top: 8px; }
 
     .process-stack { position: relative; }
-    .process-card-wrapper { height: 80vh; display: grid; place-content: center; position: sticky; top: 0; }
+    .process-card-wrapper { height: 100vh; display: flex; align-items: center; justify-content: center; position: sticky; top: 0; }
     .process-card-wrapper:nth-child(1) { z-index: 1; }
     .process-card-wrapper:nth-child(2) { z-index: 2; }
     .process-card-wrapper:nth-child(3) { z-index: 3; }
     .process-card-wrapper:nth-child(4) { z-index: 4; }
     .process-card-wrapper:nth-child(5) { z-index: 5; }
-    .process-card { background: var(--white); border-radius: var(--radius-lg); box-shadow: 0 8px 40px rgba(0,0,0,0.10); border: 1px solid rgba(201,169,110,0.18); padding: var(--space-xl) var(--space-2xl); display: flex; gap: var(--space-lg); align-items: flex-start; max-width: 720px; }
-    .process-card-wrapper:nth-child(2) .process-card { box-shadow: 0 10px 44px rgba(0,0,0,0.12); }
-    .process-card-wrapper:nth-child(3) .process-card { box-shadow: 0 12px 48px rgba(0,0,0,0.14); }
-    .process-card-wrapper:nth-child(4) .process-card { box-shadow: 0 14px 52px rgba(0,0,0,0.16); }
-    .process-card-wrapper:nth-child(5) .process-card { box-shadow: 0 16px 56px rgba(0,0,0,0.18); }
+    .process-card { background: var(--white); border-radius: var(--radius-lg); box-shadow: 0 8px 40px rgba(0,0,0,0.10); border: 1px solid rgba(201,169,110,0.18); padding: var(--space-xl) var(--space-2xl); display: flex; gap: var(--space-lg); align-items: flex-start; max-width: 800px; width: 90%; transform-origin: top center; transition: transform 0.1s linear; }
     .method-image.method-image-sticky { position: sticky; top: 96px; align-self: flex-start; }
     .process-card .process-num { width: 48px; height: 48px; min-width: 48px; border-radius: 50%; border: 2px solid var(--gold); background: var(--white); color: var(--gold); display: flex; align-items: center; justify-content: center; font-family: var(--font-serif); font-weight: 700; font-size: 20px; }
     .process-card h4 { font-size: 19px; margin-bottom: 10px; color: var(--text-primary); line-height: 1.35; }
@@ -602,62 +598,64 @@
         <div class="gold-line"></div>
         <h2>So funktioniert die Gynäkomastie-Korrektur</h2>
       </div>
-      <div class="method-layout">
+      <div class="method-layout" style="grid-template-columns:1fr 1fr; align-items:center; margin-bottom:var(--space-2xl);">
         <div class="method-content">
           <p class="method-intro">Im persönlichen Beratungsgespräch wird zunächst geklärt, welche Ursache hinter der vergrößerten Männerbrust steckt: Drüsengewebe, Fettgewebe oder eine Mischform. Anschließend wird gemeinsam besprochen, welches Ergebnis realistisch erreichbar ist, welche Methode sinnvoll ist und wie der Eingriff möglichst narbenarm, sicher und effizient geplant werden kann.</p>
           <p class="method-intro">Auf Wunsch können Ihnen passende Vorher-Nachher-Ergebnisse gezeigt werden, damit Sie ein besseres Gefühl dafür bekommen, welche Veränderung möglich ist und welches Ergebnis zu Ihrem Körper passt.</p>
-          <div class="process-stack">
-            <div class="process-card-wrapper"><div class="process-card">
-              <div class="process-num">1</div>
-              <div>
-                <h4>Ursachenklärung &amp; Zielbild im Beratungsgespräch</h4>
-                <p>Im ersten Schritt wird untersucht, ob vor allem Drüsengewebe, Fettgewebe oder eine Kombination aus beidem vorliegt. Genau diese Unterscheidung entscheidet darüber, ob eine Fettabsaugung, eine Entfernung von Drüsengewebe oder eine kombinierte Behandlung sinnvoll ist.</p>
-                <p>Gemeinsam wird außerdem direkt am eigenen Körper besprochen, wie die spätere Brustkontur wirken soll — damit Arzt und Patient dasselbe Zielbild vor Augen haben.</p>
-                <p class="process-outcome">→ Sie wissen danach genau, was bei Ihnen die Ursache ist, welche Methode passt und welches Ergebnis realistisch erwartet werden kann.</p>
-              </div>
-            </div></div>
-            <div class="process-card-wrapper"><div class="process-card">
-              <div class="process-num">2</div>
-              <div>
-                <h4>Individuelle Planung mit Vorher-Nachher-Einordnung</h4>
-                <p>Viele Männer wünschen sich vor dem Eingriff mehr Sicherheit: Wie kann das Ergebnis aussehen? Wird es natürlich wirken? Passt es zu meinem Körper?</p>
-                <p>Im Beratungsgespräch können passende Vorher-Nachher-Ergebnisse eingeordnet werden. So entsteht ein realistisches Gefühl dafür, welche Veränderung möglich ist — ohne falsche Erwartungen oder übertriebene Versprechen.</p>
-                <p class="process-outcome">→ Das Ziel ist kein künstlicher Look, sondern eine flachere, natürlich männliche Brustkontur.</p>
-              </div>
-            </div></div>
-            <div class="process-card-wrapper"><div class="process-card">
-              <div class="process-num">3</div>
-              <div>
-                <h4>Narbenarme Korrektur mit moderner Technik</h4>
-                <p>Der Zugang erfolgt in vielen Fällen über einen kleinen, diskret platzierten Schnitt am Rand der Brustwarze. Je nach Befund wird überschüssiges Fett abgesaugt, Drüsengewebe entfernt oder beides kombiniert.</p>
-                <p>Dabei kommen moderne, hochwertige Geräte und eine gewebeschonende Vorgehensweise zum Einsatz. Gerade bei Gynäkomastie ist Erfahrung entscheidend, um effizient zu arbeiten, die Kontur sauber zu formen und sichtbare Spuren möglichst gering zu halten.</p>
-                <p class="process-outcome">→ Die Narbe ist nach der Heilungsphase im Regelfall sehr unauffällig.</p>
-              </div>
-            </div></div>
-            <div class="process-card-wrapper"><div class="process-card">
-              <div class="process-num">4</div>
-              <div>
-                <h4>Sicherer Ablauf &amp; kurze Ausfallzeit</h4>
-                <p>Der Eingriff wird individuell geplant und je nach Umfang ambulant oder stationär durchgeführt. Viele Patienten können nach kurzer Zeit wieder leichten Alltagstätigkeiten nachgehen. Sportliche Belastung erfolgt nach ärztlicher Freigabe — häufig nach einigen Wochen.</p>
-                <p>Von außen ist der Eingriff im Alltag meist gut zu verbergen, da Kompression unter weiter Kleidung getragen werden kann und die Schnittführung sehr diskret geplant wird.</p>
-                <p class="process-outcome">→ Sie erhalten klare Empfehlungen für Schonung, Kompression, Alltag und Sport.</p>
-              </div>
-            </div></div>
-            <div class="process-card-wrapper"><div class="process-card">
-              <div class="process-num">5</div>
-              <div>
-                <h4>Langfristiges Ergebnis durch Ursachenbehandlung</h4>
-                <p>Die Behandlung zielt nicht darauf ab, die Brust nur kurzfristig optisch zu kaschieren. Stattdessen wird die Ursache gezielt behandelt: Fettgewebe wird reduziert, Drüsengewebe bei Bedarf entfernt und die Brustkontur neu geformt.</p>
-                <p>Entfernte Fettzellen entstehen an derselben Stelle in der Regel nicht neu. Für ein langfristig stabiles Ergebnis spielen jedoch auch Gewicht, Lebensstil und hormonelle Faktoren eine Rolle.</p>
-                <p class="process-outcome">→ Ziel ist eine dauerhaft harmonischere, flachere und männlichere Brustkontur.</p>
-              </div>
-            </div></div>
-          </div>
         </div>
-        <div class="method-image method-image-sticky">
-          <img src="images/beratung-dr-meyer.jpg" alt="Dr. Meyer im Beratungsgespräch mit einem männlichen Patienten" width="460" height="560" loading="lazy" style="aspect-ratio:4/5;">
+        <div class="method-image">
+          <img src="images/beratung-dr-meyer.jpg" alt="Dr. Meyer im Beratungsgespräch mit einem männlichen Patienten" width="460" height="560" loading="lazy" style="aspect-ratio:4/5; border-radius:var(--radius-lg);">
         </div>
       </div>
+    </div>
+    <div class="process-stack">
+      <div class="process-card-wrapper"><div class="process-card">
+        <div class="process-num">1</div>
+        <div>
+          <h4>Ursachenklärung &amp; Zielbild im Beratungsgespräch</h4>
+          <p>Im ersten Schritt wird untersucht, ob vor allem Drüsengewebe, Fettgewebe oder eine Kombination aus beidem vorliegt. Genau diese Unterscheidung entscheidet darüber, ob eine Fettabsaugung, eine Entfernung von Drüsengewebe oder eine kombinierte Behandlung sinnvoll ist.</p>
+          <p>Gemeinsam wird außerdem direkt am eigenen Körper besprochen, wie die spätere Brustkontur wirken soll — damit Arzt und Patient dasselbe Zielbild vor Augen haben.</p>
+          <p class="process-outcome">→ Sie wissen danach genau, was bei Ihnen die Ursache ist, welche Methode passt und welches Ergebnis realistisch erwartet werden kann.</p>
+        </div>
+      </div></div>
+      <div class="process-card-wrapper"><div class="process-card">
+        <div class="process-num">2</div>
+        <div>
+          <h4>Individuelle Planung mit Vorher-Nachher-Einordnung</h4>
+          <p>Viele Männer wünschen sich vor dem Eingriff mehr Sicherheit: Wie kann das Ergebnis aussehen? Wird es natürlich wirken? Passt es zu meinem Körper?</p>
+          <p>Im Beratungsgespräch können passende Vorher-Nachher-Ergebnisse eingeordnet werden. So entsteht ein realistisches Gefühl dafür, welche Veränderung möglich ist — ohne falsche Erwartungen oder übertriebene Versprechen.</p>
+          <p class="process-outcome">→ Das Ziel ist kein künstlicher Look, sondern eine flachere, natürlich männliche Brustkontur.</p>
+        </div>
+      </div></div>
+      <div class="process-card-wrapper"><div class="process-card">
+        <div class="process-num">3</div>
+        <div>
+          <h4>Narbenarme Korrektur mit moderner Technik</h4>
+          <p>Der Zugang erfolgt in vielen Fällen über einen kleinen, diskret platzierten Schnitt am Rand der Brustwarze. Je nach Befund wird überschüssiges Fett abgesaugt, Drüsengewebe entfernt oder beides kombiniert.</p>
+          <p>Dabei kommen moderne, hochwertige Geräte und eine gewebeschonende Vorgehensweise zum Einsatz. Gerade bei Gynäkomastie ist Erfahrung entscheidend, um effizient zu arbeiten, die Kontur sauber zu formen und sichtbare Spuren möglichst gering zu halten.</p>
+          <p class="process-outcome">→ Die Narbe ist nach der Heilungsphase im Regelfall sehr unauffällig.</p>
+        </div>
+      </div></div>
+      <div class="process-card-wrapper"><div class="process-card">
+        <div class="process-num">4</div>
+        <div>
+          <h4>Sicherer Ablauf &amp; kurze Ausfallzeit</h4>
+          <p>Der Eingriff wird individuell geplant und je nach Umfang ambulant oder stationär durchgeführt. Viele Patienten können nach kurzer Zeit wieder leichten Alltagstätigkeiten nachgehen. Sportliche Belastung erfolgt nach ärztlicher Freigabe — häufig nach einigen Wochen.</p>
+          <p>Von außen ist der Eingriff im Alltag meist gut zu verbergen, da Kompression unter weiter Kleidung getragen werden kann und die Schnittführung sehr diskret geplant wird.</p>
+          <p class="process-outcome">→ Sie erhalten klare Empfehlungen für Schonung, Kompression, Alltag und Sport.</p>
+        </div>
+      </div></div>
+      <div class="process-card-wrapper"><div class="process-card">
+        <div class="process-num">5</div>
+        <div>
+          <h4>Langfristiges Ergebnis durch Ursachenbehandlung</h4>
+          <p>Die Behandlung zielt nicht darauf ab, die Brust nur kurzfristig optisch zu kaschieren. Stattdessen wird die Ursache gezielt behandelt: Fettgewebe wird reduziert, Drüsengewebe bei Bedarf entfernt und die Brustkontur neu geformt.</p>
+          <p>Entfernte Fettzellen entstehen an derselben Stelle in der Regel nicht neu. Für ein langfristig stabiles Ergebnis spielen jedoch auch Gewicht, Lebensstil und hormonelle Faktoren eine Rolle.</p>
+          <p class="process-outcome">→ Ziel ist eine dauerhaft harmonischere, flachere und männlichere Brustkontur.</p>
+        </div>
+      </div></div>
+    </div>
+    <div class="container">
       <p class="method-transition">Welche Methode genau zu Ihrem Fall passt, erfahren Sie im persönlichen Beratungsgespräch.</p>
     </div>
   </section>
@@ -989,9 +987,11 @@
     (function(){if(window.innerWidth<=768)return;var cols=document.querySelectorAll('.compare-col');var obs=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');var bodyRows=e.target.querySelectorAll('.compare-row');bodyRows.forEach(function(row,i){setTimeout(function(){row.classList.add('visible')},200+i*120)})}})},{threshold:0.2});cols.forEach(function(c){obs.observe(c)})})();
     (function(){
       var reduced=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-      var cards=document.querySelectorAll('.process-card');
-      if(!cards.length||reduced)return;
+      var stack=document.querySelector('.process-stack');
+      var wrappers=document.querySelectorAll('.process-card-wrapper');
+      if(!wrappers.length||reduced)return;
       if(window.innerWidth<=768){
+        var cards=document.querySelectorAll('.process-card');
         cards.forEach(function(c){c.style.opacity='0';c.style.transform='translateY(16px)';c.style.transition='opacity 0.5s ease, transform 0.5s ease'});
         var mObs=new IntersectionObserver(function(entries){
           entries.forEach(function(e){
@@ -1001,13 +1001,25 @@
         cards.forEach(function(c){mObs.observe(c)});
         return;
       }
-      cards.forEach(function(c){c.classList.add('is-enter')});
-      var obs=new IntersectionObserver(function(entries){
-        entries.forEach(function(e){
-          if(e.isIntersecting){e.target.classList.add('is-visible');obs.unobserve(e.target)}
-        })
-      },{threshold:0.15,rootMargin:'0px 0px -10% 0px'});
-      cards.forEach(function(c){obs.observe(c)});
+      var total=wrappers.length;
+      function onScroll(){
+        var stackRect=stack.getBoundingClientRect();
+        var stackTop=window.scrollY+stackRect.top;
+        var stackHeight=stack.scrollHeight;
+        var scrolled=window.scrollY-stackTop;
+        var progress=Math.max(0,Math.min(1,scrolled/stackHeight));
+        wrappers.forEach(function(w,i){
+          var card=w.querySelector('.process-card');
+          var rangeStart=i*(1/total);
+          var targetScale=1-(total-i)*0.04;
+          var cardProgress=Math.max(0,Math.min(1,(progress-rangeStart)/(1-rangeStart)));
+          var scale=1-(1-targetScale)*cardProgress;
+          card.style.transform='scale('+scale+')';
+          card.style.top='calc(-5vh + '+(i*25)+'px)';
+        });
+      }
+      window.addEventListener('scroll',onScroll,{passive:true});
+      onScroll();
     })();
     (function(){var done=false,strip=document.querySelector('.trust-strip');if(!strip)return;function count(el,target,suffix){var start=null;function step(ts){if(!start)start=ts;var p=Math.min((ts-start)/1500,1);var eased=1-Math.pow(1-p,3);el.textContent=Math.floor(eased*target).toLocaleString('de-DE')+suffix;if(p<1)requestAnimationFrame(step)}requestAnimationFrame(step)}var obs=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting&&!done){done=true;var nums=strip.querySelectorAll('.trust-number');if(nums[0])count(nums[0],24000,'+');if(nums[1])nums[1].textContent='Note 1,0';if(nums[2])nums[2].textContent='37 Jahre';if(nums[3])count(nums[3],88000,'+')}})},{threshold:0.3});obs.observe(strip)})();
   </script>
