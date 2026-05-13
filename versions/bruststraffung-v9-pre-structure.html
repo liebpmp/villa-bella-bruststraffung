@@ -243,6 +243,7 @@
 
     /* FAQ */
     .faq { background: var(--white); padding: var(--space-4xl) 0; border-top: 2px solid var(--gold); }
+    .faq-video { max-width: 600px; margin: 0 auto var(--space-2xl); }
     .faq-accordion { max-width: var(--container-narrow); margin: 0 auto; padding: 0 24px; }
     .faq-item { border: 1px solid rgba(201,169,110,0.2); border-radius: var(--radius-md); margin-bottom: 12px; background: var(--white); overflow: hidden; }
     .faq-question { display: flex; justify-content: space-between; align-items: center; padding: 20px 24px; cursor: pointer; font-weight: 600; font-size: 17px; color: var(--text-primary); transition: background 0.2s ease; gap: var(--space-md); }
@@ -327,35 +328,7 @@
     .mobile-sticky-cta a { display: block; text-align: center; color: var(--white); font-weight: 600; font-size: 16px; text-decoration: none; padding: 16px; height: 56px; line-height: 24px; }
 
     /* RESPONSIVE */
-    .process-stack { position: relative; }
-    .process-card-wrapper { position: sticky; margin-bottom: 40px; }
-    .process-card-wrapper:nth-child(1) { z-index: 1; top: 100px; }
-    .process-card-wrapper:nth-child(2) { z-index: 2; top: 110px; }
-    .process-card-wrapper:nth-child(3) { z-index: 3; top: 120px; }
-    .process-card-wrapper:nth-child(4) { z-index: 4; top: 130px; }
-    .process-card-wrapper:nth-child(5) { z-index: 5; top: 140px; }
-    .process-card { background: var(--white); border-radius: var(--radius-lg); box-shadow: 0 8px 40px rgba(0,0,0,0.10); border: 1px solid rgba(201,169,110,0.18); padding: var(--space-xl) var(--space-2xl); display: flex; gap: var(--space-lg); align-items: flex-start; width: 100%; transform-origin: top center; transition: transform 0.15s linear, box-shadow 0.2s ease; }
-    .method-image.method-image-sticky { position: sticky; top: 96px; align-self: flex-start; }
-    .process-card .process-num { width: 48px; height: 48px; min-width: 48px; border-radius: 50%; border: 2px solid var(--gold); background: var(--white); color: var(--gold); display: flex; align-items: center; justify-content: center; font-family: var(--font-serif); font-weight: 700; font-size: 20px; }
-    .process-card h4 { font-size: 19px; margin-bottom: 10px; color: var(--text-primary); line-height: 1.35; }
-    .process-card p { font-size: 16px; color: var(--text-secondary); line-height: 1.65; margin-bottom: 10px; }
-    .process-card p:last-child { margin-bottom: 0; }
-    .process-card .process-outcome { color: var(--gold-dark); font-weight: 600; font-style: normal; }
-    .process-card.is-enter { opacity: 1; }
-    .process-card.is-visible { opacity: 1; }
-
-    @media (prefers-reduced-motion: reduce) {
-      .process-card-wrapper { position: static; display: block; margin-bottom: var(--space-lg); }
-      .process-card { transition: none; }
-      .process-card.is-enter { opacity: 1; transform: none; }
-    }
-
     @media (max-width: 1024px) {
-      .process-card-wrapper { position: static; display: block; margin-bottom: var(--space-lg); top: auto !important; }
-      .process-card-wrapper:nth-child(n) { z-index: auto; top: auto !important; }
-      .process-card { box-shadow: 0 4px 20px rgba(0,0,0,0.06); padding: var(--space-lg); }
-      .process-card-wrapper:nth-child(n) .process-card { box-shadow: 0 4px 20px rgba(0,0,0,0.06); }
-      .method-image.method-image-sticky { position: static; }
       h1 { font-size: 36px; }
       h2 { font-size: 30px; }
       .hero-grid { grid-template-columns: 1fr; }
@@ -379,8 +352,6 @@
       .objection-grid { grid-template-columns: 1fr; }
     }
     @media (max-width: 768px) {
-      .process-card { flex-direction: column; gap: var(--space-sm); }
-      .process-card .process-num { width: 40px; height: 40px; min-width: 40px; font-size: 17px; }
       h1 { font-size: 30px; }
       h2 { font-size: 26px; }
       h3 { font-size: 22px; }
@@ -524,32 +495,6 @@
 
   <!-- TESTIMONIAL HIGHLIGHT REMOVED — Video now in hero desktop + mobile -->
 
-  <!-- PROBLEM / PAIN (V6) -->
-  <section class="problem-section" id="problem">
-    <div class="container">
-      <div class="problem-grid">
-        <div class="problem-content">
-          <h2>Kennen Sie <em>dieses Gefühl?</em></h2>
-          <p>Der Bikini bleibt im Schrank. Im Schlafzimmer machen Sie das Licht aus. Im Spiegel schauen Sie weg — weil die Brust, die Sie sehen, nicht mehr zu der Frau passt, die Sie innerlich sind.</p>
-          <p>Nach Schwangerschaft, Stillzeit oder Gewichtsverlust hat sich alles verändert. Die Festigkeit ist verschwunden. Was bleibt, ist ein stilles Unbehagen, das Sie seit Monaten — vielleicht Jahren — begleitet. Im Alltag funktionieren Sie. Aber in den Momenten dazwischen — beim Umziehen, beim Blick zur Seite, beim Gedanken an den nächsten Strandurlaub — ist es da.</p>
-          <p>Vielleicht haben Sie gehofft, dass Sport etwas ändert. Vielleicht haben Sie Push-up-BHs als Lösung akzeptiert. Vielleicht reden Sie nicht darüber, weil es sich „eitel" anfühlt. <strong>Es ist nicht eitel. Es ist Ihr Körpergefühl. Und es zählt.</strong></p>
-          <p>Mehr Frauen empfinden so, als Sie denken. Und die meisten sagen nach dem Eingriff dasselbe: <em>„Warum habe ich so lange gewartet?"</em></p>
-          <div class="problem-story">
-            <div class="story-label">Typische Patientin</div>
-            <p>„Nach zwei Kindern und dem Abstillen habe ich mich fremd in meinem eigenen Körper gefühlt. Bikinis? Vermieden. Enge Oberteile? Undenkbar. Ich habe mich unter weiten Pullovern versteckt und so getan, als wäre es mir egal. War es nicht. Erst als ich in die Villa Bella kam und das Team mir alles in Ruhe erklärte, wusste ich: Das ist der richtige Schritt."</p>
-          </div>
-          <div class="problem-cta">
-            <a href="#kontakt" class="btn-primary">Mein persönliches Beratungsgespräch sichern →</a>
-            <p style="font-size:14px; color:var(--text-light); margin-top:8px;">100% unverbindlich. Kein Risiko. Kein Druck.</p>
-          </div>
-        </div>
-        <div class="problem-image">
-          <img src="https://cdn.prod.website-files.com/6569a841ec1461c605d92a91/6739ccbf64a0b2e7a7abdef7_DSC07545%202-p-500.webp" alt="Villa Bella Klinik München" width="500" height="600" loading="lazy">
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- PATIENT STORIES (V7) -->
   <section class="social-proof" id="patientenstimmen">
     <div class="container">
@@ -561,7 +506,7 @@
 
       <div class="testimonial-video" style="max-width:680px;margin:0 auto var(--space-2xl);">
         <div class="wistia-wrapper">
-          <iframe src="https://fast.wistia.net/embed/iframe/tgb40wwjfl?seo=true&videoFoam=false" title="Patientin erzählt ihre Erfahrung in der Villa Bella" allow="autoplay; fullscreen" loading="lazy"></iframe>
+          <iframe src="https://fast.wistia.net/embed/iframe/tgb40wwjfl?seo=true&videoFoam=false" title="Patientin erzählt ihre Erfahrung bei der Villa Bella" allow="autoplay; fullscreen" loading="lazy"></iframe>
         </div>
         <p class="video-caption">Eine Patientin teilt ihre persönliche Erfahrung</p>
       </div>
@@ -570,7 +515,7 @@
         <div class="testimonial-card">
           <div class="testimonial-stars">★★★★★</div>
           <div class="testimonial-context">Nach 2 Schwangerschaften &amp; 4 Jahren Unsicherheit</div>
-          <p class="testimonial-quote">"Ich habe mich jahrelang fremd in meinem Körper gefühlt. Nach dem Eingriff in der Villa Bella bin ich zum ersten Mal seit der Geburt meiner Kinder wieder gerne in den Spiegel geschaut. Das Ergebnis ist so natürlich — niemand würde es erahnen."</p>
+          <p class="testimonial-quote">"Ich habe mich jahrelang fremd in meinem Körper gefühlt. Nach dem Eingriff bei der Villa Bella bin ich zum ersten Mal seit der Geburt meiner Kinder wieder gerne in den Spiegel geschaut. Das Ergebnis ist so natürlich — niemand würde es erahnen."</p>
           <div class="testimonial-author">K. Jäger</div>
           <div class="testimonial-source">Jameda Bewertung (2025)</div>
         </div>
@@ -626,6 +571,32 @@
     </div>
   </section>
 
+  <!-- PROBLEM / PAIN (V6) -->
+  <section class="problem-section" id="problem">
+    <div class="container">
+      <div class="problem-grid">
+        <div class="problem-content">
+          <h2>Kennen Sie <em>dieses Gefühl</em>?</h2>
+          <p>Sie stehen vor dem Spiegel — und erkennen sich nicht wieder. Nach Schwangerschaft, Stillzeit oder Gewichtsverlust hat sich Ihre Brust verändert. Die Festigkeit ist verschwunden.</p>
+          <p>Vielleicht vermeiden Sie bestimmte Kleidung. Vielleicht fühlen Sie sich unsicher, wenn Sie sich ausziehen. Vielleicht haben Sie das Gefühl, dass Ihr Körper nicht mehr zu der Frau passt, die Sie innerlich sind.</p>
+          <p><strong>Sie sind nicht allein.</strong> Über 80% unserer Patientinnen beschreiben genau dieses Gefühl beim ersten Beratungsgespräch.</p>
+          <p>Und die meisten sagen dasselbe: <em>„Ich hätte mich viel früher melden sollen."</em></p>
+          <div class="problem-story">
+            <div class="story-label">Typische Patientin</div>
+            <p>„Nach zwei Kindern und dem Abstillen fühlte ich mich fremd in meinem eigenen Körper. Ich habe Bikinis vermieden, mich unter weiten Pullovern versteckt. Erst als ich zu Villa Bella kam und das Team mir alles in Ruhe erklärte, wusste ich: Das ist der richtige Schritt."</p>
+          </div>
+          <div class="problem-cta">
+            <a href="#kontakt" class="btn-primary">Mein persönliches Beratungsgespräch sichern →</a>
+            <p style="font-size:14px; color:var(--text-light); margin-top:8px;">100% unverbindlich. Kein Risiko. Kein Druck.</p>
+          </div>
+        </div>
+        <div class="problem-image">
+          <img src="https://cdn.prod.website-files.com/6569a841ec1461c605d92a91/6739ccbf64a0b2e7a7abdef7_DSC07545%202-p-500.webp" alt="Villa Bella Klinik München" width="500" height="600" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- CTA BAND #1 -->
   <section class="cta-band cta-band--loss">
     <div class="container">
@@ -643,66 +614,40 @@
         <div class="gold-line"></div>
         <h2>So funktioniert Ihre Bruststraffung</h2>
       </div>
-      <div class="method-layout" style="align-items:center; margin-bottom:var(--space-2xl);">
+      <div class="method-layout">
         <div class="method-content">
           <p class="method-intro">Bei einer Bruststraffung (Mastopexie) wird überschüssiges Hautgewebe entfernt, das Brustgewebe gestrafft und neu modelliert. Die Brustwarze wird in ihre natürliche, ästhetische Position versetzt. Das Ergebnis: eine straffere, jugendlichere Brust — die sich anfühlt wie Ihre eigene.</p>
-          <p class="method-intro">Auf Wunsch können Sie Ihr Ergebnis vorab in unserer Crisalix 3D-Simulation sehen, damit Sie ein besseres Gefühl dafür bekommen, welche Veränderung möglich ist und welches Ergebnis zu Ihrem Körper passt.</p>
+          <div class="method-cards">
+            <div class="method-card">
+              <div class="method-num">1</div>
+              <div>
+                <h4>Narbenarme Schnittführung</h4>
+                <p>Unsere Ärzte schneiden entlang des unteren Brustpols. Die Narben sind nach der Heilung kaum sichtbar und verlaufen in der natürlichen Brustkontur.</p>
+                <p class="method-objection">→ Angst vor sichtbaren Narben? Bei unserer Technik sind sie nach wenigen Monaten fast unsichtbar.</p>
+              </div>
+            </div>
+            <div class="method-card">
+              <div class="method-num">2</div>
+              <div>
+                <h4>3D-Simulation — Ihr Ergebnis vorab sehen</h4>
+                <p>Mit der Crisalix 3D-Simulation sehen Sie vor dem Eingriff, wie Ihr Ergebnis aussehen wird. So treffen Sie Ihre Entscheidung mit voller Klarheit.</p>
+                <p class="method-objection">→ Unsicher, ob das Ergebnis Ihren Vorstellungen entspricht? Sehen Sie es vorher.</p>
+              </div>
+            </div>
+            <div class="method-card">
+              <div class="method-num">3</div>
+              <div>
+                <h4>Flexibel kombinierbar</h4>
+                <p>Bruststraffung + Vergrößerung oder Verkleinerung — ohne zusätzliche Schnitte, in einem Eingriff. Zwei Ziele, eine OP, eine Heilungsphase.</p>
+                <p class="method-objection">→ Wünschen Sie neben der Straffung auch mehr oder weniger Volumen? Kein Problem.</p>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="method-image">
-          <img src="https://cdn.prod.website-files.com/6569a841ec1461c605d92a91/6739c962b29e9dbe8d6496e8_DSC06545.webp" alt="Villa Bella Behandlungsraum" width="460" height="420" loading="lazy" style="aspect-ratio:4/5; border-radius:var(--radius-lg);">
+          <img src="https://cdn.prod.website-files.com/6569a841ec1461c605d92a91/6739c962b29e9dbe8d6496e8_DSC06545.webp" alt="Villa Bella Behandlungsraum" width="460" height="420" loading="lazy">
         </div>
       </div>
-    </div>
-    <div class="container">
-    <div class="process-stack">
-      <div class="process-card-wrapper"><div class="process-card">
-        <div class="process-num">1</div>
-        <div>
-          <h4>Ausführliche Beratung &amp; Wunschanalyse</h4>
-          <p>Im persönlichen Beratungsgespräch nehmen wir uns Zeit, Ihre Wünsche genau zu verstehen. Wie soll Ihre Brust nach dem Eingriff aussehen? Welche Form, welche Position, welches Volumen? Dank unserer Crisalix 3D-Simulation sehen Sie bereits vor dem Eingriff, wie Ihr Ergebnis aussehen kann — realistisch, individuell, ohne Rätselraten.</p>
-          <p>Gleichzeitig untersuchen wir Ihre Ausgangslage: Hautbeschaffenheit, Brustgewebevolumen, Grad der Erschlaffung. So können wir gemeinsam klären, ob eine reine Straffung ausreicht oder ob eine Kombination mit Implantat oder Eigenfett sinnvoll ist.</p>
-          <p class="process-outcome">→ Sie wissen danach genau, was möglich ist, welche Methode zu Ihnen passt und wie Ihr Ergebnis aussehen wird.</p>
-        </div>
-      </div></div>
-      <div class="process-card-wrapper"><div class="process-card">
-        <div class="process-num">2</div>
-        <div>
-          <h4>Individuelle Planung der Schnittführung</h4>
-          <p>Die Schnittführung wird exakt auf Ihre Anatomie abgestimmt. Unser Team entscheidet, ob eine vertikale Technik (weniger Narben) oder eine T-Technik (bei stärkerer Erschlaffung) den besten Weg zu Ihrem Wunschergebnis darstellt. Das Ziel: maximale Straffung bei minimaler Narbenbildung.</p>
-          <p>Die Schnitte verlaufen entlang der natürlichen Brustkontur — nach der Heilungsphase im Regelfall sehr unauffällig. Jedes Detail wird im Vorfeld geplant, damit Sie am Tag des Eingriffs mit vollem Vertrauen in den OP-Saal gehen.</p>
-          <p class="process-outcome">→ Ein auf Ihre Anatomie maßgeschneiderter Plan — mit dem Ziel, Narben so unauffällig wie möglich zu halten.</p>
-        </div>
-      </div></div>
-      <div class="process-card-wrapper"><div class="process-card">
-        <div class="process-num">3</div>
-        <div>
-          <h4>Der Eingriff — 2 bis 3 Stunden</h4>
-          <p>Während des Eingriffs wird überschüssiges Hautgewebe entfernt, das Brustgewebe gestrafft und die Brustwarze in ihre natürliche, ästhetische Position versetzt. Auf Wunsch kann gleichzeitig ein Implantat oder Eigenfett eingebracht werden, um zusätzliches Volumen zu schaffen — ohne zusätzliche Schnitte.</p>
-          <p>Der Eingriff erfolgt in Vollnarkose. Unser Anästhesie-Team begleitet Sie während der gesamten Dauer. Die Technik unseres Ärzteteams ist darauf ausgelegt, das Gewebe so schonend wie möglich zu behandeln — für eine schnellere Heilung und ein natürlicheres Ergebnis.</p>
-          <p class="process-outcome">→ Präzise, schonend, individuell — für eine straffere, jugendlichere Brust, die sich anfühlt wie Ihre eigene.</p>
-        </div>
-      </div></div>
-      <div class="process-card-wrapper"><div class="process-card">
-        <div class="process-num">4</div>
-        <div>
-          <h4>Sichere Erholung &amp; persönliche Begleitung</h4>
-          <p>Nach dem Eingriff bleiben Sie 1–2 Nächte stationär in unserer Klinik. Ein Stütz-BH wird angelegt und die Wundversorgung sichergestellt. Unser Team ist rund um die Uhr erreichbar — für Fragen, bei Unsicherheiten, für Ihr gutes Gefühl.</p>
-          <p>In den ersten Wochen tragen Sie einen Kompressions-BH, der die neue Form unterstützt und die Heilung fördert. Leichte Alltagstätigkeiten sind bereits nach wenigen Tagen möglich. Sport und stärkere Belastung erfolgen schrittweise nach ärztlicher Freigabe — in der Regel nach ca. 4–6 Wochen.</p>
-          <p class="process-outcome">→ Klare Anweisungen, persönliche Begleitung, sichere Erholung — Schritt für Schritt zurück in den Alltag.</p>
-        </div>
-      </div></div>
-      <div class="process-card-wrapper"><div class="process-card">
-        <div class="process-num">5</div>
-        <div>
-          <h4>Ihr langfristiges Ergebnis — natürlich und dauerhaft</h4>
-          <p>Das Ergebnis einer Bruststraffung ist sofort sichtbar und verbessert sich in den folgenden Wochen und Monaten weiter, während Schwellungen abklingen und die endgültige Form entsteht. Narben verblassen deutlich und werden mit der Zeit kaum noch wahrnehmbar.</p>
-          <p>Bei guter Pflege und stabilem Gewicht hält das Ergebnis viele Jahre — typischerweise bis zu 10 Jahre und länger. Regelmäßige Nachsorge-Termine begleiten Ihre Heilung und stellen sicher, dass alles optimal verläuft.</p>
-          <p class="process-outcome">→ Eine straffere, natürlich geformte Brust — die Ihnen langfristig neues Selbstbewusstsein schenkt.</p>
-        </div>
-      </div></div>
-    </div>
-    </div>
-    <div class="container">
       <p class="method-transition">Welche Methode genau zu Ihnen passt, erfahren Sie im persönlichen Beratungsgespräch.</p>
     </div>
   </section>
@@ -851,6 +796,12 @@
     <div class="container">
       <div class="team-grid">
         <div class="team-image">
+          <div style="margin-bottom: 24px;">
+            <div class="wistia-wrapper">
+              <iframe src="https://fast.wistia.net/embed/iframe/hhivyzxxeq?seo=true&videoFoam=false" title="Villa Bella Philosophie" allow="autoplay; fullscreen" loading="lazy"></iframe>
+            </div>
+            <p class="video-caption">Lernen Sie unser Team kennen — in 2 Minuten</p>
+          </div>
           <img src="https://cdn.prod.website-files.com/6569a841ec1461c605d92a91/6919aa27a8ba8dc040abe687_rsz_fabian_lou_nadja-min.webp" alt="Villa Bella Ärzte-Team" width="540" height="400" loading="lazy">
           <div class="team-founder-badge">
             <img src="https://cdn.prod.website-files.com/6569a841ec1461c605d92a91/6846a689484243f47e3fe5b2_Design%20ohne%20Titel%20(33)-p-500.webp" alt="Dr. Ludger Meyer-Dobbelstein" width="48" height="48">
@@ -862,7 +813,7 @@
         </div>
         <div class="team-text">
           <h2>Nicht ein Arzt. Ein ganzes Spezialistenteam — nur für Ihr Ergebnis.</h2>
-          <p>In der Villa Bella werden Sie nicht von einem einzelnen Arzt behandelt. Hinter Ihrem Ergebnis steht ein <strong>eingespieltes Team aus spezialisierten Fachärztinnen und Fachärzten</strong>, die gemeinsam über tausende Bruststraffungen durchgeführt haben.</p>
+          <p>Bei Villa Bella werden Sie nicht von einem einzelnen Arzt behandelt. Hinter Ihrem Ergebnis steht ein <strong>eingespieltes Team aus spezialisierten Fachärztinnen und Fachärzten</strong>, die gemeinsam über tausende Bruststraffungen durchgeführt haben.</p>
           <p>Gegründet von Dr. Ludger Meyer-Dobbelstein hat unser Team seine bewährten Techniken weiterentwickelt und perfektioniert. Das bedeutet: Nicht die Erfahrung eines Arztes fließt in Ihr Ergebnis ein — sondern <strong>die gebündelte Expertise eines ganzen Teams.</strong></p>
           <div class="team-values">
             <div class="team-value">
@@ -883,22 +834,6 @@
       </div>
     </div>
   </section>
-  <!-- IMAGEFILM -->
-  <section style="background: var(--white); padding: var(--space-4xl) 0;">
-    <div class="container">
-      <div class="section-header">
-        <div class="gold-line"></div>
-        <h2>Lernen Sie die Villa Bella kennen</h2>
-      </div>
-      <p style="font-size: 17px; color: var(--text-secondary); text-align: center; max-width: 680px; margin: 0 auto var(--space-2xl);">Ein Blick hinter die Kulissen — erleben Sie den Spirit unserer Klinik, unser Team und unseren Anspruch in 2 Minuten.</p>
-      <div style="max-width: 800px; margin: 0 auto;">
-        <div class="wistia-wrapper" style="position:relative;">
-          <iframe src="https://fast.wistia.net/embed/iframe/pcrc62f17s?seo=true&videoFoam=false" title="Villa Bella Imagefilm" allow="autoplay; fullscreen" allowfullscreen loading="lazy"></iframe>
-        </div>
-      </div>
-    </div>
-  </section>
-
 
   <!-- CTA BAND #3 — Social Proof -->
   <section class="cta-band">
@@ -938,6 +873,12 @@
       <div class="section-header">
         <div class="gold-line"></div>
         <h2>Ihre Fragen — ehrlich beantwortet</h2>
+      </div>
+      <div class="faq-video">
+        <div class="wistia-wrapper">
+          <iframe src="https://fast.wistia.net/embed/iframe/pcrc62f17s?seo=true&videoFoam=false" title="FAQ Video" allow="autoplay; fullscreen" loading="lazy"></iframe>
+        </div>
+        <p class="video-caption">Unser Ärzteteam beantwortet die häufigsten Fragen</p>
       </div>
     </div>
     <div class="faq-accordion">
@@ -1071,45 +1012,6 @@
 
     /* Trust Strip Counter Animation */
     (function(){var done=false,strip=document.querySelector('.trust-strip');if(!strip)return;function count(el,target,suffix){var start=null;function step(ts){if(!start)start=ts;var p=Math.min((ts-start)/1500,1);var eased=1-Math.pow(1-p,3);el.textContent=Math.floor(eased*target).toLocaleString('de-DE')+suffix;if(p<1)requestAnimationFrame(step)}requestAnimationFrame(step)}var obs=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting&&!done){done=true;var nums=strip.querySelectorAll('.trust-number');if(nums[0])count(nums[0],3127,'');if(nums[1])nums[1].textContent='Note 1,0';if(nums[2])nums[2].textContent='25+ Jahre';if(nums[3])count(nums[3],5247,'+')}})},{threshold:0.3});obs.observe(strip)})();
-  
-    (function(){
-      var reduced=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-      var stack=document.querySelector('.process-stack');
-      var wrappers=document.querySelectorAll('.process-card-wrapper');
-      if(!wrappers.length||reduced)return;
-      if(window.innerWidth<=768){
-        var cards=document.querySelectorAll('.process-card');
-        cards.forEach(function(c){c.style.opacity='0';c.style.transform='translateY(16px)';c.style.transition='opacity 0.5s ease, transform 0.5s ease'});
-        var mObs=new IntersectionObserver(function(entries){
-          entries.forEach(function(e){
-            if(e.isIntersecting){e.target.style.opacity='1';e.target.style.transform='translateY(0)';mObs.unobserve(e.target)}
-          })
-        },{threshold:0.1});
-        cards.forEach(function(c){mObs.observe(c)});
-        return;
-      }
-      var total=wrappers.length;
-      function onScroll(){
-        wrappers.forEach(function(w,i){
-          var card=w.querySelector('.process-card');
-          var rect=w.getBoundingClientRect();
-          var isStuck=rect.top<=140;
-          var nextW=wrappers[i+1];
-          if(isStuck&&nextW){
-            var nextRect=nextW.getBoundingClientRect();
-            var overlap=Math.max(0,1-(nextRect.top-100)/200);
-            var scale=1-overlap*0.03;
-            card.style.transform='scale('+scale+')';
-            card.style.boxShadow='0 '+(8-overlap*4)+'px '+(40-overlap*20)+'px rgba(0,0,0,'+(0.10-overlap*0.04)+')';
-          } else {
-            card.style.transform='scale(1)';
-            card.style.boxShadow='';
-          }
-        });
-      }
-      window.addEventListener('scroll',onScroll,{passive:true});
-      onScroll();
-    })();
   </script>
 </body>
 </html>
