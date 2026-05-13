@@ -185,7 +185,11 @@
     /* METHODS BOXES */
     .methods-section { background: var(--white); padding: var(--space-4xl) 0; }
     .methods-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-lg); max-width: 1020px; margin: 0 auto; }
-    .methods-card { background: var(--white); border-radius: var(--radius-lg); padding: var(--space-xl) var(--space-lg); border: 1px solid rgba(201,169,110,0.15); position: relative; overflow: hidden; transition: all 0.25s ease; }
+    .methods-card { background: var(--white); border-radius: var(--radius-lg); padding: 0; border: 1px solid rgba(201,169,110,0.15); position: relative; overflow: hidden; transition: all 0.25s ease; }
+    .methods-card h3, .methods-card p, .methods-card .methods-tag { padding: 0 var(--space-lg); }
+    .methods-card h3 { padding-top: var(--space-lg); }
+    .methods-card .methods-tag { display: inline-block; margin: 0 var(--space-lg) var(--space-lg); }
+    .methods-card img { width: 100%; height: 220px; object-fit: cover; border-radius: 0; margin-bottom: 0; }
     .methods-card:hover { box-shadow: 0 4px 24px rgba(0,0,0,0.08); border-color: var(--gold); }
     .methods-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--gold); }
     .methods-card h3 { font-size: 20px; color: var(--text-primary); margin-bottom: var(--space-sm); }
@@ -544,7 +548,7 @@
           </div>
         </div>
         <div class="problem-image">
-          <img src="https://cdn.prod.website-files.com/6569a841ec1461c605d92a91/6739ccbf64a0b2e7a7abdef7_DSC07545%202-p-500.webp" alt="Villa Bella Klinik München" width="500" height="600" loading="lazy">
+          <img src="images/kennen-sie-bruststraffung.png" alt="Frau betrachtet sich nachdenklich im Spiegel" width="500" height="600" loading="lazy">
         </div>
       </div>
     </div>
@@ -763,16 +767,19 @@
       <p class="methods-subtitle">Je nach Ausgangslage empfehlen wir die optimale Methode. Im Beratungsgespräch finden wir gemeinsam die beste Lösung für Sie.</p>
       <div class="methods-grid">
         <div class="methods-card">
+          <img src="images/methode-bs-narbenarm.png" alt="Narbenarme Präzisionstechnik" style="width:100%;border-radius:var(--radius-md);margin-bottom:var(--space-md);aspect-ratio:1/1;object-fit:cover;" loading="lazy">
           <h3>Klassische Bruststraffung</h3>
           <p>Bewährte Mastopexie: Überschüssige Haut wird entfernt, das Brustgewebe angehoben, die Brustwarze in die ideale Position gebracht. Für deutlich erschlaffte Brüste — mit langfristigem Ergebnis.</p>
           <span class="methods-tag">Häufigste Methode</span>
         </div>
         <div class="methods-card">
+          <img src="images/methode-bs-3d-simulation.png" alt="3D-Simulation — Ergebnis vorab sehen" style="width:100%;border-radius:var(--radius-md);margin-bottom:var(--space-md);aspect-ratio:1/1;object-fit:cover;" loading="lazy">
           <h3>Straffung + Vergrößerung</h3>
           <p>Bruststraffung kombiniert mit einem Implantat oder Eigenfett-Transfer. Für Frauen, die neben der Straffung auch mehr Volumen wünschen. Zwei Ziele — ein Eingriff.</p>
           <span class="methods-tag">Mehr Volumen gewünscht</span>
         </div>
         <div class="methods-card">
+          <img src="images/methode-bs-kombination.png" alt="Kombinationseingriff — Straffung und Verkleinerung" style="width:100%;border-radius:var(--radius-md);margin-bottom:var(--space-md);aspect-ratio:1/1;object-fit:cover;" loading="lazy">
           <h3>Straffung + Verkleinerung</h3>
           <p>Reduktionsmastopexie: Gleichzeitige Verkleinerung und Straffung. Besonders entlastend bei Rücken- und Nackenbeschwerden durch zu große Brüste.</p>
           <span class="methods-tag">Entlastung &amp; Form</span>
